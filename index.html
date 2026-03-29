@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pinky's Space — A Living Archive of Signal, Motion, and Memory</title>
+  <meta name="description" content="Pinky's Space is a living archive of signal, motion, and memory — art, community, motion, and memory mapped like a subway system." />
+  <style>
+    :root{
+      --bg:#0a0b10;
+      --bg2:#0f1017;
+      --panel:rgba(255,255,255,.03);
+      --border:rgba(255,255,255,.1);
+      --text:#f4f0ea;
+      --muted:#bcb4aa;
+      --pink:#ff2ea6;
+      --blue:#1ea7ff;
+      --yellow:#ffd500;
+      --orange:#ff8b1f;
+      --green:#32e37d;
+      --shadow:0 0 24px rgba(255,46,166,.18);
+      --radius:24px;
+      --line:4px;
+      --max:1200px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--text);
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at 15% 0%, rgba(255,46,166,.08), transparent 28%),
+        radial-gradient(circle at 85% 15%, rgba(30,167,255,.07), transparent 25%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg2) 40%, var(--bg) 100%);
+      overflow-x:hidden;
+    }
+    a{color:inherit}
+    .ticker{
+      position:sticky; top:0; z-index:60;
+      background:var(--pink);
+      color:#fff;
+      overflow:hidden;
+      border-bottom:1px solid rgba(255,255,255,.25);
+    }
+    .ticker-track{
+      display:flex;
+      width:max-content;
+      white-space:nowrap;
+      animation:marquee 28s linear infinite;
+      padding:.55rem 0;
+      font-size:.78rem;
+      font-weight:900;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+    }
+    .ticker-track span{margin-right:2.25rem}
+    @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+    header{
+      position:sticky;
+      top:2.05rem;
+      z-index:50;
+      backdrop-filter: blur(10px);
+      background:rgba(10,11,16,.8);
+      border-bottom:1px solid var(--border);
+    }
+    .nav{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:1rem 1.2rem;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:1rem;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:.8rem;
+      font-size:.95rem;
+      font-weight:900;
+      text-decoration:none;
+      letter-spacing:.1em;
+      text-transform:uppercase;
+    }
+    .brand-dot{
+      width:18px;height:18px;border-radius:50%;
+      background:var(--pink);
+      box-shadow:0 0 0 3px rgba(255,255,255,.95), 0 0 18px rgba(255,46,166,.55);
+      animation:pulse 2.4s ease-in-out infinite;
+      flex:0 0 auto;
+    }
+    @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.12)}}
+    nav ul{
+      list-style:none;
+      display:flex;
+      flex-wrap:wrap;
+      gap:1rem;
+      margin:0;padding:0;
+    }
+    nav a{
+      text-decoration:none;
+      font-size:.78rem;
+      text-transform:uppercase;
+      letter-spacing:.15em;
+      font-weight:800;
+      opacity:.92;
+    }
+    nav a:hover{color:var(--pink)}
+    .route-bar{
+      height:var(--line);
+      background:linear-gradient(90deg,var(--pink) 0 24%, var(--blue) 24% 42%, var(--yellow) 42% 60%, var(--orange) 60% 80%, var(--green) 80% 100%);
+      box-shadow:0 0 18px rgba(255,255,255,.08);
+    }
+    .section{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:4.25rem 1.2rem;
+      position:relative;
+    }
+    .station{
+      display:flex;align-items:center;gap:.9rem;
+      color:var(--muted);
+      text-transform:uppercase;
+      letter-spacing:.18em;
+      font-size:.72rem;
+      font-weight:900;
+      margin-bottom:1rem;
+    }
+    .station-line{
+      width:84px;
+      height:var(--line);
+      background:var(--pink);
+      border-radius:999px;
+      box-shadow:var(--shadow);
+      flex:0 0 auto;
+    }
+    .hero{
+      min-height:90vh;
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:2rem;
+      align-items:center;
+      padding-top:5rem;
+    }
+    .hero::before{
+      content:"";
+      position:absolute;
+      left:1.2rem; right:1.2rem; top:31%;
+      height:2px;
+      background:linear-gradient(90deg, transparent 0, rgba(30,167,255,.85) 10%, rgba(30,167,255,.28) 90%, transparent 100%);
+      opacity:.7;
+    }
+    .hero::after{
+      content:"";
+      position:absolute;
+      right:20%;
+      top:18%;
+      width:4px;
+      height:58%;
+      border-radius:999px;
+      background:rgba(255,46,166,.42);
+      box-shadow:0 0 18px rgba(255,46,166,.22);
+    }
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:.55rem;
+      background:rgba(255,46,166,.12);
+      border:1px solid rgba(255,46,166,.3);
+      padding:.45rem .75rem;
+      border-radius:999px;
+      text-transform:uppercase;
+      letter-spacing:.15em;
+      font-size:.72rem;
+      font-weight:900;
+    }
+    h1{
+      margin:.85rem 0 1rem;
+      font-size:clamp(3.2rem, 8vw, 6.4rem);
+      line-height:.92;
+      text-transform:uppercase;
+      letter-spacing:-.05em;
+      max-width:10ch;
+    }
+    h1 .accent{color:var(--pink)}
+    .lead{
+      font-size:clamp(1rem,1.6vw,1.22rem);
+      line-height:1.65;
+      color:var(--text);
+      max-width:58ch;
+      margin:0 0 1.4rem;
+    }
+    .legend{
+      display:flex;
+      flex-wrap:wrap;
+      gap:1.1rem;
+      margin:1.25rem 0 1.75rem;
+      font-size:.82rem;
+      text-transform:uppercase;
+      letter-spacing:.09em;
+      font-weight:900;
+    }
+    .legend span{display:inline-flex;align-items:center;gap:.48rem}
+    .legend i{
+      width:11px;height:11px;border-radius:50%;display:inline-block;
+      box-shadow:0 0 12px currentColor;
+    }
+    .btn-row{display:flex;gap:.8rem;flex-wrap:wrap}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      padding:.95rem 1.18rem;
+      border-radius:999px;
+      border:1px solid var(--border);
+      text-decoration:none;
+      font-size:.78rem;
+      font-weight:900;
+      letter-spacing:.13em;
+      text-transform:uppercase;
+      transition:.2s ease;
+    }
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:var(--pink); box-shadow:0 0 18px rgba(255,46,166,.22)}
+    .btn-secondary{background:transparent}
+    .map{
+      min-height:450px;
+      border:1px solid var(--border);
+      border-radius:28px;
+      background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+      overflow:hidden;
+      position:relative;
+      box-shadow:0 20px 60px rgba(0,0,0,.28);
+    }
+    .map-line{
+      position:absolute;
+      height:var(--line);
+      border-radius:999px;
+      transform-origin:left center;
+      animation:drawx 2.1s ease forwards;
+      box-shadow:0 0 16px rgba(255,255,255,.08);
+    }
+    .map-line.v{
+      width:var(--line);
+      transform-origin:center top;
+      animation:drawy 2.1s ease forwards;
+    }
+    @keyframes drawx{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+    @keyframes drawy{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+    .node{
+      position:absolute;
+      width:16px;height:16px;border-radius:50%;
+      border:3px solid rgba(255,255,255,.95);
+      box-shadow:0 0 18px rgba(255,255,255,.16);
+      animation:pulse 2.8s ease-in-out infinite;
+    }
+    .node-label{
+      position:absolute;
+      color:var(--muted);
+      font-size:.66rem;
+      font-weight:900;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+    }
+    .about-grid,.signal-grid,.bridge{display:grid;gap:1rem}
+    .about-grid{grid-template-columns:1fr 1fr}
+    .signal-grid{grid-template-columns:1.15fr .85fr}
+    .bridge{grid-template-columns:1fr auto;align-items:center}
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:1rem;
+    }
+    .card{
+      background:var(--panel);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      padding:1.18rem;
+      box-shadow:0 14px 32px rgba(0,0,0,.18);
+      transition:.2s ease;
+    }
+    .card:hover{
+      transform:translateY(-3px);
+      border-color:rgba(255,255,255,.16);
+      box-shadow:0 18px 42px rgba(0,0,0,.25);
+    }
+    .route{
+      display:inline-flex;align-items:center;gap:.45rem;
+      color:var(--muted);
+      font-size:.72rem;font-weight:900;
+      text-transform:uppercase;letter-spacing:.15em;
+      margin-bottom:.7rem;
+    }
+    .route i{
+      width:9px;height:9px;border-radius:50%;display:inline-block;
+      box-shadow:0 0 10px currentColor;
+    }
+    .card h3{
+      margin:.1rem 0 .5rem;
+      font-size:1.45rem;
+      line-height:1.08;
+    }
+    .card p{margin:0;line-height:1.58}
+    .quote{
+      margin:0;
+      border-left:4px solid var(--blue);
+      padding-left:1rem;
+      font-size:1.05rem;
+      line-height:1.75;
+    }
+    .video{
+      min-height:280px;
+      border-radius:24px;
+      border:1px solid var(--border);
+      background:
+        radial-gradient(circle at 20% 20%, rgba(255,46,166,.2), transparent 26%),
+        radial-gradient(circle at 80% 72%, rgba(30,167,255,.15), transparent 18%),
+        linear-gradient(145deg, #151622, #0a0b10 72%);
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:1rem;
+      gap:1rem;
+    }
+    .play{
+      width:72px;height:72px;border-radius:50%;
+      display:grid;place-items:center;
+      border:1px solid rgba(255,255,255,.24);
+      background:rgba(255,255,255,.08);
+      box-shadow:0 0 20px rgba(255,46,166,.16);
+    }
+    .play::before{
+      content:"";
+      width:0;height:0;
+      border-top:10px solid transparent;
+      border-bottom:10px solid transparent;
+      border-left:18px solid #fff;
+      margin-left:4px;
+    }
+    .mini-map{
+      display:grid;
+      grid-template-columns:repeat(5,minmax(0,1fr));
+      gap:.9rem;
+    }
+    .mini-stop{
+      border-top:var(--line) solid currentColor;
+      padding-top:.8rem;
+      font-size:.85rem;
+      font-weight:900;
+      letter-spacing:.06em;
+      text-transform:uppercase;
+      line-height:1.28;
+    }
+    .footer{
+      max-width:var(--max);
+      margin:0 auto;
+      padding:0 1.2rem 4rem;
+    }
+    .footer-box{
+      border-top:1px solid var(--border);
+      padding-top:1.2rem;
+      display:flex;
+      justify-content:space-between;
+      gap:1rem;
+      flex-wrap:wrap;
+      color:var(--muted);
+      font-size:.84rem;
+      text-transform:uppercase;
+      letter-spacing:.12em;
+      font-weight:900;
+    }
+    .reveal{
+      opacity:0;
+      transform:translateY(20px);
+      transition:.55s ease;
+    }
+    .reveal.show{
+      opacity:1;
+      transform:translateY(0);
+    }
+    @media (max-width: 940px){
+      .hero,.about-grid,.signal-grid,.bridge{grid-template-columns:1fr}
+      .cards{grid-template-columns:1fr}
+      .mini-map{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .hero::after{right:7%}
+    }
+    @media (max-width: 640px){
+      .nav{padding:.9rem 1rem}
+      .section{padding:3.35rem 1rem}
+      nav ul{gap:.7rem}
+      nav a{font-size:.72rem}
+      .mini-map{grid-template-columns:1fr 1fr}
+      .map{min-height:340px}
+      h1{max-width:unset}
+      header{top:2rem}
+    }
+  </style>
+</head>
+<body>
+  <div class="ticker">
+    <div class="ticker-track">
+      <span>Art in Motion</span><span>Memory Preserved</span><span>Street Culture Lives</span><span>Found Objects Speak</span><span>Dream Access Open</span><span>All Lines Running</span>
+      <span>Art in Motion</span><span>Memory Preserved</span><span>Street Culture Lives</span><span>Found Objects Speak</span><span>Dream Access Open</span><span>All Lines Running</span>
+    </div>
+  </div>
+
+  <header>
+    <div class="nav">
+      <a class="brand" href="#top">
+        <span class="brand-dot"></span>
+        <span>Pinky's Space</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#archive">Archive</a></li>
+          <li><a href="#signal">Signal</a></li>
+          <li><a href="#map">Map</a></li>
+          <li><a href="#connect">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="route-bar"></div>
+  </header>
+
+  <main id="top">
+    <section class="section hero">
+      <div class="reveal">
+        <div class="eyebrow">● New York City · Est. Now</div>
+        <h1>A Living <span class="accent">Archive</span> of Signal.</h1>
+        <p class="lead">
+          Motion and memory, transformed. Where food, street culture, art, and imagination collide — turning everyday materials and moments into something alive.
+        </p>
+        <div class="legend">
+          <span><i style="background:var(--pink);color:var(--pink)"></i>Art</span>
+          <span><i style="background:var(--blue);color:var(--blue)"></i>Community</span>
+          <span><i style="background:var(--orange);color:var(--orange)"></i>Motion</span>
+          <span><i style="background:var(--green);color:var(--green)"></i>Memory</span>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="#archive">Enter the Archive</a>
+          <a class="btn btn-secondary" href="#signal">Watch the Signal</a>
+        </div>
+      </div>
+
+      <div class="map reveal">
+        <div class="map-line" style="left:4%;top:15%;width:62%;background:var(--pink)"></div>
+        <div class="map-line" style="left:8%;top:58%;width:72%;background:var(--blue)"></div>
+        <div class="map-line" style="left:6%;top:77%;width:88%;background:linear-gradient(90deg,var(--pink) 0 28%, var(--blue) 28% 48%, var(--yellow) 48% 66%, var(--orange) 66% 83%, var(--green) 83% 100%)"></div>
+        <div class="map-line v" style="left:69%;top:15%;height:56%;background:rgba(255,46,166,.45)"></div>
+
+        <div class="node" style="left:7%;top:12%;background:var(--pink)"></div>
+        <div class="node" style="left:11%;top:55%;background:var(--pink)"></div>
+        <div class="node" style="left:16%;top:55%;background:var(--blue)"></div>
+        <div class="node" style="left:21%;top:55%;background:var(--yellow)"></div>
+        <div class="node" style="left:26%;top:55%;background:var(--green)"></div>
+
+        <div class="node-label" style="left:9%;top:6%">Signal Start</div>
+        <div class="node-label" style="left:58%;top:83%">All Lines Running</div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="station reveal">
+        <span class="station-line"></span>
+        <span>Station 01 · About</span>
+      </div>
+      <div class="about-grid">
+        <div class="card reveal">
+          <span class="route"><i style="background:var(--pink);color:var(--pink)"></i>Route Pink · NYC</span>
+          <h3>Pinky's Space</h3>
+          <p>
+            Pinky’s Space is a living art and community project born in New York City — a place where food, street culture, memory, and imagination meet and become signal.
+          </p>
+        </div>
+        <div class="card reveal">
+          <span class="route"><i style="background:var(--blue);color:var(--blue)"></i>Route Blue · Why It Matters</span>
+          <h3>Living Archive</h3>
+          <p>
+            This site is not just a portfolio. It is a map of practice — documenting installations, found objects, paintings, motion, and emotional geography as they keep evolving.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="archive" class="section">
+      <div class="station reveal">
+        <span class="station-line" style="background:var(--blue)"></span>
+        <span>Station 02 · The Archive</span>
+      </div>
+      <div class="cards">
+        <article class="card reveal">
+          <span class="route"><i style="background:var(--pink);color:var(--pink)"></i>Route Pink · Installation Art</span>
+          <h3>Pinky’s Space — NYC Installation</h3>
+          <p>A neighborhood art and food space that became a beacon of light — filled with music, color, conversation, and spontaneous creativity.</p>
+        </article>
+        <article class="card reveal">
+          <span class="route"><i style="background:var(--green);color:var(--green)"></i>Route Green · Found Objects</span>
+          <h3>Whole Arts</h3>
+          <p>Artworks created using discarded materials — insulated grocery bags, found objects, and overlooked remnants turned into expression.</p>
+        </article>
+        <article class="card reveal">
+          <span class="route"><i style="background:var(--yellow);color:var(--yellow)"></i>Route Yellow · Painting</span>
+          <h3>Dream Access</h3>
+          <p>A collection exploring subconscious memory, emotion, and internal architecture — maps of the mind made visible.</p>
+        </article>
+        <article class="card reveal">
+          <span class="route"><i style="background:var(--orange);color:var(--orange)"></i>Route Orange · Relics</span>
+          <h3>TV Relics / Project Free TV</h3>
+          <p>Disassembled televisions reimagined as sculptural and visual art — giving new life to abandoned technology and the stories it carried.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="signal" class="section">
+      <div class="station reveal">
+        <span class="station-line" style="background:var(--orange)"></span>
+        <span>Station 03 · Live Signal</span>
+      </div>
+      <div class="signal-grid">
+        <div class="card reveal">
+          <h3>Dispatches in Motion</h3>
+          <p class="quote">
+            Fragments from the ride, the street, the archive, and the subconscious. This is where the signal stays current — city energy, field notes, and future transmissions.
+          </p>
+        </div>
+        <div class="video reveal">
+          <div class="play"></div>
+          <strong>Future Signal Slot</strong>
+          <span style="color:var(--muted);max-width:24ch;line-height:1.5">Drop in a DiscoDuoMoto clip, archive video, or field transmission here.</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="map" class="section">
+      <div class="station reveal">
+        <span class="station-line" style="background:var(--yellow)"></span>
+        <span>Station 04 · Signal Map</span>
+      </div>
+      <div class="card reveal">
+        <div class="mini-map">
+          <div class="mini-stop" style="color:var(--pink)">Installation Art</div>
+          <div class="mini-stop" style="color:var(--blue)">Community Space</div>
+          <div class="mini-stop" style="color:var(--yellow)">Painting</div>
+          <div class="mini-stop" style="color:var(--orange)">Motion & Film</div>
+          <div class="mini-stop" style="color:var(--green)">Found Objects</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="connect" class="section">
+      <div class="station reveal">
+        <span class="station-line" style="background:var(--green)"></span>
+        <span>Station 05 · Connect</span>
+      </div>
+      <div class="card bridge reveal">
+        <div>
+          <h3 style="margin:.2rem 0 .55rem">The Signal Is Always On</h3>
+          <p style="margin:0;line-height:1.65">
+            Reach out for collaborations, commissions, installations, archive conversations, or future transmissions.
+          </p>
+        </div>
+        <a class="btn btn-primary" href="mailto:wesley.wobles@gmail.com">Email Wesley</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="route-bar" style="margin-bottom:1.15rem"></div>
+    <div class="footer-box">
+      <span>All Lines Running</span>
+      <span>Pinky's Space · New York City</span>
+    </div>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting) entry.target.classList.add('show');
+      });
+    }, {threshold: .12});
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+  </script>
+</body>
+</html>
