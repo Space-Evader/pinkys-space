@@ -1,0 +1,44 @@
+{
+  "verifiedAt": "2026-10-30",
+  "scope": "Two original identity assets explicitly supplied by the user for the existing draft integration. Telephone remains unverified.",
+  "records": [
+    {
+      "id": "original-logo",
+      "source_file": "1000002955.jpg",
+      "source": "User-supplied original attachment in this conversation, October 30, 2026",
+      "source_sha256": "60b2b87f88f69576f0fb2c1fbcd083719c4a72f1fd082d5f22ee8898275ae497",
+      "source_dimensions": [
+        812,
+        1280
+      ],
+      "src": "assets/identity/pinkys-space-original-logo.jpg",
+      "sha256": "60b2b87f88f69576f0fb2c1fbcd083719c4a72f1fd082d5f22ee8898275ae497",
+      "bytes": 32358,
+      "width": 812,
+      "height": 1280,
+      "role": "Original historical Pinky’s Space logo artwork with In Orbit Since 2017 signature",
+      "verifiedAt": "2026-10-30",
+      "visuallyInspected": true,
+      "processing": "None. Byte-identical JPEG copy with complete supplied frame and color profile. No crop, redraw, recolor, filters or generative editing. No EXIF tags present in supplied file."
+    },
+    {
+      "id": "chef-portrait",
+      "source_file": "1000002978.jpg",
+      "source": "User-supplied original attachment in this conversation, October 30, 2026",
+      "source_sha256": "e971f4eeea9c40202a3193f2b813dbf6e13e2052f2206340e0f1536b108f6936",
+      "source_dimensions": [
+        960,
+        1280
+      ],
+      "src": "assets/identity/big-chef-dog-halloween.jpg",
+      "sha256": "e971f4eeea9c40202a3193f2b813dbf6e13e2052f2206340e0f1536b108f6936",
+      "bytes": 83842,
+      "width": 960,
+      "height": 1280,
+      "role": "Supplied Big Chef Dog Halloween photograph; no product or artwork identity implied",
+      "verifiedAt": "2026-10-30",
+      "visuallyInspected": true,
+      "processing": "None. Byte-identical JPEG copy with complete supplied frame and color profile. No crop, redraw, recolor, filters or generative editing. No EXIF tags present in supplied file."
+    }
+  ]
+}

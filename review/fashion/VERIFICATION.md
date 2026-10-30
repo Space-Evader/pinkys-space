@@ -9,10 +9,10 @@ October 30, 2026. Review branch: `codex/pinkys-universe-review`. No publication,
 | Source, syntax, HTML/ARIA references, local files, CSS and existing behavior | Pass | `npm run validate` |
 | Existing homepage, archive, portfolio and commerce-route regression | Pass | [browser-results.json](../browser-results.json) |
 | Fashion identity, source groups, filters, search, disclosures and fallback | Pass | [fashion-browser-results.json](../fashion-browser-results.json) |
-| Dormant identity gates and local hotline preview | Pass | Exact approved copy, Tab containment, Escape, Close, focus return, no phone or substitute portrait |
+| Verified original identity images and non-AI guide | Pass | Exact supplied JPEG hashes, complete-frame rendering, image decoding, normal and preview guide, keyboard controls, missing-asset fallback, no phone link |
 | Image and protected-source preservation | Pass | [preservation-results.json](../preservation-results.json): all 53 protected files match the checkpoint |
 | Current Square product prices, currency, variants, stock and checkout | Not verified | Source access blocked/incomplete; zero item-level purchase buttons |
-| Original logo and Halloween portrait | Not available | Hooks prepared; originals not substituted |
+| Original logo and Halloween portrait | Integrated | User-supplied originals, byte-identical source copies; [identity provenance](../identity-sources.json) |
 
 Chromium 154.0.8037.57 was used with this repository’s pinned Playwright Core 1.57.0. Desktop viewport: 1440 × 1000. Mobile viewport: 390 × 844. Neither the fashion page nor the existing homepage had horizontal overflow at 320, 390, 650, 768, 1024 or 1440 pixels. The new page made no external requests and produced no browser errors. Reduced-motion behavior and the no-JavaScript archive were checked. No real Core Web Vitals, Safari, physical-device or assistive-technology certification is claimed.
 
@@ -27,9 +27,10 @@ The existing browser suite verifies all 46 responsive WebP variants decode at th
 | Wearable Art entrance | [Desktop](../screenshots/fashion-desktop.png) | [Mobile](../screenshots/fashion-mobile.png) |
 | Archive heading and filters | [Desktop](../screenshots/fashion-index-desktop.png) | [Mobile](../screenshots/fashion-index-mobile.png) |
 | Archive entries | [Desktop](../screenshots/fashion-records-desktop.png) | [Mobile](../screenshots/fashion-records-mobile.png) |
+| Big Chef Dog guide | [Desktop](../screenshots/hotline-desktop.png) | [Mobile](../screenshots/hotline-mobile.png) |
 | Local hotline preview | [Desktop](../screenshots/hotline-preview-desktop.png) | [Mobile](../screenshots/hotline-preview-mobile.png) |
 
-Existing homepage, gallery and artwork-viewer screenshots were also refreshed by the regression suite. These are actual browser captures; the hotline screenshots intentionally show a local preview without an original portrait or telephone link.
+Existing homepage, gallery and artwork-viewer screenshots were also refreshed by the regression suite. These are actual browser captures. Both guide modes show the original Halloween portrait and approved copy. The telephone link remains absent until a suitable public number is verified.
 
 ## Reproduction
 

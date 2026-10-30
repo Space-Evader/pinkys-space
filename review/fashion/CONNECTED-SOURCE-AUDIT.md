@@ -1,5 +1,6 @@
 # Connected-source audit — Pinky’s Space
 
+Later identity update: the user supplied the original logo and Big Chef Dog Halloween portrait after this source search. Both are now integrated; see `../identity-sources.json`. Earlier missing-asset findings below document the search checkpoint. The public telephone number remains unverified.
 Verified 2026-10-30. Read-only; no connected source was edited.
 
 The accessible historical Square export contains 802 rows. The wearable extraction contains 716 variant rows, 71 exact product names and 79 provisional exact-name/SKU-family groups. This is complete for that source’s wearable rows; it is not a complete current Square catalog.

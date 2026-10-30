@@ -35,9 +35,9 @@
   }
   const localPreview = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname) || location.protocol === "file:";
   const preview = localPreview && new URLSearchParams(location.search).get("hotline-preview") === "1";
-  // Both the authentic portrait and the explicitly public number are required
-  // before the normal floating hotline is shown.
-  if (!preview && !(portraitReady && telephoneReady)) return;
+  // The authentic portrait enables the non-AI guide. Telephone access has its
+  // own public-use gate and can remain unavailable independently.
+  if (!preview && !portraitReady) return;
   const mount = document.querySelector("#hotline-root");
   if (!mount || typeof HTMLDialogElement === "undefined" || typeof HTMLDialogElement.prototype.showModal !== "function") return;
   const node = (tag, value, className) => {
@@ -51,7 +51,7 @@
   launcher.type = "button";
   launcher.setAttribute("aria-haspopup", "dialog");
   launcher.setAttribute("aria-controls", "chef-dialog");
-  if (!preview) launcher.append(image(identity.chefPortrait, "chef-launcher-portrait"));
+  if (portraitReady) launcher.append(image(identity.chefPortrait, "chef-launcher-portrait"));
   launcher.append(node("span", preview ? "Big Chef Dog · preview" : "Big Chef Dog Hotline"));
   const dialog = node("dialog", "", "chef-dialog");
   dialog.id = "chef-dialog";
@@ -75,7 +75,7 @@
     call.href = "tel:" + phone.e164;
     inner.append(call);
   } else {
-    inner.append(node("p", "The telephone link is not available in this preview.", "chef-preview-note"));
+    inner.append(node("p", preview ? "The telephone link is not available in this preview." : "The telephone link isn’t available yet.", "chef-preview-note"));
   }
   const routes = node("nav", "", "chef-routes");
   routes.setAttribute("aria-label", "Explore with the Big Chef Dog");

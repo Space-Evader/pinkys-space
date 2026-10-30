@@ -18,11 +18,9 @@ The separate `content/related-brand-catalog.json` contains 25 individually read 
 | Available variants and inventory | All 79 historical groups | Current variation and availability data; historical quantities such as 100000 are not live stock evidence |
 | Matched original product photography | All 79 historical groups | Original images mapped to exact item IDs; gallery/artwork pictures cannot stand in for these |
 | HatsRx image files | 31 source references | Source binaries and visual verification before local publication; image host is blocked here |
-| Original Pinky’s Space logo | Not recovered | Supplied original artwork file with provenance; no redraw or substitute |
-| Big Chef Dog Halloween portrait | Not recovered | Supplied original photograph with provenance |
 | Full Google Voice number ending 212 | Not verified | Full number and evidence it is approved for public hotline use |
 
-The user’s “sent” response contained no file reference or attachment accessible in this turn. Searches did not establish access to those originals. These are access gaps, not claims that the assets do not exist.
+The user subsequently attached the original logo (1000002955.jpg) and Big Chef Dog Halloween photograph (1000002978.jpg). Both were visually inspected and copied byte-for-byte into `assets/identity/`, retaining their full frames and original color profiles. [Identity provenance](../identity-sources.json) records their exact hashes and dimensions. The originals now appear in the draft; these two asset gaps are resolved. The full public hotline number remains unverified.
 
 ## Square link evidence
 
@@ -34,12 +32,12 @@ Direct access to Square returned HTTP CONNECT 403. The web reader returned minim
 
 - `fashion.html`: editorial entrance, authentic supplied portfolio photograph, all 71 exact archive names, seven source-supported categories, search, native source disclosures, and separate HatsRx references. All entries remain accessible without JavaScript.
 - `index.html#wearable-art`: homepage entry into the new room. Existing artwork, history chapters, gallery, five priced artworks and commerce destinations remain available.
-- `content/identity.js`: original-asset configuration is unset. The normal floating hotline is dormant. Local `fashion.html?hotline-preview=1` or `index.html?hotline-preview=1` previews the approved non-AI copy and navigation without a portrait or telephone link.
-- The original-logo hook accepts only a verified supplied image. It has no replacement logo artwork.
+- `content/identity.js`: verified original logo and portrait are configured. The floating non-AI guide uses the supplied portrait, approved copy and existing story/art links. Telephone access stays disabled because the full public-use number is unverified. Local `?hotline-preview=1` remains available for review.
+- The original-logo hook renders the supplied historical logo image faithfully. No redraw, crop, recoloring, generative edit or substitute asset was used.
 - Portfolio photograph 03 provides editorial context only; no catalog match, title, price or artist credit has been invented. Visual reinspection corrected two inherited descriptions: image11 shows stencils and paint supplies rather than a jacket; image13 shows a painted panel rather than fabric. All 46 image files are byte-identical to the checkpoint.
 
 ## Preservation and remaining review
 
 Work continues on `codex/pinkys-universe-review` from `b46ad03383a229ff3b202fda1f9832baf81181ce`. The recovered checkout was clean, with no unpublished local edits to overwrite. Prior review commits remain ancestors. The original Drive images were not changed. The complete raw historical export and excluded rows are retained in `/workspace/pinkys-source-audit`, outside the public website source. Unrelated environments were not used for runtime packages or testing.
 
-This is an implemented historical fashion archive, not a completed current commerce integration. Publication is blocked by the source and asset gaps above and by the user’s explicit no-publish/no-merge instruction. Final founder visual review and current commerce verification remain required. Browser results and screenshots are recorded alongside this report; emulated mobile Chromium checks do not replace Safari, physical-device or assistive-technology review.
+The original identity assets are integrated. This is an implemented historical fashion archive, not a completed current commerce integration. Publication is blocked by the source and asset gaps above and by the user’s explicit no-publish/no-merge instruction. Final founder visual review and current commerce verification remain required. Browser results and screenshots are recorded alongside this report; emulated mobile Chromium checks do not replace Safari, physical-device or assistive-technology review.

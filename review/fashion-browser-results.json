@@ -6,6 +6,26 @@
     "historicalVariants": 716,
     "verifiedCurrentSquareItems": 0
   },
+  "identityAssets": [
+    {
+      "key": "originalLogo",
+      "src": "assets/identity/pinkys-space-original-logo.jpg",
+      "bytes": 32358,
+      "sha256": "60b2b87f88f69576f0fb2c1fbcd083719c4a72f1fd082d5f22ee8898275ae497",
+      "width": 812,
+      "height": 1280,
+      "originalBytesVerified": true
+    },
+    {
+      "key": "chefPortrait",
+      "src": "assets/identity/big-chef-dog-halloween.jpg",
+      "bytes": 83842,
+      "sha256": "e971f4eeea9c40202a3193f2b813dbf6e13e2052f2206340e0f1536b108f6936",
+      "width": 960,
+      "height": 1280,
+      "originalBytesVerified": true
+    }
+  ],
   "viewports": [
     {
       "name": "desktop",
@@ -25,25 +45,30 @@
     "All records and native source disclosure usable without JavaScript",
     "No current prices, inventory or purchase destination invented; no commerce action inside archival records",
     "25 HatsRx design references remain distinct from Pinky's historical records",
-    "No default logo, portrait, floating hotline or telephone link without verified assets",
-    "Local-only hotline preview exact copy, route links, Tab containment, Escape, Close and restored focus",
+    "Original logo and Halloween portrait JPEG byte counts and SHA-256 match independent supplied-source hashes",
+    "Original identity images decode at supplied dimensions with nonempty descriptions",
+    "Normal portrait launcher and local-only preview: exact approved copy, route links, Tab containment, Escape, Close and restored focus",
+    "Unconfirmed public telephone remains null and no telephone link is rendered",
+    "Runtime all-null identity override keeps normal logo and guide absent and requests no identity images on homepage and fashion page",
     "No horizontal overflow at 320, 390, 650, 768, 1024 and 1440 pixels",
     "No external requests or browser errors; reduced-motion mode",
-    "Eight current desktop/mobile fashion and hotline screenshots"
+    "Ten current desktop/mobile fashion, normal hotline and hotline-preview screenshots"
   ],
   "screenshots": [
     "review/screenshots/fashion-desktop.png",
     "review/screenshots/fashion-index-desktop.png",
     "review/screenshots/fashion-records-desktop.png",
+    "review/screenshots/hotline-desktop.png",
     "review/screenshots/hotline-preview-desktop.png",
     "review/screenshots/fashion-mobile.png",
     "review/screenshots/fashion-index-mobile.png",
     "review/screenshots/fashion-records-mobile.png",
+    "review/screenshots/hotline-mobile.png",
     "review/screenshots/hotline-preview-mobile.png"
   ],
   "limitations": [
     "No current Square product page was accessible; remote destination availability and checkout were not exercised.",
     "No physical device, Safari, or assistive-technology testing is implied.",
-    "Original logo, Halloween portrait, and confirmed public hotline number are absent; only local gated preview is tested."
+    "The original logo and Halloween portrait are verified; a confirmed public hotline number remains absent. The non-AI guide exposes no telephone link."
   ]
 }

@@ -30,9 +30,11 @@
     }
   ],
   "identityAssets": {
-    "originalLogo": "missing; no new attachment or accessible supplied link visible",
-    "chefHalloweenPortrait": "missing",
-    "publicHotlineNumber": "unverified; no telephone link exposed"
+    "originalLogo": "verified user-supplied original; assets/identity/pinkys-space-original-logo.jpg",
+    "chefHalloweenPortrait": "verified user-supplied original; assets/identity/big-chef-dog-halloween.jpg",
+    "publicHotlineNumber": "unverified; no telephone link exposed",
+    "provenance": "review/identity-sources.json",
+    "processing": "Byte-identical original JPEG copies; full frames, no creative alterations."
   },
   "accessLimitations": [
     "Direct Square HTTPS CONNECT403; page extractor cannot recover listing contents.",
@@ -65,6 +67,26 @@
       "path": "review/fashion/inventory-summary.csv",
       "bytes": 20599,
       "sha256": "b78d721010f9638cbfc76b7a5c276f26a2f7acccb52cd35d51140c15f9eb78e9"
+    },
+    {
+      "path": "content/identity.js",
+      "bytes": 977,
+      "sha256": "d952e8992cf1c28fe2da47ba136a33d1c876d665a3d13e07a498cb58253c19b7"
+    },
+    {
+      "path": "review/identity-sources.json",
+      "bytes": 1996,
+      "sha256": "f0633d5f6d6280790a14b9d2bd07a03aad83462cd879920843c8f27765b0005f"
+    },
+    {
+      "path": "assets/identity/pinkys-space-original-logo.jpg",
+      "bytes": 32358,
+      "sha256": "60b2b87f88f69576f0fb2c1fbcd083719c4a72f1fd082d5f22ee8898275ae497"
+    },
+    {
+      "path": "assets/identity/big-chef-dog-halloween.jpg",
+      "bytes": 83842,
+      "sha256": "e971f4eeea9c40202a3193f2b813dbf6e13e2052f2206340e0f1536b108f6936"
     }
   ]
 }
