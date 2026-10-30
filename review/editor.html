@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Archive editor — Pinky’s Space founder review</title><link rel="stylesheet" href="../assets/space.css"><script src="../content/archive.js"></script>
+<style>main{max-width:850px;margin:auto}label{display:grid;gap:8px;font-size:13px;margin:20px 0}input,select,textarea{font:16px Arial,sans-serif;background:var(--paper);color:var(--ink);border:1px solid;padding:14px;width:100%}textarea{min-height:130px;resize:vertical}.controls{display:flex;flex-wrap:wrap;gap:16px;margin:30px 0}#status{color:var(--green);min-height:30px}fieldset{border:1px solid var(--line);padding:20px;margin:25px 0}h1{font-size:42px}.hint{font-size:13px;color:#c9c8bf}input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--pink);outline-offset:4px}</style>
+</head><body><main class="section"><p class="eyebrow">FOUNDER REVIEW / CONTENT TOOL</p><h1>Pinky’s Days<br>Archive editor.</h1><p>Add approved memories, photos, and video links without a website rebuild. This tool edits a working copy in this tab. Export the archive file when finished.</p><p class="hint">Nothing is uploaded or published here. Keep the original media and permission records. Google Photos share pages are links to albums, not direct image files; use approved exported images in the site’s assets folder.</p>
+<label>Chapter<select id="chapter"></select></label>
+<label>Chapter headline<input id="headline" maxlength="160"></label><label>Chapter introduction<textarea id="story" maxlength="6000"></textarea></label>
+<div class="controls"><button class="button pink" id="save">Save chapter in working copy</button></div>
+<h2>Memories in this chapter</h2><div id="entries"></div>
+<fieldset><legend>Add an approved entry</legend>
+<label>Title<input id="entry-title" maxlength="160"></label><label>Date or period (optional; use only what is known)<input id="entry-date" maxlength="100"></label>
+<label>Story<textarea id="entry-body" maxlength="10000"></textarea></label>
+<label>Image path or direct HTTPS image URL (optional)<input id="entry-image" placeholder="assets/garden-01.jpg"></label>
+<label>Image description for screen readers<input id="entry-alt" maxlength="500"></label><label>Photo caption<input id="entry-caption" maxlength="1000"></label><label>Photo credit / attribution<input id="entry-credit" maxlength="500"></label>
+<label>Video or interview HTTPS link (optional)<input id="entry-video"></label>
+<label>Link label<input id="entry-video-label" placeholder="Watch the garden interview ↗"></label>
+<label style="display:flex;align-items:center"><input style="width:auto" id="approved" type="checkbox">I have checked the story, credit, and permission to use this media.</label>
+<button class="button pink" id="add">Add entry to working copy</button>
+</fieldset>
+<p role="status" id="status"></p>
+<div class="controls"><button class="button pink" id="export">Export archive.js</button><a class="button" style="border-color:var(--paper)" href="../index.html">Back to site ↗</a></div>
+<p class="hint">To apply: replace content/archive.js with the exported file and put approved images at their matching assets paths. Refresh the local site to review. Publication remains a separate founder-authorized action. This tab has no server storage; export before closing.</p>
+</main><script>
+(() => {
+  "use strict";
+  const data = JSON.parse(JSON.stringify(window.PINKYS_ARCHIVE));
+  const $ = id => document.getElementById(id);
+  const say = message => { $("status").textContent = message; };
+  data.forEach(chapter => { const option = document.createElement("option"); option.value = chapter.id; option.textContent = chapter.number + " / " + chapter.label; $("chapter").append(option); });
+  const current = () => data.find(chapter => chapter.id === $("chapter").value);
+  function show() {
+    const chapter = current();
+    $("headline").value = chapter.title; $("story").value = chapter.story;
+    $("entries").replaceChildren();
+    chapter.entries.forEach((entry, index) => {
+      const row = document.createElement("p");
+      const title = document.createElement("span"); title.textContent = entry.title + " ";
+      const remove = document.createElement("button"); remove.textContent = "Remove"; remove.type = "button"; remove.className = "button";
+      remove.style.borderColor = "var(--paper)";
+      remove.addEventListener("click", () => { chapter.entries.splice(index, 1); show(); say("Entry removed from the working copy."); });
+      row.append(title, remove); $("entries").append(row);
+    });
+    if (!chapter.entries.length) { const p = document.createElement("p"); p.className = "hint"; p.textContent = "No individual memories added yet."; $("entries").append(p); }
+  }
+  function save() {
+    if (!$("headline").value.trim() || !$("story").value.trim()) { say("Add a headline and introduction."); return false; }
+    current().title = $("headline").value.trim(); current().story = $("story").value.trim(); return true;
+  }
+  let previousId = data[0].id;
+  $("chapter").addEventListener("change", () => {
+    const previous = data.find(chapter => chapter.id === previousId);
+    if ($("headline").value.trim()) previous.title = $("headline").value.trim();
+    if ($("story").value.trim()) previous.story = $("story").value.trim();
+    previousId = $("chapter").value; show(); say("");
+  });
+  $("save").addEventListener("click", () => { if (save()) say("Chapter saved in this tab. Export to keep your changes."); });
+  $("add").addEventListener("click", () => {
+    const value = id => $(id).value.trim();
+    if (!value("entry-title") || !value("entry-body") || !$("approved").checked) { say("Add a title and story, then confirm accuracy and media permission."); return; }
+    if (value("entry-image") && (!value("entry-alt") || !value("entry-credit"))) { say("Add image description and credit."); return; }
+    const image = value("entry-image");
+    if (image && !/^https:\/\//i.test(image) && !/^assets\/[a-z0-9_./-]+$/i.test(image)) { say("Use an assets/ path or a direct HTTPS image URL."); return; }
+    if (value("entry-video") && !/^https:\/\//i.test(value("entry-video"))) { say("Use an HTTPS video link."); return; }
+    if (!save()) return;
+    current().entries.push({title:value("entry-title"),date:value("entry-date"),body:value("entry-body"),image,alt:value("entry-alt"),caption:value("entry-caption"),credit:value("entry-credit"),video:value("entry-video"),videoLabel:value("entry-video-label")});
+    ["entry-title","entry-date","entry-body","entry-image","entry-alt","entry-caption","entry-credit","entry-video","entry-video-label"].forEach(id => $(id).value = "");
+    $("approved").checked = false; show(); say("Entry added in this tab. Export to keep your changes.");
+  });
+  $("export").addEventListener("click", () => {
+    if (!save()) return;
+    const source = "/* Founder-approved archive content. No build required. */\nwindow.PINKYS_ARCHIVE = " + JSON.stringify(data, null, 2) + ";\n";
+    const url = URL.createObjectURL(new Blob([source], {type:"text/javascript"}));
+    const a = document.createElement("a"); a.href = url; a.download = "archive.js"; a.click();
+    setTimeout(() => URL.revokeObjectURL(url), 1000); say("Archive file exported. Replace content/archive.js in the review checkout.");
+  });
+  show();
+})();
+</script></body></html>
