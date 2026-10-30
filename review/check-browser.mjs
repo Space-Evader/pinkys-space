@@ -105,9 +105,12 @@ try {
     const buttons = await page.locator("[data-work]").all();
     for (let index=0;index<buttons.length;index++) {
       await buttons[index].focus(); await page.keyboard.press("Enter");
-      assert.ok((await page.locator("#work-price").textContent()).includes("$" + prices[index]));
+      await page.waitForFunction(() => document.querySelector("#work-dialog").open);
+      const actualPrice = await page.locator("#work-price").textContent();
+      assert.ok(actualPrice.includes("$" + prices[index]), "Work " + index + ": expected $" + prices[index] + ", received " + actualPrice);
       assert.ok((await page.locator("#work-inquiry").getAttribute("href")).startsWith("mailto:info@pinkys.space?subject="));
       await page.keyboard.press("Escape");
+      await page.waitForFunction(() => !document.querySelector("#work-dialog").open);
       assert.equal(await buttons[index].evaluate(button => button === document.activeElement),true);
     }
     assert.equal(await page.locator('a[href="https://pinkysspace.square.site/"]').count(),1);
@@ -121,6 +124,7 @@ try {
       assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), "Horizontal overflow at " + width);
     }
     assert.deepEqual(externalRequests,[]);
+    await page.setViewportSize({width:viewport.width,height:viewport.height});
     for (const link of await page.locator("header nav a").all()) {
       const hash = await link.getAttribute("href");
       await link.click();

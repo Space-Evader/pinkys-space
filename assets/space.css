@@ -58,3 +58,33 @@ dialog{width:min(640px,calc(100% - 32px));max-height:calc(100svh - 40px);padding
 @media(max-width:650px){.entrance{padding-bottom:24px}.entrance-stage{grid-template-columns:1fr;gap:30px;padding-top:40px}.entrance .entrance-copy h1{font-size:clamp(43px,11.5vw,74px);margin-bottom:25px}.entrance .entrance-bottom{gap:19px}.entrance .entrance-bottom p{font-size:13px}.entrance-art{padding:12px}.entrance-art img{max-height:none}.entrance-art figcaption{font-size:8px}.portfolio-heading{display:block;padding-block:38px}.portfolio-heading h2{font-size:48px}.portfolio-heading>div{font-size:13px;margin-top:25px}.portfolio-grid{grid-template-columns:1fr;gap:32px}.portfolio-card:nth-child(even){margin-top:0}.portfolio-open img{max-height:none}.portfolio-card figcaption{grid-template-columns:auto 1fr;gap:15px}.portfolio-card figcaption p{font-size:12px}.portfolio-footer{align-items:start;flex-direction:column;gap:22px}.portfolio-dialog-inner{padding:12px}.portfolio-dialog-bottom{gap:10px}#portfolio-image{height:60svh}#portfolio-caption{font-size:12px}.image-nav{width:44px;height:44px}}
 @media print{.portfolio-card[hidden]{display:block!important}.portfolio-grid{grid-template-columns:repeat(2,1fr)}.portfolio-card{break-inside:avoid}.portfolio-open img{max-height:300px}.portfolio-card:nth-child(even){margin-top:0}#portfolio-more,.image-open{display:none!important}.entrance-stage{grid-template-columns:1fr 1fr}.entrance-art img{max-height:400px}}
 .arrow,.star{display:inline-block;width:1em;height:1em;vertical-align:-.12em;flex:none}
+/* Publication polish: readable details, generous touch targets and quiet focus. */
+.entrance .entrance-copy h1{letter-spacing:-.055em}
+.entrance-art figcaption{font-size:10px;line-height:1.6}
+.portfolio-number{font-size:10px}
+.portfolio-card figcaption p{font-size:14px;line-height:1.6}
+.header nav a{position:relative;padding-block:8px}
+.header nav a::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:1px;background:var(--pink);transform:scaleX(0);transform-origin:left;transition:transform .18s ease}
+.header nav a:hover::after,.header nav a:focus-visible::after{transform:scaleX(1)}
+.image-open{width:44px;height:44px}
+.portfolio-open{outline:1px solid #34342f;outline-offset:0}
+.portfolio-open:hover,.portfolio-open:focus-visible{outline-color:var(--pink)}
+.portfolio-open:focus-visible{outline-width:3px;outline-offset:5px}
+.portfolio-open:focus-visible .image-open{background:var(--pink)}
+.journal:before{content:"+";font-family:Arial,Helvetica,sans-serif;font-size:40px;line-height:1;color:#a80055}
+@media(max-width:650px){
+  html{scroll-padding-top:154px}
+  .header nav a{min-height:44px;font-size:11px;padding-block:6px}
+  .entrance{min-height:calc(100svh - 123px)}
+  .entrance-meta{font-size:10px;letter-spacing:.04em}
+  .entrance-stage{padding-top:28px;gap:22px}
+  .entrance .entrance-copy h1{letter-spacing:-.045em}
+  .entrance .entrance-bottom p{font-size:14px;line-height:1.55}
+  .entrance-art figcaption{font-size:10px;gap:12px}
+  .section-kicker,.eyebrow,.archive-foot{font-size:10px;letter-spacing:.04em}
+  .portfolio-card figcaption{grid-template-columns:1fr;gap:5px}
+  .portfolio-card figcaption p{font-size:14px}
+  .portfolio-number{font-size:10px}
+  .prose p,.garden-story p:not(.large),.contact p{font-size:15px}
+  .text-link{font-size:12px}
+}

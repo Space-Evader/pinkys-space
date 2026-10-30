@@ -1,6 +1,6 @@
 # Pinky’s Space — founder review
 
-Prepared October 30, 2026. Status: working, unpublished visual and interaction draft with all 23 supplied portfolio photos integrated. Automated source and real-browser checks passed. Exact artwork titles and credits, historical garden/venue photography, and founder visual review remain open.
+Prepared October 30, 2026. Status: publication-authorized release candidate with all 23 supplied portfolio photos integrated. Automated source and real-browser checks passed. Exact artwork titles and credits, historical garden/venue photography, and founder visual review remain open.
 
 ## What is ready to review
 
@@ -88,7 +88,7 @@ The baseline findings are source-based. The updated draft also passed the automa
 - Automated real-browser checks passed with system Chromium 154.0.8037.57 and this project's pinned Playwright Core 1.57.0. All 46 WebP variants decoded at their declared widths, and all 23 portfolio images decoded successfully after disclosure. Gallery previous/next controls, arrow keys, Tab containment, Escape, and focus restoration passed; all seven archive headings were reachable by keyboard.
 - Browser checks confirmed the five product prices and inquiry destinations, retained Square/companion-domain/checkout links, desktop/mobile main navigation, reduced-motion handling, and the no-JavaScript gallery fallback. The homepage produced no external requests or browser errors. Checkout remains opt-in; no transaction was attempted.
 - No horizontal overflow was detected at viewport widths of 320, 390, 650, 768, 1024, or 1440 pixels.
-- No third-party script is requested by the homepage. Its HTML, CSS, scripts, content data and favicon total 88,966 bytes before compression, excluding the WebP derivatives. The complete derivative set is about 7.4 MiB; the hero is prioritized while below-fold images load lazily and responsive variants reduce smaller-screen transfers. No real performance measurement is implied.
+- No third-party script is requested by the homepage. Its HTML, CSS, scripts, content data and favicon total 90,752 bytes before compression, excluding the WebP derivatives. The complete derivative set is about 7.4 MiB; the hero is prioritized while below-fold images load lazily and responsive variants reduce smaller-screen transfers. No real performance measurement is implied.
 
 The checks are reproducible from the project root with Node, npm, Python 3, and an installed Chromium:
 
@@ -117,12 +117,16 @@ These are automated Chromium results, including emulated mobile viewport sizes. 
 3. Review the actual portfolio selection and descriptive captions. Confirm artwork titles and artist/photographer credits where known. For the next archive addition, collect just three to five original venue/garden photos with a brief true caption, approximate date, and photo credit where known. The supplied Drive-image workflow is already working; it does not need to be restarted. Portfolio artwork will not be assigned to priced works without matching evidence.
 4. Use review/editor.html to add verified memories and credited images. Export the content file before closing the tab.
 5. Confirm the listed print prices and whether the original Stripe button remains the intended checkout. Its configured identity was preserved but checkout was not exercised. Confirm Square’s intended role and whether an authenticated CMS is desired later.
-6. Review the saved desktop/mobile screenshots and any additional browser or assistive-technology coverage the founders need, then obtain explicit Magic × Wizard authorization before merging or publishing.
+6. Publication authorization has been received for the existing GitHub Pages site. The saved desktop/mobile screenshots remain available for continued founder review and any additional browser or assistive-technology coverage.
 
 The attachment ended at “The atmosphere” in section C, The Garden. Requirements beyond that point were not available.
 
 ## Recovery and release boundary
 
-The review branch is isolated from main. Do not merge it until founders approve. No Sites registration, domain change, production deployment, Square mutation, or checkout transaction is part of this work.
+Publication was explicitly authorized in this conversation on October 30, 2026. The validated review branch is authorized for merging into the existing GitHub Pages main branch. This authorization does not change DNS, Square inventory, checkout infrastructure, product pricing, or domains. No payment transaction is part of verification.
 
 Local recovery materials contain a published-baseline.zip with all four original files at verified byte content and a Git bundle with baseline and review checkpoint branches. The review source is also downloadable from the draft branch on GitHub. The original upstream SHA remains recoverable in GitHub. If a future authorized deployment needs rollback, prepare a reviewed revert to that source checkpoint; do not automatically force-reset main.
+
+## Visual refinement for publication
+
+The final polish relaxes headline tracking, enlarges mobile caption/metadata text and navigation touch targets, stacks mobile image labels above captions, and makes keyboard image focus as clear as hover. Artwork proportions, all 23 images, seven archive chapters, five prices and commerce destinations remain intact. The source and real-Chromium checks are rerun for this release; the saved screenshots show the refined state.
