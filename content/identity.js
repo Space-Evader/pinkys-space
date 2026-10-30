@@ -1,5 +1,5 @@
-/* Byte-identical user-supplied originals; provenance: review/identity-sources.json.
-   No verified public telephone number has been supplied. */
+/* User-supplied originals and owner-confirmed public Google Voice hotline.
+   Provenance: review/identity-sources.json. */
 window.PINKYS_IDENTITY = {
   originalLogo: {
     src: "assets/identity/pinkys-space-original-logo.jpg",
@@ -19,5 +19,11 @@ window.PINKYS_IDENTITY = {
     sourceReference: "User-supplied original 1000002978.jpg; review/identity-sources.json#chef-portrait",
     verifiedAt: "2026-10-30"
   },
-  publicTelephone: null
+  publicTelephone: {
+    e164: "+13476354690",
+    display: "(347) 635-4690",
+    publicHotlineUseConfirmed: true,
+    sourceReference: "Owner confirmed Big Chef Dog hotline; Google Voice settings screenshot 1000002984.jpg",
+    verifiedAt: "2026-10-30"
+  }
 };

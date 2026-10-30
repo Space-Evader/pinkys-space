@@ -9,7 +9,7 @@ October 30, 2026. Review branch: `codex/pinkys-universe-review`. Publication was
 | Source, syntax, HTML/ARIA references, local files, CSS and existing behavior | Pass | `npm run validate` |
 | Existing homepage, archive, portfolio and commerce-route regression | Pass | [browser-results.json](../browser-results.json) |
 | Fashion identity, source groups, filters, search, disclosures and fallback | Pass | [fashion-browser-results.json](../fashion-browser-results.json) |
-| Verified original identity images and non-AI guide | Pass | Exact supplied JPEG hashes, complete-frame rendering, image decoding, normal and preview guide, keyboard controls, missing-asset fallback, no phone link |
+| Verified original identity images and non-AI guide | Pass | Exact supplied JPEG hashes, complete-frame rendering, image decoding, normal and preview guide, keyboard controls, missing-asset fallback, verified public call link in normal mode and suppression in preview |
 | Image and protected-source preservation | Pass | [preservation-results.json](../preservation-results.json): all 53 protected files match the checkpoint |
 | Current Square product prices, currency, variants, stock and checkout | Not verified | Source access blocked/incomplete; zero item-level purchase buttons |
 | Original logo and Halloween portrait | Integrated | User-supplied originals, byte-identical source copies; [identity provenance](../identity-sources.json) |
@@ -30,7 +30,7 @@ The existing browser suite verifies all 46 responsive WebP variants decode at th
 | Big Chef Dog guide | [Desktop](../screenshots/hotline-desktop.png) | [Mobile](../screenshots/hotline-mobile.png) |
 | Local hotline preview | [Desktop](../screenshots/hotline-preview-desktop.png) | [Mobile](../screenshots/hotline-preview-mobile.png) |
 
-Existing homepage, gallery and artwork-viewer screenshots were also refreshed by the regression suite. These are actual browser captures. Both guide modes show the original Halloween portrait and approved copy. The telephone link remains absent until a suitable public number is verified.
+Existing homepage, gallery and artwork-viewer screenshots were also refreshed by the regression suite. These are actual browser captures. Both guide modes show the original Halloween portrait and approved copy. The normal guide displays the owner-confirmed (347) 635-4690 and links to `tel:+13476354690`; preview mode omits the call link. Browser checks inspect and activate the link with default navigation prevented, without placing a real call.
 
 ## Reproduction
 

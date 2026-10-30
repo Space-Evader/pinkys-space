@@ -26,6 +26,10 @@
       "originalBytesVerified": true
     }
   ],
+  "publicHotline": {
+    "e164": "+13476354690",
+    "display": "(347) 635-4690"
+  },
   "viewports": [
     {
       "name": "desktop",
@@ -47,8 +51,10 @@
     "25 HatsRx design references remain distinct from Pinky's historical records",
     "Original logo and Halloween portrait JPEG byte counts and SHA-256 match independent supplied-source hashes",
     "Original identity images decode at supplied dimensions with nonempty descriptions",
-    "Normal portrait launcher and local-only preview: exact approved copy, route links, Tab containment, Escape, Close and restored focus",
-    "Unconfirmed public telephone remains null and no telephone link is rendered",
+    "Normal portrait launcher and local-only preview on homepage and fashion page: exact approved copy, route links, Tab containment, Escape, Close and restored focus",
+    "Owner-confirmed visible telephone number matches tel:+13476354690; intercepted keyboard activation places no call",
+    "Local preview suppresses telephone links on both pages",
+    "Null, false approval, missing provenance and malformed E.164 each suppress telephone links while portrait guide stays active on both pages",
     "Runtime all-null identity override keeps normal logo and guide absent and requests no identity images on homepage and fashion page",
     "No horizontal overflow at 320, 390, 650, 768, 1024 and 1440 pixels",
     "No external requests or browser errors; reduced-motion mode",
@@ -69,6 +75,6 @@
   "limitations": [
     "No current Square product page was accessible; remote destination availability and checkout were not exercised.",
     "No physical device, Safari, or assistive-technology testing is implied.",
-    "The original logo and Halloween portrait are verified; a confirmed public hotline number remains absent. The non-AI guide exposes no telephone link."
+    "The owner-confirmed public telephone link is checked by intercepted keyboard activation. No call was placed and voicemail delivery was not tested. The private account-settings screenshot is not a website asset."
   ]
 }
