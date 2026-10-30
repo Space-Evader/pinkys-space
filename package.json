@@ -5,7 +5,8 @@
   "description": "Unpublished static Pinky’s Space redesign and self-contained review checks.",
   "scripts": {
     "validate": "python review/check-source.py && node review/check-css.mjs && node review/check.mjs && node review/check-portfolio.mjs",
-    "browser-check": "node review/check-browser.mjs"
+    "browser-check": "node review/check-browser.mjs",
+    "fashion-check": "node review/check-fashion.mjs"
   },
   "devDependencies": {
     "playwright-core": "1.57.0",

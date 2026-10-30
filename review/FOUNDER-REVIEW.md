@@ -1,5 +1,7 @@
 # Pinky’s Space — founder review
 
+**Historical artwork-checkpoint report.** The later Wearable Art assignment is draft-only and explicitly prohibits publication or merging. See [current fashion inventory and readiness](fashion/MISSING-AND-READINESS.md) and its current verification artifacts. The release authorization recorded in this earlier report does not authorize the current changes.
+
 Prepared October 30, 2026. Status: publication-authorized release candidate with all 23 supplied portfolio photos integrated. Automated source and real-browser checks passed. Exact artwork titles and credits, historical garden/venue photography, and founder visual review remain open.
 
 ## What is ready to review

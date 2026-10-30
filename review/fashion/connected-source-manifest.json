@@ -1,0 +1,149 @@
+{
+  "verified_at": "2026-10-30",
+  "complete_current_catalog": false,
+  "sources": [
+    {
+      "id": "catalog-2026-05-31",
+      "title": "catalog-cleaned-2026-05-31",
+      "url": "https://docs.google.com/spreadsheets/d/1q_hhjLRl2d1MTwsWowpubhYp_pTFVxW1NHmud9y-g8I/edit",
+      "verified_at": "2026-10-30",
+      "source_modified_at": "2026-05-31T18:17:09.136Z",
+      "status": "Historical Square export",
+      "scope": "802 total rows; 716 wearable variant rows; 71 exact wearable names; 79 provisional exact-name/SKU-family groups",
+      "limits": [
+        "No original image fields",
+        "No currency field",
+        "Only 3 nonblank permalink slugs, no complete product URLs",
+        "Current inventory/pricing is unverified",
+        "Group identities are provisional because parent Square item IDs are absent"
+      ]
+    },
+    {
+      "id": "ilikeyourhat-brief",
+      "title": "I LIKE YOUR HAT. — Implementation Brief — 2026-10-27",
+      "url": "https://docs.google.com/document/d/1w2vQcKz1aitlwtDCuDKJY5S94s-RMC3MEPBOZEf6ljs/edit",
+      "source_modified_at": "2026-10-28T19:11:57.175Z",
+      "verified_at": "2026-10-30",
+      "status": "Prior checkpoint evidence",
+      "scope": "Records prior cap188 $36, Diamond Mind shirt $25, PSILY hoodie239 $45 and cap original-image filename",
+      "limits": [
+        "Not a fresh commerce verification",
+        "Wix draft and merchant entries do not establish Pinky's current catalog completeness",
+        "Document says item238 also exists; do not merge hoodie identities"
+      ]
+    },
+    {
+      "id": "master-art-catalog",
+      "title": "Pinky's Space — Master Art Catalog",
+      "url": "https://docs.google.com/spreadsheets/d/1LNl1tylNTko670V69RrV06M_a8kv090ngKp5Cabt0CI/edit",
+      "source_modified_at": "2026-08-31T03:25:36.646Z",
+      "verified_at": "2026-10-30",
+      "status": "Art identity / review reference",
+      "scope": "Art records and linked source references",
+      "limits": [
+        "DOT_* document references explicitly quarantined and unsuitable for art/photo publication",
+        "Hold/Review records not approved for sale",
+        "No verified wearable-product photography or hotline asset"
+      ]
+    },
+    {
+      "id": "hatsrx-clinic-inventory",
+      "title": "HatsRx Clinic Inventory",
+      "url": "https://docs.google.com/spreadsheets/d/19d-4w4OruTf2syl4a-fhjKNXtpEL81fyk4xlr7fE48c/edit",
+      "source_modified_at": "2026-06-22T23:10:25.667Z",
+      "verified_at": "2026-10-30",
+      "status": "Historical separate-brand reference",
+      "scope": "12 named HatsRx units and creative language",
+      "limits": [
+        "No price/image/current-stock evidence",
+        "Slug fields are not complete verified Square destinations",
+        "No claim of ownership or new product duplication"
+      ]
+    },
+    {
+      "id": "hq-register",
+      "title": "Diamond Mind HQ — Master Project Register — 2026-10-19",
+      "url": "https://docs.google.com/document/d/1c4oTRl8P2JurHTsrcmqGKF1UPVA6ET6Qc1qF72aU0Dg/edit",
+      "source_modified_at": "2026-10-19T21:43:45.368Z",
+      "verified_at": "2026-10-30",
+      "status": "Cross-brand context",
+      "scope": "HatsRx completed launch; Pinky's art catalog; brand integration boundaries",
+      "limits": [
+        "HatsRx launch statement not independently audited in register",
+        "Does not establish clothing catalog completeness"
+      ]
+    },
+    {
+      "id": "merchant-template-rejected",
+      "title": "Google Merchant Center feed - Products source",
+      "url": "https://docs.google.com/spreadsheets/d/1m2bxZCEL3_M6xOHgMrFMAGJ1Xros_CNAlxhipDFLfWs/edit",
+      "source_modified_at": "2024-05-20T16:28:23.796Z",
+      "verified_at": "2026-10-30",
+      "status": "Rejected as product evidence",
+      "scope": "Google template instructions and sample Google-brand sweatshirt/TV rows with example.com URLs",
+      "limits": [
+        "No Pinky's products",
+        "Do not import example products, prices or images"
+      ]
+    },
+    {
+      "id": "art-work-folder",
+      "title": "Connected project source folder",
+      "url": "https://drive.google.com/drive/folders/1VIbPOTozDppbnrd5IwwqbInFx3oyxdzc",
+      "verified_at": "2026-10-30",
+      "status": "Direct-child folder listing inspected",
+      "scope": "Master Art Catalog and I LIKE YOUR HAT brief",
+      "limits": [
+        "No original logo or Big Chef Dog Halloween photograph in direct children"
+      ]
+    },
+    {
+      "id": "google-ai-studio-folder",
+      "title": "Google AI Studio",
+      "url": "https://drive.google.com/drive/folders/1UbR1lpB1WpQcwV7SdMHdzQdZBRoAPttA",
+      "verified_at": "2026-10-30",
+      "status": "Asset candidates, not approved originals",
+      "scope": "Generic image files, screenshots and app prompts, HatsRx IG logo",
+      "limits": [
+        "Generic image names and folder association do not establish original product imagery",
+        "No named original Pinky's logo or Halloween dog photo recovered",
+        "Do not substitute unverified image candidates for originals"
+      ]
+    },
+    {
+      "id": "canva-pinkys-signature-lead",
+      "title": "@Pinky’s Space",
+      "url": "https://www.canva.com/d/ooHzINcBU0l3VSr",
+      "providerDesignId": "DAEZ5CJRoDc",
+      "sourceCreatedYear": 2021,
+      "verified_at": "2026-10-30",
+      "status": "Historical design / unresolved original-logo lead",
+      "scope": "Two pages; fetched text @pinkysspace and PS. Page metadata recovered.",
+      "limits": [
+        "Not verified as supplied original logo artwork",
+        "No original reusable logo asset downloaded",
+        "Not used as replacement logo or redraw"
+      ]
+    },
+    {
+      "id": "canva-pinkys-menu-reference",
+      "title": "Copie de Copy of Pinky’s Space",
+      "url": "https://www.canva.com/d/yfdVo3yAcCJBY4l",
+      "providerDesignId": "DAEeTJNo6Do",
+      "sourceCreatedYear": 2021,
+      "verified_at": "2026-10-30",
+      "status": "Historical menu / context only",
+      "scope": "Three pages of restaurant/paint/shop menu text, including generic space Hat $25 and space T-shirt $25.",
+      "limits": [
+        "Generic names do not establish distinct fashion product identity",
+        "Historical amounts are not current product-price evidence",
+        "No product or logo asset verified from this reference"
+      ]
+    }
+  ],
+  "additionalSearchLimits": [
+    "Notion Big Chef and HatsRx searches returned no results. Pinky query timed out; Notion scope incomplete.",
+    "Canva Big Chef search returned only photo-free portfolio; no supplied Halloween photograph recovered.",
+    "Typed Drive Pinky-logo hits inspected were unrelated WorkOS screenshots."
+  ]
+}

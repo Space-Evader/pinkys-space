@@ -1,0 +1,49 @@
+{
+  "browser": "154.0.8037.57",
+  "inventory": {
+    "exactNames": 71,
+    "provisionalGroups": 79,
+    "historicalVariants": 716,
+    "verifiedCurrentSquareItems": 0
+  },
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "checks": [
+    "71 exact source names, 79 distinct provisional groups, 716 historical variants",
+    "Every card identity, category, source link and group count matches inventory",
+    "Seven supported category filters, keyboard activation, case-insensitive search, no results and clear/focus",
+    "All records and native source disclosure usable without JavaScript",
+    "No current prices, inventory or purchase destination invented; no commerce action inside archival records",
+    "25 HatsRx design references remain distinct from Pinky's historical records",
+    "No default logo, portrait, floating hotline or telephone link without verified assets",
+    "Local-only hotline preview exact copy, route links, Tab containment, Escape, Close and restored focus",
+    "No horizontal overflow at 320, 390, 650, 768, 1024 and 1440 pixels",
+    "No external requests or browser errors; reduced-motion mode",
+    "Eight current desktop/mobile fashion and hotline screenshots"
+  ],
+  "screenshots": [
+    "review/screenshots/fashion-desktop.png",
+    "review/screenshots/fashion-index-desktop.png",
+    "review/screenshots/fashion-records-desktop.png",
+    "review/screenshots/hotline-preview-desktop.png",
+    "review/screenshots/fashion-mobile.png",
+    "review/screenshots/fashion-index-mobile.png",
+    "review/screenshots/fashion-records-mobile.png",
+    "review/screenshots/hotline-preview-mobile.png"
+  ],
+  "limitations": [
+    "No current Square product page was accessible; remote destination availability and checkout were not exercised.",
+    "No physical device, Safari, or assistive-technology testing is implied.",
+    "Original logo, Halloween portrait, and confirmed public hotline number are absent; only local gated preview is tested."
+  ]
+}

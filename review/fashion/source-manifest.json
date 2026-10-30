@@ -1,0 +1,70 @@
+{
+  "auditDate": "2026-10-30",
+  "reviewBaseCommit": "b46ad03383a229ff3b202fda1f9832baf81181ce",
+  "branch": "codex/pinkys-universe-review",
+  "publication": "Not authorized for this assignment; no merge or publication.",
+  "completeCurrentCatalog": false,
+  "sourceInventory": {
+    "sourceDate": "2026-05-31",
+    "sourceRows": 802,
+    "wearableRows": 716,
+    "excludedNonwearableRows": 86,
+    "exactNames": 71,
+    "provisionalSkuGroups": 79,
+    "verifiedCurrentSquareItems": 0
+  },
+  "relatedBrand": {
+    "name": "HatsRx",
+    "individuallyReadPublicDesignPages": 25,
+    "sourceImageReferences": 31,
+    "localImagesDownloaded": 0,
+    "verifiedSquareMappings": 0,
+    "mergedWithPinkysRecords": false
+  },
+  "editorialImages": [
+    {
+      "src": "assets/portfolio/03-640.webp",
+      "sourceRecord": "portfolio-03",
+      "role": "Supplied art portfolio photograph of a decorated bag. Editorial context only; no named-product or price match.",
+      "sourceFile": "See review/image-sources.json record portfolio-03"
+    }
+  ],
+  "identityAssets": {
+    "originalLogo": "missing; no new attachment or accessible supplied link visible",
+    "chefHalloweenPortrait": "missing",
+    "publicHotlineNumber": "unverified; no telephone link exposed"
+  },
+  "accessLimitations": [
+    "Direct Square HTTPS CONNECT403; page extractor cannot recover listing contents.",
+    "Direct static.wixstatic.com image access CONNECT403; related-brand image references remain unshipped and visually unverified.",
+    "No Square connected catalog API available.",
+    "Historical variants/price amounts/quantities do not establish current stock or prices."
+  ],
+  "files": [
+    {
+      "path": "content/fashion-inventory.json",
+      "bytes": 465560,
+      "sha256": "fbc9415467268ae7ad4d121286c28daa481208a14b608427d9ef5ab68bbf4bf7"
+    },
+    {
+      "path": "content/related-brand-catalog.json",
+      "bytes": 55645,
+      "sha256": "94c3ec4ff7e5578a6b7a0f0ae9617154a880240c457d52bd38a41f26a345a241"
+    },
+    {
+      "path": "review/fashion/connected-source-manifest.json",
+      "bytes": 6707,
+      "sha256": "f570ba725015ad149425cda0ae19c92fbed6b25c23cf0acf0394f227caa497a8"
+    },
+    {
+      "path": "review/fashion/unverified-recovery-leads.json",
+      "bytes": 4493,
+      "sha256": "3cfb7ac5e3d6986f83ca7ed1d6870f213584cdccd5dc682f9afbbe52b9717b53"
+    },
+    {
+      "path": "review/fashion/inventory-summary.csv",
+      "bytes": 20599,
+      "sha256": "b78d721010f9638cbfc76b7a5c276f26a2f7acccb52cd35d51140c15f9eb78e9"
+    }
+  ]
+}

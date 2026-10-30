@@ -192,8 +192,8 @@ window.PINKYS_PORTFOLIO = [
   },
   {
     "id": "portfolio-11",
-    "caption": "Patterns and found forms across a jacket.",
-    "alt": "A light-colored jacket laid flat and decorated with black and yellow shapes, stars, spirals, and small figures.",
+    "caption": "Stencils, paint, and symbols gathered on a work surface.",
+    "alt": "Cut-out stencils of stars, planets, figures and the word SPACE scattered with paint bottles on a work surface.",
     "width": 1200,
     "height": 1600,
     "image": "assets/portfolio/11-640.webp",
@@ -230,8 +230,8 @@ window.PINKYS_PORTFOLIO = [
   },
   {
     "id": "portfolio-13",
-    "caption": "Hearts, stars, and a crescent across fabric.",
-    "alt": "Decorated fabric with a red heart, orange arrow, black silhouettes, stars, and a blue-and-white crescent.",
+    "caption": "A red heart, an orange arrow, and silhouettes on a painted panel.",
+    "alt": "A painted panel with a central red heart, an orange arrow, dark silhouettes, stars and a crescent against pale blue and white.",
     "width": 1200,
     "height": 1600,
     "image": "assets/portfolio/13-640.webp",

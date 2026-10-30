@@ -16,7 +16,7 @@ from urllib.parse import unquote, urlsplit
 
 
 ROOT = Path(__file__).resolve().parent.parent
-ENTRYPOINTS = ("index.html", "checkout.html", "review/editor.html")
+ENTRYPOINTS = ("index.html", "fashion.html", "checkout.html", "review/editor.html")
 VOID_TAGS = frozenset(
     "area base br col embed hr img input link meta param source track wbr".split()
 )

@@ -1,0 +1,1165 @@
+{
+  "auditDate": "2026-10-30",
+  "scope": "Read-only public website audit; not complete Pinky's Space catalog.",
+  "completePinkyCatalog": false,
+  "verifiedRelatedBrandProductCount": 25,
+  "publicSources": [
+    {
+      "url": "https://pinkysspace.com/",
+      "status": "Readable current website. 23 portfolio images indicated; clothing portfolio descriptions are artwork evidence, not product identity or sale verification."
+    },
+    {
+      "url": "https://pinkysspace.square.site/",
+      "status": "Verified existing store link from Pinky's website; public extractor yielded only a Facebook image; no catalog rows/product URLs recoverable."
+    },
+    {
+      "url": "https://pinkys.space/",
+      "status": "Observed redirect to https://pinkysspace.square.site/."
+    },
+    {
+      "url": "https://pinkysspace.square.site/sitemap.xml",
+      "status": "Not accessible through web tool."
+    },
+    {
+      "url": "https://pinkysspace.square.site/robots.txt",
+      "status": "Not accessible through web tool."
+    },
+    {
+      "url": "https://www.hatsrx.com/category/all-products",
+      "status": "Official page says 25 products, exposes first 20. Remaining five discovered through exact product recommendations and individually read."
+    },
+    {
+      "url": "https://www.hatsrx.com/blank",
+      "status": "Official about page identifies Wizard + Magic as HatsRx creators. Related brand identity is verified; do not present HatsRx product records as Pinky's Space-owned Square products."
+    },
+    {
+      "url": "https://pinkysspace.square.site/product/p-s-i-love-you-cotton-cap/188",
+      "status": "Exact prior-brief link re-opened 2026-10-30; web tool reports inaccessible. Prior 2026-10-28 cap observation is dated historical evidence only."
+    }
+  ],
+  "missing": [
+    "No current authenticated Square catalog/API access or readable public product contents. Historical Square export was later recovered separately by the connected-source audit; it does not establish current catalog state.",
+    "No verified Square purchase destination for any HatsRx record.",
+    "No verified Pinky's named shirts, hoodies, jackets, or accessories recovered from current public website; absence of access is not absence of products.",
+    "ISO price currency not exposed in readable pages.",
+    "Per-product colors for embroidered hats and variant-level availability not exposed.",
+    "Public HatsRx footer numbers differ from requested Google Voice ending 212; none verifies that hotline. Do not use them as substitutes.",
+    "Original Pinky's logo and Big Chef Dog Halloween photograph not identified via this public audit.",
+    "Product image binaries and all secondary product photos not downloaded by this audit; exact source links recorded."
+  ],
+  "deduplication": "25 unique canonical product URLs. Legacy Zero Gravity/Ace naming reconciled to one current record. XOXO bold and xoxo small are separate RX identifiers and URLs, so retained separately.",
+  "inventory": [
+    {
+      "id": "hatsrx-crown-state",
+      "brand": "HatsRx",
+      "name": "Crown State\u2122 Snapback Classic",
+      "designFamily": "Crown State",
+      "designFamilyBasis": "Product name and RX identifier; no independent collection taxonomy verified.",
+      "category": "Hats & Headwear",
+      "sourceUrl": "https://www.hatsrx.com/product-page/crown-state-snapback-classic",
+      "rx": "HXRX-CROWNSTATE-CORE",
+      "price": {
+        "amount": 49,
+        "display": "$49.00",
+        "currency": null,
+        "currencyStatus": "Dollar symbol verified; ISO currency not exposed in readable source."
+      },
+      "imagery": [
+        {
+          "kind": "product-photography",
+          "source": "https://static.wixstatic.com/media/891a9c_950a80bb1ac04442a6b31fc62457c0a6~mv2.jpg",
+          "observedDerivative": "https://static.wixstatic.com/media/891a9c_950a80bb1ac04442a6b31fc62457c0a6~mv2.jpg/v1/fill/w_1%2Ch_1%2Cq_90/891a9c_950a80bb1ac04442a6b31fc62457c0a6~mv2.jpg",
+          "verification": "First product image link on exact product page; binary not downloaded or visually inspected."
+        }
+      ],
+      "variants": {
+        "colorOrBase": null,
+        "sizes": null,
+        "note": "Color selector present but values not exposed by readable page; per-product colors/sizes unverified."
+      },
+      "availability": {
+        "sourceSays": "Made to order",
+        "purchaseControls": "Add to Cart and Buy Now present on source website",
+        "inventory": null,
+        "verification": "Public page content only; no variant availability, stock quantity, or fulfilled checkout verified."
+      },
+      "squareProductUrl": null,
+      "squareVerification": "No Square mapping verified.",
+      "editorialOnly": true,
+      "verifiedAt": "2026-10-30",
+      "verification": "Public official product page name, displayed price, RX identifier, and image references verified. Does not establish Pinky's Square inventory."
+    },
+    {
+      "id": "hatsrx-xoxo-bold",
+      "brand": "HatsRx",
+      "name": "XOXO\u2122 Snapback",
+      "designFamily": "XOXO",
+      "designFamilyBasis": "Product name and RX identifier; no independent collection taxonomy verified.",
+      "category": "Hats & Headwear",
+      "sourceUrl": "https://www.hatsrx.com/product-page/xoxo-spaback",
+      "rx": "HXRX-XOXO-BOLD",
+      "price": {
+        "amount": 49,
+        "display": "$49.00",
+        "currency": null,
+        "currencyStatus": "Dollar symbol verified; ISO currency not exposed in readable source."
+      },
+      "imagery": [
+        {
+          "kind": "product-photography",
+          "source": "https://static.wixstatic.com/media/891a9c_5c59aa4776af4c949358f9af5dc803e6~mv2.jpg",
+          "observedDerivative": "https://static.wixstatic.com/media/891a9c_5c59aa4776af4c949358f9af5dc803e6~mv2.jpg/v1/fill/w_1%2Ch_1%2Cq_90/891a9c_5c59aa4776af4c949358f9af5dc803e6~mv2.jpg",
+          "verification": "First product image link on exact product page; binary not downloaded or visually inspected."
+        }
+      ],
+      "variants": {
+        "colorOrBase": null,
+        "sizes": null,
+        "note": "Color selector present but values not exposed by readable page; per-product colors/sizes unverified."
+      },
+      "availability": {
+        "sourceSays": "Made to order",
+        "purchaseControls": "Add to Cart and Buy Now present on source website",
+        "inventory": null,
+        "verification": "Public page content only; no variant availability, stock quantity, or fulfilled checkout verified."
+      },
+      "squareProductUrl": null,
+      "squareVerification": "No Square mapping verified.",
+      "editorialOnly": true,
+      "verifiedAt": "2026-10-30",
+      "verification": "Public official product page name, displayed price, RX identifier, and image references verified. Does not establish Pinky's Square inventory."
+    },
+    {
+      "id": "hatsrx-xoxo-small",
+      "brand": "HatsRx",
+      "name": "xoxo\u2122 snapback",
+      "designFamily": "xoxo",
+      "designFamilyBasis": "Product name and RX identifier; no independent collection taxonomy verified.",
+      "category": "Hats & Headwear",
+      "sourceUrl": "https://www.hatsrx.com/product-page/xoxo",
+      "rx": "HXRX-XOXO-SMALL",
+      "price": {
+        "amount": 49,
+        "display": "$49.00",
+        "currency": null,
+        "currencyStatus": "Dollar symbol verified; ISO currency not exposed in readable source."
+      },
+      "imagery": [
+        {
+          "kind": "product-photography",
+          "source": "https://static.wixstatic.com/media/891a9c_a5f1a2d5035c4f328463f9dc32421ce6~mv2.jpg",
+          "observedDerivative": "https://static.wixstatic.com/media/891a9c_a5f1a2d5035c4f328463f9dc32421ce6~mv2.jpg/v1/fill/w_1%2Ch_1%2Cq_90/891a9c_a5f1a2d5035c4f328463f9dc32421ce6~mv2.jpg",
+          "verification": "First product image link on exact product page; binary not downloaded or visually inspected."
+        }
+      ],
+      "variants": {
+        "colorOrBase": null,
+        "sizes": null,
+        "note": "Color selector present but values not exposed by readable page; per-product colors/sizes unverified."
+      },
+      "availability": {
+        "sourceSays": "Made to order",
+        "purchaseControls": "Add to Cart and Buy Now present on source website",
+        "inventory": null,
+        "verification": "Public page content only; no variant availability, stock quantity, or fulfilled checkout verified."
+      },
+      "squareProductUrl": null,
+      "squareVerification": "No Square mapping verified.",
+      "editorialOnly": true,
+      "verifiedAt": "2026-10-30",
+      "verification": "Public official product page name, displayed price, RX identifier, and image references verified. Does not establish Pinky's Square inventory."
+    },
+    {
+      "id": "hatsrx-ps-i-love-you",
+      "brand": "HatsRx",
+      "name": "p.s. I Love You\u2122 Snapback",
+      "designFamily": "p.s. I Love You",
+      "designFamilyBasis": "Product name and RX identifier; no independent collection taxonomy verified.",
+      "category": "Hats & Headwear",
+      "sourceUrl": "https://www.hatsrx.com/product-page/p-s-i-love-you-snapback",
+      "rx": "HXRX-PSILY-LOVE",
+      "price": {
+        "amount": 49,
+        "display": "$49.00",
+        "currency": null,
+        "currencyStatus": "Dollar symbol verified; ISO currency not exposed in readable source."
+      },
+      "imagery": [
+        {
+          "kind": "product-photography",
+          "source": "https://static.wixstatic.com/media/891a9c_3275f97bbbba4edfbb03a91f75b778e0~mv2.jpg",
+          "observedDerivative": "https://static.wixstatic.com/media/891a9c_3275f97bbbba4edfbb03a91f75b778e0~mv2.jpg/v1/fill/w_1%2Ch_1%2Cq_90/891a9c_3275f97bbbba4edfbb03a91f75b778e0~mv2.jpg",
+          "verification": "First product image link on exact product page; binary not downloaded or visually inspected."
+        }
+      ],
+      "variants": {
+        "colorOrBase": null,
+        "sizes": null,
+        "note": "Color selector present but values not exposed by readable page; per-product colors/sizes unverified."
+      },
+      "availability": {
+        "sourceSays": "Made to order",
+        "purchaseControls": "Add to Cart and Buy Now present on source website",
+        "inventory": null,
+        "verification": "Public page content only; no variant availability, stock quantity, or fulfilled checkout verified."
+      },
+      "squareProductUrl": null,
+      "squareVerification": "No Square mapping verified.",
+      "editorialOnly": true,
+      "verifiedAt": "2026-10-30",
+      "verification": "Public official product page name, displayed price, RX identifier, and image references verified. Does not establish Pinky's Square inventory."
+    },
+    {
+      "id": "hatsrx-for-myself",
+      "brand": "HatsRx",
+      "name": "For Myself\u2122",
+      "designFamily": "p.s. I Love You",
+      "designFamilyBasis": "Product name and RX identifier; no independent collection taxonomy verified.",
+      "category": "Hats & Headwear",
+      "sourceUrl": "https://www.hatsrx.com/product-page/p-s-i-love-you-self-trucker-cap-embroidered-white",
+      "rx": "HXRX-FORMYSELF-MIRROR",
+      "price": {
+        "amount": 49,
+        "display": "$49.00",
+        "currency": null,
+        "currencyStatus": "Dollar symbol verified; ISO currency not exposed in readable source."
+      },
+      "imagery": [
+        {
+          "kind": "product-photography",
+          "source": "https://static.wixstatic.com/media/891a9c_c126ad9bf21e4b5bb8ac708b2e6dd529~mv2.jpg",
+          "observedDerivative": "https://static.wixstatic.com/media/891a9c_c126ad9bf21e4b5bb8ac708b2e6dd529~mv2.jpg/v1/fill/w_1%2Ch_1%2Cq_90/891a9c_c126ad9bf21e4b5bb8ac708b2e6dd529~mv2.jpg",
+          "verification": "First product image link on exact product page; binary not downloaded or visually inspected."
+        }
+      ],
+      "variants": {
+        "colorOrBase": null,
+        "sizes": null,
+        "note": "No options in readable product page; adjustable trucker details present."
+      },
+      "availability": {
+        "sourceSays": "Made to order",
+        "purchaseControls": "Add to Cart and Buy Now present on source website",
+        "inventory": null,
+        "verification": "Public page content only; no variant availability, stock quantity, or fulfilled checkout verified."
+      },
+      "squareProductUrl": null,
+      "squareVerification": "No Square mapping verified.",
+      "editorialOnly": true,
+      "verifiedAt": "2026-10-30",
+      "verification": "Public official product page name, displayed price, RX identifier, and image references verified. Does not establish Pinky's Square inventory.",
+      "sourceSku": "6AAEE1A977ED9_8747"
+    },
+    {
+      "id": "hatsrx-nasa-v1",
+      "brand": "HatsRx",
+      "name": "NASA v.1",
+      "designFamily": "NASA v.1",
+      "designFamilyBasis": "Product name and RX identifier; no independent collection taxonomy verified.",
+      "category": "Hats & Headwear",
+      "sourceUrl": "https://www.hatsrx.com/product-page/nasa-v-1",
+      "rx": "HXRX-NASA-V1",
+      "price": {
+        "amount": 49,
+        "display": "$49.00",
+        "currency": null,
+        "currencyStatus": "Dollar symbol verified; ISO currency not exposed in readable source."
+      },
+      "imagery": [
+        {
+          "kind": "product-photography",
+          "source": "https://static.wixstatic.com/media/891a9c_a53147c60ba34a2587975d49c5c2ccd4~mv2.jpg",
+          "observedDerivative": "https://static.wixstatic.com/media/891a9c_a53147c60ba34a2587975d49c5c2ccd4~mv2.jpg/v1/fill/w_1%2Ch_1%2Cq_90/891a9c_a53147c60ba34a2587975d49c5c2ccd4~mv2.jpg",
+          "verification": "First product image link on exact product page; binary not downloaded or visually inspected."
+        }
+      ],
+      "variants": {
+        "colorOrBase": [
+          "White"
+        ],
+        "sizes": [
+          "U"
+        ],
+        "note": "Product order instructions verify White as blank print base, not the finished artwork color; U means Universal Size. Variant inventory not exposed."
+      },
+      "availability": {
+        "sourceSays": "Made to order",
+        "purchaseControls": "Add to Cart and Buy Now present on source website",
+        "inventory": null,
+        "verification": "Public page content only; no variant availability, stock quantity, or fulfilled checkout verified."
+      },
+      "squareProductUrl": null,
+      "squareVerification": "No Square mapping verified.",
+      "editorialOnly": true,
+      "verifiedAt": "2026-10-30",
+      "verification": "Public official product page name, displayed price, RX identifier, and image references verified. Does not establish Pinky's Square inventory."
+    },
+    {
+      "id": "hatsrx-happening-now",
+      "brand": "HatsRx",
+      "name": "I'm What's Happening Now",
+      "designFamily": "I'm What's Happening Now",
+      "designFamilyBasis": "Product name and RX identifier; no independent collection taxonomy verified.",
+      "category": "Hats & Headwear",
+      "sourceUrl": "https://www.hatsrx.com/product-page/i-m-what-s-happening-now-1",
+      "rx": "HXRX-HAPPENING-NOW",
+      "price": {
+        "amount": 49,
+        "display": "$49.00",
+        "currency": null,
+        "currencyStatus": "Dollar symbol verified; ISO currency not exposed in readable source."
+      },
+      "imagery": [
+        {
+          "kind": "product-photography",
+          "source": "https://static.wixstatic.com/media/891a9c_6ffb73e25adb463b830024c4e85d221b~mv2.jpg",
+          "observedDerivative": "https://static.wixstatic.com/media/891a9c_6ffb73e25adb463b830024c4e85d221b~mv2.jpg/v1/fill/w_1%2Ch_1%2Cq_90/891a9c_6ffb73e25adb463b830024c4e85d221b~mv2.jpg",
+          "verification": "First product image link on exact product page; binary not downloaded or visually inspected."
+        }
+      ],
+      "variants": {
+        "colorOrBase": [
+          "White"
+        ],
+        "sizes": [
+          "U"
+        ],
+        "note": "Product order instructions verify White as blank print base, not the finished artwork color; U means Universal Size. Variant inventory not exposed."
+      },
+      "availability": {
+        "sourceSays": "Made to order",
+        "purchaseControls": "Add to Cart and Buy Now present on source website",
+        "inventory": null,
+        "verification": "Public page content only; no variant availability, stock quantity, or fulfilled checkout verified."
+      },
+      "squareProductUrl": null,
+      "squareVerification": "No Square mapping verified.",
+      "editorialOnly": true,
+      "verifiedAt": "2026-10-30",
+      "verification": "Public official product page name, displayed price, RX identifier, and image references verified. Does not establish Pinky's Square inventory."
+    },
+    {
+      "id": "hatsrx-happening-flip",
+      "brand": "HatsRx",
+      "name": "Upside Down I'm What's Happening Now",
+      "designFamily": "I'm What's Happening Now",
+      "designFamilyBasis": "Product name and RX identifier; no independent collection taxonomy verified.",
+      "category": "Hats & Headwear",
+      "sourceUrl": "https://www.hatsrx.com/product-page/i-m-what-s-happening-now",
+      "rx": "HXRX-HAPPENING-FLIP",
+      "price": {
+        "amount": 49,
+        "display": "$49.00",
+        "currency": null,
+        "currencyStatus": "Dollar symbol verified; ISO currency not exposed in readable source."
+      },
+      "imagery": [
+        {
+          "kind": "product-photography",
+          "source": "https://static.wixstatic.com/media/891a9c_5e2b0452cafb44a2b36a86e6c0387be4~mv2.jpg",
+          "observedDerivative": "https://static.wixstatic.com/media/891a9c_5e2b0452cafb44a2b36a86e6c0387be4~mv2.jpg/v1/fill/w_1%2Ch_1%2Cq_90/891a9c_5e2b0452cafb44a2b36a86e6c0387be4~mv2.jpg",
+          "verification": "First product image link on exact product page; binary not downloaded or visually inspected."
+        }
+      ],
+      "variants": {
+        "colorOrBase": [
+          "White"
+        ],
+        "sizes": [
+          "U"
+        ],
+        "note": "Product order instructions verify White as blank print base, not the finished artwork color; U means Universal Size. Variant inventory not exposed."
+      },
+      "availability": {
+        "sourceSays": "Made to order",
+        "purchaseControls": "Add to Cart and Buy Now present on source website",
+        "inventory": null,
+        "verification": "Public page content only; no variant availability, stock quantity, or fulfilled checkout verified."
+      },
+      "squareProductUrl": null,
+      "squareVerification": "No Square mapping verified.",
+      "editorialOnly": true,
+      "verifiedAt": "2026-10-30",
+      "verification": "Public official product page name, displayed price, RX identifier, and image references verified. Does not establish Pinky's Square inventory."
+    },
+    {
+      "id": "hatsrx-diamond-snow",
+      "brand": "HatsRx",
+      "name": "Diamond Mind\u2122 Snow Trucker Snapback",
+      "designFamily": "Diamond Mind",
+      "designFamilyBasis": "Product name and RX identifier; no independent collection taxonomy verified.",
+      "category": "Hats & Headwear",
+      "sourceUrl": "https://www.hatsrx.com/product-page/diamond-mind-snow-trucker-snapback-1",
+      "rx": "HXRX-DIAMNDMND-SNOW",
+      "price": {
+        "amount": 49,
+        "display": "$49.00",
+        "currency": null,
+        "currencyStatus": "Dollar symbol verified; ISO currency not exposed in readable source."
+      },
+      "imagery": [
+        {
+          "kind": "product-photography",
+          "source": "https://static.wixstatic.com/media/891a9c_482c055e5c144107ae144888eb97c83e~mv2.jpg",
+          "observedDerivative": "https://static.wixstatic.com/media/891a9c_482c055e5c144107ae144888eb97c83e~mv2.jpg/v1/fill/w_1%2Ch_1%2Cq_90/891a9c_482c055e5c144107ae144888eb97c83e~mv2.jpg",
+          "verification": "First product image link on exact product page; binary not downloaded or visually inspected."
+        }
+      ],
+      "variants": {
+        "colorOrBase": null,
+        "sizes": null,
+        "note": "Color selector present but values not exposed by readable page; per-product colors/sizes unverified."
+      },
+      "availability": {
+        "sourceSays": "Made to order",
+        "purchaseControls": "Add to Cart and Buy Now present on source website",
+        "inventory": null,
+        "verification": "Public page content only; no variant availability, stock quantity, or fulfilled checkout verified."
+      },
+      "squareProductUrl": null,
+      "squareVerification": "No Square mapping verified.",
+      "editorialOnly": true,
+      "verifiedAt": "2026-10-30",
+      "verification": "Public official product page name, displayed price, RX identifier, and image references verified. Does not establish Pinky's Square inventory."
+    },
+    {
+      "id": "hatsrx-hot-air-balloon",
+      "brand": "HatsRx",
+      "name": "HotAirBalloonSpaceManGlitterGold",
+      "designFamily": "HotAirBalloonSpaceManGlitterGold",
+      "designFamilyBasis": "Product name and RX identifier; no independent collection taxonomy verified.",
+      "category": "Hats & Headwear",
+      "sourceUrl": "https://www.hatsrx.com/product-page/hotairballoonspacemanglittergold-1",
+      "rx": "HXRX-HABA-SPCMAN-GOLD",
+      "price": {
+        "amount": 49,
+        "display": "$49.00",
+        "currency": null,
+        "currencyStatus": "Dollar symbol verified; ISO currency not exposed in readable source."
+      },
+      "imagery": [
+        {
+          "kind": "product-photography",
+          "source": "https://static.wixstatic.com/media/891a9c_c13efc6298a94efb9381385bd1b53189~mv2.jpg",
+          "observedDerivative": "https://static.wixstatic.com/media/891a9c_c13efc6298a94efb9381385bd1b53189~mv2.jpg/v1/fill/w_1%2Ch_1%2Cq_90/891a9c_c13efc6298a94efb9381385bd1b53189~mv2.jpg",
+          "verification": "First product image link on exact product page; binary not downloaded or visually inspected."
+        }
+      ],
+      "variants": {
+        "colorOrBase": [
+          "White"
+        ],
+        "sizes": [
+          "U"
+        ],
+        "note": "Product order instructions verify White as blank print base, not the finished artwork color; U means Universal Size. Variant inventory not exposed."
+      },
+      "availability": {
+        "sourceSays": "Made to order",
+        "purchaseControls": "Add to Cart and Buy Now present on source website",
+        "inventory": null,
+        "verification": "Public page content only; no variant availability, stock quantity, or fulfilled checkout verified."
+      },
+      "squareProductUrl": null,
+      "squareVerification": "No Square mapping verified.",
+      "editorialOnly": true,
+      "verifiedAt": "2026-10-30",
+      "verification": "Public official product page name, displayed price, RX identifier, and image references verified. Does not establish Pinky's Square inventory."
+    },
+    {
+      "id": "hatsrx-head-in-clouds",
+      "brand": "HatsRx",
+      "name": "HeadInTheCloudsBarbie",
+      "designFamily": "HeadInTheCloudsBarbie",
+      "designFamilyBasis": "Product name and RX identifier; no independent collection taxonomy verified.",
+      "category": "Hats & Headwear",
+      "sourceUrl": "https://www.hatsrx.com/product-page/headinthecloudsbarbie-1",
+      "rx": "HXRX-HITC-BARBIE-SKY",
+      "price": {
+        "amount": 49,
+        "display": "$49.00",
+        "currency": null,
+        "currencyStatus": "Dollar symbol verified; ISO currency not exposed in readable source."
+      },
+      "imagery": [
+        {
+          "kind": "product-photography",
+          "source": "https://static.wixstatic.com/media/891a9c_e4ca7f77629046f496419dbfb3d2b37c~mv2.jpg",
+          "observedDerivative": "https://static.wixstatic.com/media/891a9c_e4ca7f77629046f496419dbfb3d2b37c~mv2.jpg/v1/fill/w_1%2Ch_1%2Cq_90/891a9c_e4ca7f77629046f496419dbfb3d2b37c~mv2.jpg",
+          "verification": "First product image link on exact product page; binary not downloaded or visually inspected."
+        }
+      ],
+      "variants": {
+        "colorOrBase": [
+          "White"
+        ],
+        "sizes": [
+          "U"
+        ],
+        "note": "Product order instructions verify White as blank print base, not the finished artwork color; U means Universal Size. Variant inventory not exposed."
+      },
+      "availability": {
+        "sourceSays": "Made to order",
+        "purchaseControls": "Add to Cart and Buy Now present on source website",
+        "inventory": null,
+        "verification": "Public page content only; no variant availability, stock quantity, or fulfilled checkout verified."
+      },
+      "squareProductUrl": null,
+      "squareVerification": "No Square mapping verified.",
+      "editorialOnly": true,
+      "verifiedAt": "2026-10-30",
+      "verification": "Public official product page name, displayed price, RX identifier, and image references verified. Does not establish Pinky's Square inventory."
+    },
+    {
+      "id": "hatsrx-space-lovers",
+      "brand": "HatsRx",
+      "name": "SpaceLovers",
+      "designFamily": "SpaceLovers",
+      "designFamilyBasis": "Product name and RX identifier; no independent collection taxonomy verified.",
+      "category": "Hats & Headwear",
+      "sourceUrl": "https://www.hatsrx.com/product-page/spacelovers",
+      "rx": "HXRX-SPCLOVERS-ARTCAP",
+      "price": {
+        "amount": 49,
+        "display": "$49.00",
+        "currency": null,
+        "currencyStatus": "Dollar symbol verified; ISO currency not exposed in readable source."
+      },
+      "imagery": [
+        {
+          "kind": "product-photography",
+          "source": "https://static.wixstatic.com/media/891a9c_6cfe357b67b3460396f71ce9c0c184eb~mv2.jpg",
+          "observedDerivative": "https://static.wixstatic.com/media/891a9c_6cfe357b67b3460396f71ce9c0c184eb~mv2.jpg/v1/fill/w_1%2Ch_1%2Cq_90/891a9c_6cfe357b67b3460396f71ce9c0c184eb~mv2.jpg",
+          "verification": "First product image link on exact product page; binary not downloaded or visually inspected."
+        }
+      ],
+      "variants": {
+        "colorOrBase": [
+          "White"
+        ],
+        "sizes": [
+          "U"
+        ],
+        "note": "Product order instructions verify White as blank print base, not the finished artwork color; U means Universal Size. Variant inventory not exposed."
+      },
+      "availability": {
+        "sourceSays": "Made to order",
+        "purchaseControls": "Add to Cart and Buy Now present on source website",
+        "inventory": null,
+        "verification": "Public page content only; no variant availability, stock quantity, or fulfilled checkout verified."
+      },
+      "squareProductUrl": null,
+      "squareVerification": "No Square mapping verified.",
+      "editorialOnly": true,
+      "verifiedAt": "2026-10-30",
+      "verification": "Public official product page name, displayed price, RX identifier, and image references verified. Does not establish Pinky's Square inventory."
+    },
+    {
+      "id": "hatsrx-lysergic",
+      "brand": "HatsRx",
+      "name": "lysergic",
+      "designFamily": "lysergic",
+      "designFamilyBasis": "Product name and RX identifier; no independent collection taxonomy verified.",
+      "category": "Hats & Headwear",
+      "sourceUrl": "https://www.hatsrx.com/product-page/lysergic",
+      "rx": "HXRX-LYSERGIC-ARTCAP",
+      "price": {
+        "amount": 49,
+        "display": "$49.00",
+        "currency": null,
+        "currencyStatus": "Dollar symbol verified; ISO currency not exposed in readable source."
+      },
+      "imagery": [
+        {
+          "kind": "product-photography",
+          "source": "https://static.wixstatic.com/media/891a9c_8811ba217c614a2aa283bf379fa5db32~mv2.jpg",
+          "observedDerivative": "https://static.wixstatic.com/media/891a9c_8811ba217c614a2aa283bf379fa5db32~mv2.jpg/v1/fill/w_1%2Ch_1%2Cq_90/891a9c_8811ba217c614a2aa283bf379fa5db32~mv2.jpg",
+          "verification": "First product image link on exact product page; binary not downloaded or visually inspected."
+        }
+      ],
+      "variants": {
+        "colorOrBase": [
+          "White"
+        ],
+        "sizes": [
+          "U"
+        ],
+        "note": "Product order instructions verify White as blank print base, not the finished artwork color; U means Universal Size. Variant inventory not exposed."
+      },
+      "availability": {
+        "sourceSays": "Made to order",
+        "purchaseControls": "Add to Cart and Buy Now present on source website",
+        "inventory": null,
+        "verification": "Public page content only; no variant availability, stock quantity, or fulfilled checkout verified."
+      },
+      "squareProductUrl": null,
+      "squareVerification": "No Square mapping verified.",
+      "editorialOnly": true,
+      "verifiedAt": "2026-10-30",
+      "verification": "Public official product page name, displayed price, RX identifier, and image references verified. Does not establish Pinky's Square inventory."
+    },
+    {
+      "id": "hatsrx-space-school",
+      "brand": "HatsRx",
+      "name": "SpaceSchool Sweethearts\u2122 Snapback",
+      "designFamily": "SpaceSchool Sweethearts",
+      "designFamilyBasis": "Product name and RX identifier; no independent collection taxonomy verified.",
+      "category": "Hats & Headwear",
+      "sourceUrl": "https://www.hatsrx.com/product-page/booknotes-from-another-universe",
+      "rx": "HXRX-SPCSCHOOL-SWTHRT",
+      "price": {
+        "amount": 49,
+        "display": "$49.00",
+        "currency": null,
+        "currencyStatus": "Dollar symbol verified; ISO currency not exposed in readable source."
+      },
+      "imagery": [
+        {
+          "kind": "product-photography",
+          "source": "https://static.wixstatic.com/media/891a9c_42b8224be7d24f7685bea0c2d4627e04~mv2.jpg",
+          "observedDerivative": "https://static.wixstatic.com/media/891a9c_42b8224be7d24f7685bea0c2d4627e04~mv2.jpg/v1/fill/w_1%2Ch_1%2Cq_90/891a9c_42b8224be7d24f7685bea0c2d4627e04~mv2.jpg",
+          "verification": "First product image link on exact product page; binary not downloaded or visually inspected."
+        }
+      ],
+      "variants": {
+        "colorOrBase": [
+          "White"
+        ],
+        "sizes": [
+          "U"
+        ],
+        "note": "Product order instructions verify White as blank print base, not the finished artwork color; U means Universal Size. Variant inventory not exposed."
+      },
+      "availability": {
+        "sourceSays": "Made to order",
+        "purchaseControls": "Add to Cart and Buy Now present on source website",
+        "inventory": null,
+        "verification": "Public page content only; no variant availability, stock quantity, or fulfilled checkout verified."
+      },
+      "squareProductUrl": null,
+      "squareVerification": "No Square mapping verified.",
+      "editorialOnly": true,
+      "verifiedAt": "2026-10-30",
+      "verification": "Public official product page name, displayed price, RX identifier, and image references verified. Does not establish Pinky's Square inventory."
+    },
+    {
+      "id": "hatsrx-neila",
+      "brand": "HatsRx",
+      "name": "Neila\u2122 Snapback Hat",
+      "designFamily": "Neila",
+      "designFamilyBasis": "Product name and RX identifier; no independent collection taxonomy verified.",
+      "category": "Hats & Headwear",
+      "sourceUrl": "https://www.hatsrx.com/product-page/neila-snapback-hat",
+      "rx": "HXRX-NEILA-ARTCAP",
+      "price": {
+        "amount": 49,
+        "display": "$49.00",
+        "currency": null,
+        "currencyStatus": "Dollar symbol verified; ISO currency not exposed in readable source."
+      },
+      "imagery": [
+        {
+          "kind": "product-photography",
+          "source": "https://static.wixstatic.com/media/891a9c_e68c33c097b940a588a9824950d1eee6~mv2.jpg",
+          "observedDerivative": "https://static.wixstatic.com/media/891a9c_e68c33c097b940a588a9824950d1eee6~mv2.jpg/v1/fill/w_1%2Ch_1%2Cq_90/891a9c_e68c33c097b940a588a9824950d1eee6~mv2.jpg",
+          "verification": "First product image link on exact product page; binary not downloaded or visually inspected."
+        },
+        {
+          "kind": "original-artwork",
+          "source": "https://static.wixstatic.com/media/891a9c_f891047c2d184d738feddbb8556664d7~mv2.jpg",
+          "verification": "Source page explicitly labels image as original artwork / inspiration."
+        }
+      ],
+      "variants": {
+        "colorOrBase": [
+          "White"
+        ],
+        "sizes": [
+          "U"
+        ],
+        "note": "Product order instructions verify White as blank print base, not the finished artwork color; U means Universal Size. Variant inventory not exposed."
+      },
+      "availability": {
+        "sourceSays": "Made to order",
+        "purchaseControls": "Add to Cart and Buy Now present on source website",
+        "inventory": null,
+        "verification": "Public page content only; no variant availability, stock quantity, or fulfilled checkout verified."
+      },
+      "squareProductUrl": null,
+      "squareVerification": "No Square mapping verified.",
+      "editorialOnly": true,
+      "verifiedAt": "2026-10-30",
+      "verification": "Public official product page name, displayed price, RX identifier, and image references verified. Does not establish Pinky's Square inventory."
+    },
+    {
+      "id": "hatsrx-bus-ted",
+      "brand": "HatsRx",
+      "name": "Bus Ted\u2122 Snapback",
+      "designFamily": "Bus Ted",
+      "designFamilyBasis": "Product name and RX identifier; no independent collection taxonomy verified.",
+      "category": "Hats & Headwear",
+      "sourceUrl": "https://www.hatsrx.com/product-page/bus-ted-snapback-hat",
+      "rx": "HXRX-BUSTED-ARTCAP",
+      "price": {
+        "amount": 49,
+        "display": "$49.00",
+        "currency": null,
+        "currencyStatus": "Dollar symbol verified; ISO currency not exposed in readable source."
+      },
+      "imagery": [
+        {
+          "kind": "product-photography",
+          "source": "https://static.wixstatic.com/media/891a9c_f3aa6224a5aa484f9daa4fbeaba0aecc~mv2.jpg",
+          "observedDerivative": "https://static.wixstatic.com/media/891a9c_f3aa6224a5aa484f9daa4fbeaba0aecc~mv2.jpg/v1/fill/w_1%2Ch_1%2Cq_90/891a9c_f3aa6224a5aa484f9daa4fbeaba0aecc~mv2.jpg",
+          "verification": "First product image link on exact product page; binary not downloaded or visually inspected."
+        }
+      ],
+      "variants": {
+        "colorOrBase": [
+          "White"
+        ],
+        "sizes": [
+          "U"
+        ],
+        "note": "Product order instructions verify White as blank print base, not the finished artwork color; U means Universal Size. Variant inventory not exposed."
+      },
+      "availability": {
+        "sourceSays": "Made to order",
+        "purchaseControls": "Add to Cart and Buy Now present on source website",
+        "inventory": null,
+        "verification": "Public page content only; no variant availability, stock quantity, or fulfilled checkout verified."
+      },
+      "squareProductUrl": null,
+      "squareVerification": "No Square mapping verified.",
+      "editorialOnly": true,
+      "verifiedAt": "2026-10-30",
+      "verification": "Public official product page name, displayed price, RX identifier, and image references verified. Does not establish Pinky's Square inventory."
+    },
+    {
+      "id": "hatsrx-hey-chap",
+      "brand": "HatsRx",
+      "name": "Hey Chap\u2122 Snapback",
+      "designFamily": "Hey Chap",
+      "designFamilyBasis": "Product name and RX identifier; no independent collection taxonomy verified.",
+      "category": "Hats & Headwear",
+      "sourceUrl": "https://www.hatsrx.com/product-page/hey-chap-mood-elevation-snapback",
+      "rx": "HXRX-BEAUTYMND-ARTCAP-CHAP",
+      "price": {
+        "amount": 49,
+        "display": "$49.00",
+        "currency": null,
+        "currencyStatus": "Dollar symbol verified; ISO currency not exposed in readable source."
+      },
+      "imagery": [
+        {
+          "kind": "product-photography",
+          "source": "https://static.wixstatic.com/media/891a9c_74c1106241284319978d8c8e67cb3a8e~mv2.jpg",
+          "observedDerivative": "https://static.wixstatic.com/media/891a9c_74c1106241284319978d8c8e67cb3a8e~mv2.jpg/v1/fill/w_1%2Ch_1%2Cq_90/891a9c_74c1106241284319978d8c8e67cb3a8e~mv2.jpg",
+          "verification": "First product image link on exact product page; binary not downloaded or visually inspected."
+        },
+        {
+          "kind": "original-artwork",
+          "source": "https://static.wixstatic.com/media/891a9c_d34f81e757a8470e81101b386d3b0950~mv2.png",
+          "verification": "Source page explicitly labels image as original artwork / inspiration."
+        }
+      ],
+      "variants": {
+        "colorOrBase": [
+          "White"
+        ],
+        "sizes": [
+          "U"
+        ],
+        "note": "Product order instructions verify White as blank print base, not the finished artwork color; U means Universal Size. Variant inventory not exposed."
+      },
+      "availability": {
+        "sourceSays": "Made to order",
+        "purchaseControls": "Add to Cart and Buy Now present on source website",
+        "inventory": null,
+        "verification": "Public page content only; no variant availability, stock quantity, or fulfilled checkout verified."
+      },
+      "squareProductUrl": null,
+      "squareVerification": "No Square mapping verified.",
+      "editorialOnly": true,
+      "verifiedAt": "2026-10-30",
+      "verification": "Public official product page name, displayed price, RX identifier, and image references verified. Does not establish Pinky's Square inventory."
+    },
+    {
+      "id": "hatsrx-alien-rainbow",
+      "brand": "HatsRx",
+      "name": "Alien Rainbow Carnival\u2122 Snapback",
+      "designFamily": "Alien Rainbow Carnival",
+      "designFamilyBasis": "Product name and RX identifier; no independent collection taxonomy verified.",
+      "category": "Hats & Headwear",
+      "sourceUrl": "https://www.hatsrx.com/product-page/alien-rainbow-carnival-snapback",
+      "rx": "HXRX-ALIENRNBW-CARNIVAL",
+      "price": {
+        "amount": 49,
+        "display": "$49.00",
+        "currency": null,
+        "currencyStatus": "Dollar symbol verified; ISO currency not exposed in readable source."
+      },
+      "imagery": [
+        {
+          "kind": "product-photography",
+          "source": "https://static.wixstatic.com/media/891a9c_41834f0f0420421d95d97c3a26f1f381~mv2.jpg",
+          "observedDerivative": "https://static.wixstatic.com/media/891a9c_41834f0f0420421d95d97c3a26f1f381~mv2.jpg/v1/fill/w_1%2Ch_1%2Cq_90/891a9c_41834f0f0420421d95d97c3a26f1f381~mv2.jpg",
+          "verification": "First product image link on exact product page; binary not downloaded or visually inspected."
+        }
+      ],
+      "variants": {
+        "colorOrBase": [
+          "White"
+        ],
+        "sizes": [
+          "U"
+        ],
+        "note": "Product order instructions verify White as blank print base, not the finished artwork color; U means Universal Size. Variant inventory not exposed."
+      },
+      "availability": {
+        "sourceSays": "Made to order",
+        "purchaseControls": "Add to Cart and Buy Now present on source website",
+        "inventory": null,
+        "verification": "Public page content only; no variant availability, stock quantity, or fulfilled checkout verified."
+      },
+      "squareProductUrl": null,
+      "squareVerification": "No Square mapping verified.",
+      "editorialOnly": true,
+      "verifiedAt": "2026-10-30",
+      "verification": "Public official product page name, displayed price, RX identifier, and image references verified. Does not establish Pinky's Square inventory."
+    },
+    {
+      "id": "hatsrx-yes-yes-yes",
+      "brand": "HatsRx",
+      "name": "Yes Yes Yes\u2122 Snapback Hat",
+      "designFamily": "Yes Yes Yes",
+      "designFamilyBasis": "Product name and RX identifier; no independent collection taxonomy verified.",
+      "category": "Hats & Headwear",
+      "sourceUrl": "https://www.hatsrx.com/product-page/yes-yes-yes-snapback-hat",
+      "rx": "HXRX-YESYESYES-ARTCAP",
+      "price": {
+        "amount": 49,
+        "display": "$49.00",
+        "currency": null,
+        "currencyStatus": "Dollar symbol verified; ISO currency not exposed in readable source."
+      },
+      "imagery": [
+        {
+          "kind": "product-photography",
+          "source": "https://static.wixstatic.com/media/891a9c_427d8e419b9f4360b7e60fae943e7c45~mv2.jpg",
+          "observedDerivative": "https://static.wixstatic.com/media/891a9c_427d8e419b9f4360b7e60fae943e7c45~mv2.jpg/v1/fill/w_1%2Ch_1%2Cq_90/891a9c_427d8e419b9f4360b7e60fae943e7c45~mv2.jpg",
+          "verification": "First product image link on exact product page; binary not downloaded or visually inspected."
+        },
+        {
+          "kind": "original-artwork",
+          "source": "https://static.wixstatic.com/media/891a9c_0c14025585cf4d07a95c854e4049cbce~mv2.png",
+          "verification": "Source page explicitly labels image as original artwork / inspiration."
+        }
+      ],
+      "variants": {
+        "colorOrBase": [
+          "White"
+        ],
+        "sizes": [
+          "U"
+        ],
+        "note": "Product order instructions verify White as blank print base, not the finished artwork color; U means Universal Size. Variant inventory not exposed."
+      },
+      "availability": {
+        "sourceSays": "Made to order",
+        "purchaseControls": "Add to Cart and Buy Now present on source website",
+        "inventory": null,
+        "verification": "Public page content only; no variant availability, stock quantity, or fulfilled checkout verified."
+      },
+      "squareProductUrl": null,
+      "squareVerification": "No Square mapping verified.",
+      "editorialOnly": true,
+      "verifiedAt": "2026-10-30",
+      "verification": "Public official product page name, displayed price, RX identifier, and image references verified. Does not establish Pinky's Square inventory."
+    },
+    {
+      "id": "hatsrx-garden-jupiter",
+      "brand": "HatsRx",
+      "name": "Garden of Jupiter\u2122 Snapback",
+      "designFamily": "Garden of Jupiter",
+      "designFamilyBasis": "Product name and RX identifier; no independent collection taxonomy verified.",
+      "category": "Hats & Headwear",
+      "sourceUrl": "https://www.hatsrx.com/product-page/garden-of-jupiter-snapback",
+      "rx": "HXRX-JUPITER-GDNBLM",
+      "price": {
+        "amount": 49,
+        "display": "$49.00",
+        "currency": null,
+        "currencyStatus": "Dollar symbol verified; ISO currency not exposed in readable source."
+      },
+      "imagery": [
+        {
+          "kind": "product-photography",
+          "source": "https://static.wixstatic.com/media/891a9c_1c986974c50146019fa8597987bffeac~mv2.jpg",
+          "observedDerivative": "https://static.wixstatic.com/media/891a9c_1c986974c50146019fa8597987bffeac~mv2.jpg/v1/fill/w_1%2Ch_1%2Cq_90/891a9c_1c986974c50146019fa8597987bffeac~mv2.jpg",
+          "verification": "First product image link on exact product page; binary not downloaded or visually inspected."
+        },
+        {
+          "kind": "original-artwork",
+          "source": "https://static.wixstatic.com/media/891a9c_e77636ba2f8f4c4eb73f9332880c721d~mv2.png",
+          "verification": "Source page explicitly labels image as original artwork / inspiration."
+        }
+      ],
+      "variants": {
+        "colorOrBase": [
+          "White"
+        ],
+        "sizes": [
+          "U"
+        ],
+        "note": "Product order instructions verify White as blank print base, not the finished artwork color; U means Universal Size. Variant inventory not exposed."
+      },
+      "availability": {
+        "sourceSays": "Made to order",
+        "purchaseControls": "Add to Cart and Buy Now present on source website",
+        "inventory": null,
+        "verification": "Public page content only; no variant availability, stock quantity, or fulfilled checkout verified."
+      },
+      "squareProductUrl": null,
+      "squareVerification": "No Square mapping verified.",
+      "editorialOnly": true,
+      "verifiedAt": "2026-10-30",
+      "verification": "Public official product page name, displayed price, RX identifier, and image references verified. Does not establish Pinky's Square inventory."
+    },
+    {
+      "id": "hatsrx-diamond-core",
+      "brand": "HatsRx",
+      "name": "Diamond Mind\u2122 Snapback Hat",
+      "designFamily": "Diamond Mind",
+      "designFamilyBasis": "Product name and RX identifier; no independent collection taxonomy verified.",
+      "category": "Hats & Headwear",
+      "sourceUrl": "https://www.hatsrx.com/product-page/diamond-mind-snapback-hat",
+      "rx": "HXRX-DIAMNDMND-CORE",
+      "price": {
+        "amount": 49,
+        "display": "$49.00",
+        "currency": null,
+        "currencyStatus": "Dollar symbol verified; ISO currency not exposed in readable source."
+      },
+      "imagery": [
+        {
+          "kind": "product-photography",
+          "source": "https://static.wixstatic.com/media/891a9c_ef30fd131d8e47429f068906938fc211~mv2.jpg",
+          "observedDerivative": "https://static.wixstatic.com/media/891a9c_ef30fd131d8e47429f068906938fc211~mv2.jpg/v1/fill/w_1%2Ch_1%2Cq_90/891a9c_ef30fd131d8e47429f068906938fc211~mv2.jpg",
+          "verification": "First product image link on exact product page; binary not downloaded or visually inspected."
+        }
+      ],
+      "variants": {
+        "colorOrBase": null,
+        "sizes": null,
+        "note": "Color selector present but values not exposed by readable page; per-product colors/sizes unverified."
+      },
+      "availability": {
+        "sourceSays": "Made to order",
+        "purchaseControls": "Add to Cart and Buy Now present on source website",
+        "inventory": null,
+        "verification": "Public page content only; no variant availability, stock quantity, or fulfilled checkout verified."
+      },
+      "squareProductUrl": null,
+      "squareVerification": "No Square mapping verified.",
+      "editorialOnly": true,
+      "verifiedAt": "2026-10-30",
+      "verification": "Public official product page name, displayed price, RX identifier, and image references verified. Does not establish Pinky's Square inventory."
+    },
+    {
+      "id": "hatsrx-sea-heart",
+      "brand": "HatsRx",
+      "name": "Sea Heart\u2122 Snapback Hat",
+      "designFamily": "Sea Heart",
+      "designFamilyBasis": "Product name and RX identifier; no independent collection taxonomy verified.",
+      "category": "Hats & Headwear",
+      "sourceUrl": "https://www.hatsrx.com/product-page/sea-heart-snapback-hat",
+      "rx": "HXRX-SEAHEART-ARTCAP",
+      "price": {
+        "amount": 49,
+        "display": "$49.00",
+        "currency": null,
+        "currencyStatus": "Dollar symbol verified; ISO currency not exposed in readable source."
+      },
+      "imagery": [
+        {
+          "kind": "product-photography",
+          "source": "https://static.wixstatic.com/media/891a9c_a17aa1b66e664f25896be0cb16fb7662~mv2.jpg",
+          "observedDerivative": "https://static.wixstatic.com/media/891a9c_a17aa1b66e664f25896be0cb16fb7662~mv2.jpg/v1/fill/w_1%2Ch_1%2Cq_90/891a9c_a17aa1b66e664f25896be0cb16fb7662~mv2.jpg",
+          "verification": "First product image link on exact product page; binary not downloaded or visually inspected."
+        },
+        {
+          "kind": "original-artwork",
+          "source": "https://static.wixstatic.com/media/891a9c_d00a219d65d94429884197d00ed2c432~mv2.png",
+          "verification": "Source page explicitly labels image as original artwork / inspiration."
+        }
+      ],
+      "variants": {
+        "colorOrBase": [
+          "White"
+        ],
+        "sizes": [
+          "U"
+        ],
+        "note": "Product order instructions verify White as blank print base, not the finished artwork color; U means Universal Size. Variant inventory not exposed."
+      },
+      "availability": {
+        "sourceSays": "Made to order",
+        "purchaseControls": "Add to Cart and Buy Now present on source website",
+        "inventory": null,
+        "verification": "Public page content only; no variant availability, stock quantity, or fulfilled checkout verified."
+      },
+      "squareProductUrl": null,
+      "squareVerification": "No Square mapping verified.",
+      "editorialOnly": true,
+      "verifiedAt": "2026-10-30",
+      "verification": "Public official product page name, displayed price, RX identifier, and image references verified. Does not establish Pinky's Square inventory."
+    },
+    {
+      "id": "hatsrx-ace-space",
+      "brand": "HatsRx",
+      "name": "Ace of Space\u2122 Snapback",
+      "designFamily": "Ace of Space",
+      "designFamilyBasis": "Product name and RX identifier; no independent collection taxonomy verified.",
+      "category": "Hats & Headwear",
+      "sourceUrl": "https://www.hatsrx.com/product-page/astronaut-red-lounger",
+      "rx": "HXRX-ACE-OFSPACE",
+      "price": {
+        "amount": 49,
+        "display": "$49.00",
+        "currency": null,
+        "currencyStatus": "Dollar symbol verified; ISO currency not exposed in readable source."
+      },
+      "imagery": [
+        {
+          "kind": "product-photography",
+          "source": "https://static.wixstatic.com/media/891a9c_17698c40b30f451c9c00e0189894b5da~mv2.jpg",
+          "observedDerivative": "https://static.wixstatic.com/media/891a9c_17698c40b30f451c9c00e0189894b5da~mv2.jpg/v1/fill/w_1%2Ch_1%2Cq_90/891a9c_17698c40b30f451c9c00e0189894b5da~mv2.jpg",
+          "verification": "First product image link on exact product page; binary not downloaded or visually inspected."
+        }
+      ],
+      "variants": {
+        "colorOrBase": [
+          "White"
+        ],
+        "sizes": [
+          "U"
+        ],
+        "note": "Product order instructions verify White as blank print base, not the finished artwork color; U means Universal Size. Variant inventory not exposed."
+      },
+      "availability": {
+        "sourceSays": "Made to order",
+        "purchaseControls": "Add to Cart and Buy Now present on source website",
+        "inventory": null,
+        "verification": "Public page content only; no variant availability, stock quantity, or fulfilled checkout verified."
+      },
+      "squareProductUrl": null,
+      "squareVerification": "No Square mapping verified.",
+      "editorialOnly": true,
+      "verifiedAt": "2026-10-30",
+      "verification": "Public official product page name, displayed price, RX identifier, and image references verified. Does not establish Pinky's Square inventory.",
+      "aliases": [
+        "Zero Gravity Chill \u2013 Astronaut Red Snapback",
+        "X Zero Gravity Chill Snapback"
+      ],
+      "aliasNote": "Initial cached result used older Zero Gravity Chill naming; re-opened current product page says Ace of Space\u2122 Snapback. Same exact product URL; one record."
+    },
+    {
+      "id": "hatsrx-bzous-zoo",
+      "brand": "HatsRx",
+      "name": "B Zous Zoo Space Picnic\u2122 Snapback",
+      "designFamily": "B Zous Zoo Space Picnic",
+      "designFamilyBasis": "Product name and RX identifier; no independent collection taxonomy verified.",
+      "category": "Hats & Headwear",
+      "sourceUrl": "https://www.hatsrx.com/product-page/b-zous-zoo-space-picnic-snapback",
+      "rx": "HXRX-BZOUSZOO-CAP",
+      "price": {
+        "amount": 49,
+        "display": "$49.00",
+        "currency": null,
+        "currencyStatus": "Dollar symbol verified; ISO currency not exposed in readable source."
+      },
+      "imagery": [
+        {
+          "kind": "product-photography",
+          "source": "https://static.wixstatic.com/media/891a9c_541e14f3fd434a6bac64eb5ba7671464~mv2.jpg",
+          "observedDerivative": "https://static.wixstatic.com/media/891a9c_541e14f3fd434a6bac64eb5ba7671464~mv2.jpg/v1/fill/w_1%2Ch_1%2Cq_90/891a9c_541e14f3fd434a6bac64eb5ba7671464~mv2.jpg",
+          "verification": "First product image link on exact product page; binary not downloaded or visually inspected."
+        },
+        {
+          "kind": "original-artwork",
+          "source": "https://static.wixstatic.com/media/891a9c_31774de04e004a1ebfbb644384582244~mv2.jpeg",
+          "verification": "Source page explicitly labels image as original artwork / inspiration."
+        }
+      ],
+      "variants": {
+        "colorOrBase": [
+          "White"
+        ],
+        "sizes": [
+          "U"
+        ],
+        "note": "Product order instructions verify White as blank print base, not the finished artwork color; U means Universal Size. Variant inventory not exposed."
+      },
+      "availability": {
+        "sourceSays": "Made to order",
+        "purchaseControls": "Add to Cart and Buy Now present on source website",
+        "inventory": null,
+        "verification": "Public page content only; no variant availability, stock quantity, or fulfilled checkout verified."
+      },
+      "squareProductUrl": null,
+      "squareVerification": "No Square mapping verified.",
+      "editorialOnly": true,
+      "verifiedAt": "2026-10-30",
+      "verification": "Public official product page name, displayed price, RX identifier, and image references verified. Does not establish Pinky's Square inventory."
+    },
+    {
+      "id": "hatsrx-beautiful-mind",
+      "brand": "HatsRx",
+      "name": "Beautiful Mind\u2122 Snapback Hat",
+      "designFamily": "Beautiful Mind",
+      "designFamilyBasis": "Product name and RX identifier; no independent collection taxonomy verified.",
+      "category": "Hats & Headwear",
+      "sourceUrl": "https://www.hatsrx.com/product-page/beautiful-mind-snapback-hat",
+      "rx": "HXRX-BEAUTYMND-ARTCAP",
+      "price": {
+        "amount": 49,
+        "display": "$49.00",
+        "currency": null,
+        "currencyStatus": "Dollar symbol verified; ISO currency not exposed in readable source."
+      },
+      "imagery": [
+        {
+          "kind": "product-photography",
+          "source": "https://static.wixstatic.com/media/891a9c_dec4120b57f04a51a9947c7d932491c5~mv2.jpg",
+          "observedDerivative": "https://static.wixstatic.com/media/891a9c_dec4120b57f04a51a9947c7d932491c5~mv2.jpg/v1/fill/w_1%2Ch_1%2Cq_90/891a9c_dec4120b57f04a51a9947c7d932491c5~mv2.jpg",
+          "verification": "First product image link on exact product page; binary not downloaded or visually inspected."
+        }
+      ],
+      "variants": {
+        "colorOrBase": [
+          "White"
+        ],
+        "sizes": [
+          "U"
+        ],
+        "note": "Product order instructions verify White as blank print base, not the finished artwork color; U means Universal Size. Variant inventory not exposed."
+      },
+      "availability": {
+        "sourceSays": "Made to order",
+        "purchaseControls": "Add to Cart and Buy Now present on source website",
+        "inventory": null,
+        "verification": "Public page content only; no variant availability, stock quantity, or fulfilled checkout verified."
+      },
+      "squareProductUrl": null,
+      "squareVerification": "No Square mapping verified.",
+      "editorialOnly": true,
+      "verifiedAt": "2026-10-30",
+      "verification": "Public official product page name, displayed price, RX identifier, and image references verified. Does not establish Pinky's Square inventory."
+    }
+  ],
+  "historicalExportDiscoveredLater": {
+    "path": "/workspace/pinkys-source-audit/inventory.json",
+    "scope": "79 provisional source name + SKU-family groups from historical Square exports; not a live Square API result. See source agent report for dates and duplicate review."
+  }
+}
