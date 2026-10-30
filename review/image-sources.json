@@ -1,0 +1,744 @@
+{
+  "collection": "Founder-supplied Wesley Wobles Art Portfolio",
+  "scope": "23 supplied source images, 46 local WebP derivatives. Originals remain unmodified in the supplied Drive folder and local recovery storage; originals are not website payloads.",
+  "verification": "All23 source images visually inspected; all46 derivatives decoded. Descriptive captions only; no artwork titles, creator credits, price-listing matches or historical-venue identities assumed.",
+  "processing": "EXIF orientation applied, resize preserving full frame, WebP quality79. No crop, generative editing, recoloring or compositing. EXIF omitted from derivatives.",
+  "records": [
+    {
+      "id": "portfolio-01",
+      "source_file": "20220113_004632.jpg",
+      "source_sha256": "9d77b79b8c992d864f5a552a63f3e3456b25fe9073d24a9bc95b2a0b1d4cd159",
+      "source_dimensions": [
+        9301,
+        5937
+      ],
+      "caption": "City fragments, layered in color.",
+      "creator_credit": "unconfirmed",
+      "historical_location": "unconfirmed",
+      "historical_date": "unconfirmed",
+      "priced_product_match": null,
+      "derivatives": [
+        {
+          "src": "assets/portfolio/01-640.webp",
+          "width": 640,
+          "height": 409,
+          "bytes": 74024,
+          "sha256": "5cbe4de13bd5a0ec87c216bbae9d318c2d86bf273a9bdc500a61a95ffe0ef3e3",
+          "git_blob_sha": "40b2cd1aee748b9f1a9857ac98c8deb43411f57b"
+        },
+        {
+          "src": "assets/portfolio/01-1600.webp",
+          "width": 1600,
+          "height": 1021,
+          "bytes": 477328,
+          "sha256": "481408c894d10fb73ce7a0123c3097d24aa3f4b4c45123f7167756825592d731",
+          "git_blob_sha": "f5fa9ea81f1fa8b1bd0596b5377b90b4b63ba357"
+        }
+      ]
+    },
+    {
+      "id": "portfolio-02",
+      "source_file": "20241025_134630.jpg",
+      "source_sha256": "71983bd4cc00d85dc699ff979d1a4368e336a2d28162f3b06620485059064ae6",
+      "source_dimensions": [
+        3000,
+        3767
+      ],
+      "caption": "A small painted panel against a textured surface.",
+      "creator_credit": "unconfirmed",
+      "historical_location": "unconfirmed",
+      "historical_date": "unconfirmed",
+      "priced_product_match": null,
+      "derivatives": [
+        {
+          "src": "assets/portfolio/02-640.webp",
+          "width": 510,
+          "height": 640,
+          "bytes": 133456,
+          "sha256": "a489448b723fa3b0d161e364cf81c49f6dfbf4bcea5180fa1358dceac0fdec86",
+          "git_blob_sha": "db0963d9626a22929da28cf6599b9719e5c21309"
+        },
+        {
+          "src": "assets/portfolio/02-1600.webp",
+          "width": 1274,
+          "height": 1600,
+          "bytes": 912122,
+          "sha256": "77a0e6c6922468a36cef6f0fc921630a10c4cbd2b904b8f9489c790f37d85aa4",
+          "git_blob_sha": "8fae434dbedcfef673b4b0b388469e754fb331ca"
+        }
+      ]
+    },
+    {
+      "id": "portfolio-03",
+      "source_file": "6582277A-47D7-4BED-96A7-2FCAF9DC9DF7.jpg",
+      "source_sha256": "c228dd65a7f77460fdafa7374f69549ecb7e57332dfdcf9dfe3f77a38b02f96f",
+      "source_dimensions": [
+        3024,
+        4032
+      ],
+      "caption": "A bag suspended against red and violet marks.",
+      "creator_credit": "unconfirmed",
+      "historical_location": "unconfirmed",
+      "historical_date": "unconfirmed",
+      "priced_product_match": null,
+      "derivatives": [
+        {
+          "src": "assets/portfolio/03-640.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 59736,
+          "sha256": "717537f997113dc1ec52409e9deeb105a65e22982c1e2e3f730ce711c537b581",
+          "git_blob_sha": "6106752285e182b1cb01e031a2f92b410a20b311"
+        },
+        {
+          "src": "assets/portfolio/03-1600.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 294342,
+          "sha256": "af189158f4c3378d01f274f8e1e8adfad356a062961c06156446114c7b1fb29a",
+          "git_blob_sha": "a828c6d60a765a6ad8d77f2ca715b0431988f991"
+        }
+      ]
+    },
+    {
+      "id": "portfolio-04",
+      "source_file": "IMG_0129.jpg",
+      "source_sha256": "c17f31e26e861201d2fafd5bea94318cfd3025a6f1fdc3b2145c74c8cce95406",
+      "source_dimensions": [
+        4032,
+        3024
+      ],
+      "caption": "A character assembled from circles and color.",
+      "creator_credit": "unconfirmed",
+      "historical_location": "unconfirmed",
+      "historical_date": "unconfirmed",
+      "priced_product_match": null,
+      "derivatives": [
+        {
+          "src": "assets/portfolio/04-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 79566,
+          "sha256": "61f9cc2b88894798bfc0c5dce07766cddcc1bcb394deadf424f2080e097e9a5e",
+          "git_blob_sha": "38fa2e5921b4584ad6edc4cb34376e332bfc19c1"
+        },
+        {
+          "src": "assets/portfolio/04-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 459146,
+          "sha256": "06c95a456d9cf109b63e8ac42551914a323d832ab2dcb75a13ca8930e24ec778",
+          "git_blob_sha": "cef8f17a1b5154c51ccdd9d521caac6f2219ebca"
+        }
+      ]
+    },
+    {
+      "id": "portfolio-05",
+      "source_file": "20241025_134225.jpg",
+      "source_sha256": "921f74cc1a0816b0ce971089e013e98d481e8d76b3fd4c24cca8efe22d07919b",
+      "source_dimensions": [
+        3000,
+        4000
+      ],
+      "caption": "Bright circular forms on a panel outdoors.",
+      "creator_credit": "unconfirmed",
+      "historical_location": "unconfirmed",
+      "historical_date": "unconfirmed",
+      "priced_product_match": null,
+      "derivatives": [
+        {
+          "src": "assets/portfolio/05-640.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 28236,
+          "sha256": "c6949ea0d4c64511869b81feff97d8518681fb881f30144885f3059abf4c25c1",
+          "git_blob_sha": "ec2d872f2fe82fa7ed1a55228bb9df407fa95063"
+        },
+        {
+          "src": "assets/portfolio/05-1600.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 115808,
+          "sha256": "77f545b25c21dabd6b13a104f0ffb867f2082bf62530e6b373dc8d7b03317242",
+          "git_blob_sha": "4952119c0d517545aec4b09630474556e63910e2"
+        }
+      ]
+    },
+    {
+      "id": "portfolio-06",
+      "source_file": "IMG_0218.jpg",
+      "source_sha256": "8c22e6d484725618b370e4b043a565d163428186ea52fd73bdfae41dd3307837",
+      "source_dimensions": [
+        4032,
+        3024
+      ],
+      "caption": "Red lines raised against a blue-green surface.",
+      "creator_credit": "unconfirmed",
+      "historical_location": "unconfirmed",
+      "historical_date": "unconfirmed",
+      "priced_product_match": null,
+      "derivatives": [
+        {
+          "src": "assets/portfolio/06-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 71526,
+          "sha256": "4da4ddb6ded363c7c9f5a062b2233e0e0cdeccbbfe6fb4ec536300910c1b1cc2",
+          "git_blob_sha": "0a302832e0daa5cf83df0ac65aeb5daf5bfc81c9"
+        },
+        {
+          "src": "assets/portfolio/06-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 367736,
+          "sha256": "92944f18c60d719843c59770b3d43303edffb6e6054d1ba50385e74e8594fd65",
+          "git_blob_sha": "d300576c883b2bb9dd4f3eb8ece9464a33593800"
+        }
+      ]
+    },
+    {
+      "id": "portfolio-07",
+      "source_file": "20241025_135451.jpg",
+      "source_sha256": "00fa20ebf5cf0cc1c0bedb5f552088af88959cc1c6f866d186eb7c8af9212857",
+      "source_dimensions": [
+        4000,
+        3000
+      ],
+      "caption": "Figures and orange-red gestures on an easel.",
+      "creator_credit": "unconfirmed",
+      "historical_location": "unconfirmed",
+      "historical_date": "unconfirmed",
+      "priced_product_match": null,
+      "derivatives": [
+        {
+          "src": "assets/portfolio/07-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 28728,
+          "sha256": "3bb2069e7f88f05c95e3274316f43cf3c88a0d1a7836d8f36821d6fc2dcaa190",
+          "git_blob_sha": "3098933de331966d3d28d11afeee9a2fb8dbe375"
+        },
+        {
+          "src": "assets/portfolio/07-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 116974,
+          "sha256": "8a4a28355b736ab78095ca9837016c873ecb1484603626cafe75e355d7c03808",
+          "git_blob_sha": "478cb8ec97985bf3e9a3a4cacad5bd677479a21f"
+        }
+      ]
+    },
+    {
+      "id": "portfolio-08",
+      "source_file": "20241025_134317.jpg",
+      "source_sha256": "70ec9a5fde71b462fa87ff345e7d5f5c0a1d8fcc9c87554798cdd5b630741702",
+      "source_dimensions": [
+        4000,
+        3000
+      ],
+      "caption": "Layered symbols in violet, yellow, and pink.",
+      "creator_credit": "unconfirmed",
+      "historical_location": "unconfirmed",
+      "historical_date": "unconfirmed",
+      "priced_product_match": null,
+      "derivatives": [
+        {
+          "src": "assets/portfolio/08-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 34864,
+          "sha256": "f8b5e2c866649e9f656fd2458d9d4e7cc135dcecd11ad4cc417a7df1baee6b6e",
+          "git_blob_sha": "2c38beef67de86fb7bb204e24c61775fba14e4b6"
+        },
+        {
+          "src": "assets/portfolio/08-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 166286,
+          "sha256": "34e704af0ed129662805a852e88417c076a7bb0593db3488d92502be2e26c11f",
+          "git_blob_sha": "b28bc883c767818381e0def72db8b160f8914ae9"
+        }
+      ]
+    },
+    {
+      "id": "portfolio-09",
+      "source_file": "B725EC7D-349B-4457-80E4-475E0A1FFAF4.jpg",
+      "source_sha256": "299a1f07ce800e39639a646b1835addbd706d17ca0bce8f6c83aef651e399312",
+      "source_dimensions": [
+        3531,
+        2784
+      ],
+      "caption": "A decorated case with city-like silhouettes.",
+      "creator_credit": "unconfirmed",
+      "historical_location": "unconfirmed",
+      "historical_date": "unconfirmed",
+      "priced_product_match": null,
+      "derivatives": [
+        {
+          "src": "assets/portfolio/09-640.webp",
+          "width": 640,
+          "height": 505,
+          "bytes": 48676,
+          "sha256": "9eee5342056b35a62a7c636d07a5a10aa4fbc16d55e4b86b09382a0043523fce",
+          "git_blob_sha": "41c50e046cb5aa67a8a57319bd9c34393605a5ec"
+        },
+        {
+          "src": "assets/portfolio/09-1600.webp",
+          "width": 1600,
+          "height": 1262,
+          "bytes": 241348,
+          "sha256": "e534f65c1631e648494f43c0d18e98a6f397cf38eec62d641f9bc3db119ae361",
+          "git_blob_sha": "a50d147b409d8318a065ecc2a11a5aae746e1522"
+        }
+      ]
+    },
+    {
+      "id": "portfolio-10",
+      "source_file": "20241025_134418.jpg",
+      "source_sha256": "480a7921eb7659f1bfa6a5904d8f95b3ad22e442ab9b9e31ebb76e1fb5d8dd77",
+      "source_dimensions": [
+        4000,
+        3000
+      ],
+      "caption": "A red heart within a field of color.",
+      "creator_credit": "unconfirmed",
+      "historical_location": "unconfirmed",
+      "historical_date": "unconfirmed",
+      "priced_product_match": null,
+      "derivatives": [
+        {
+          "src": "assets/portfolio/10-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 33188,
+          "sha256": "a707b194b22eb3e708e818f703bd7341abeaa7ba2f05713a114421b9c4d94044",
+          "git_blob_sha": "aa7aa62cf8e875ccc8bd1679f95a32e64f10754a"
+        },
+        {
+          "src": "assets/portfolio/10-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 147176,
+          "sha256": "5da28c57e89002e2bf3201061b09127517dbf77482ea1ac09d6d58aa430ec2f8",
+          "git_blob_sha": "8cbf4e30cd773e28294033d7119630adf62ae9ec"
+        }
+      ]
+    },
+    {
+      "id": "portfolio-11",
+      "source_file": "IMG_9473.HEIC",
+      "source_sha256": "e6acb5fc2a3cd359c7d06d05da77dcb856e6bfacef03e93dc61fa2abb1518eb1",
+      "source_dimensions": [
+        3024,
+        4032
+      ],
+      "caption": "Patterns and found forms across a jacket.",
+      "creator_credit": "unconfirmed",
+      "historical_location": "unconfirmed",
+      "historical_date": "unconfirmed",
+      "priced_product_match": null,
+      "derivatives": [
+        {
+          "src": "assets/portfolio/11-640.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 71036,
+          "sha256": "e97dcd600db3cc613ef96523bd701f481aec90899e31637b8de763680be0e5de",
+          "git_blob_sha": "5a0d86d822931092fcf347ceead5ab4dbe6c39f4"
+        },
+        {
+          "src": "assets/portfolio/11-1600.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 279914,
+          "sha256": "a9c12fa31991f97b78714f9b7f415a8040b11cb8e7e8f2711b14e17d145317c4",
+          "git_blob_sha": "7ba2062be473d8633a3f328f3e70c3848ff7ec68"
+        }
+      ]
+    },
+    {
+      "id": "portfolio-12",
+      "source_file": "34093359-E1C3-41E5-8970-FE13C4E10FA4.jpeg",
+      "source_sha256": "0c7110465dde67c38c1fbe3cf434c172f1ae2b9ae98543e24bcb9f2c3d3a13e6",
+      "source_dimensions": [
+        2567,
+        3132
+      ],
+      "caption": "A framed composition photographed with “Stay Home” lettering.",
+      "creator_credit": "unconfirmed",
+      "historical_location": "unconfirmed",
+      "historical_date": "unconfirmed",
+      "priced_product_match": null,
+      "derivatives": [
+        {
+          "src": "assets/portfolio/12-640.webp",
+          "width": 525,
+          "height": 640,
+          "bytes": 64620,
+          "sha256": "c38ccf579400e1bbb8a92224f832f39687016e4bfbff6e87e4742443891c95cb",
+          "git_blob_sha": "935d86b6effe98cedead6bdeb8d65949f41049ed"
+        },
+        {
+          "src": "assets/portfolio/12-1600.webp",
+          "width": 1311,
+          "height": 1600,
+          "bytes": 318326,
+          "sha256": "1a92136f6076be5f6495d3527dfb6cedf2419f0b96019676bb08c2f5688c872b",
+          "git_blob_sha": "50296bf684444fa7beac4259f08fe5563216e393"
+        }
+      ]
+    },
+    {
+      "id": "portfolio-13",
+      "source_file": "IMG_3301.HEIC",
+      "source_sha256": "ba6cc031be61f08a9ec618c924d103ade2fdbc871a280ab7c4ab42834d5d3948",
+      "source_dimensions": [
+        3024,
+        4032
+      ],
+      "caption": "Hearts, stars, and a crescent across fabric.",
+      "creator_credit": "unconfirmed",
+      "historical_location": "unconfirmed",
+      "historical_date": "unconfirmed",
+      "priced_product_match": null,
+      "derivatives": [
+        {
+          "src": "assets/portfolio/13-640.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 82970,
+          "sha256": "1ba00ccd8cb75dc3f77c256eec08f27a2a1171d8bd4314bb2cf3ad9e81a9b831",
+          "git_blob_sha": "4326164bb7dc357c252ad48e04b99fc8c5cce9cb"
+        },
+        {
+          "src": "assets/portfolio/13-1600.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 406258,
+          "sha256": "c88a53296fcab06f9d95b1e3da1c6e6632d1d95311280bca4e92e8764c3b70df",
+          "git_blob_sha": "dd924bd518f9a18c6fc1b5aaf11f107fc1946075"
+        }
+      ]
+    },
+    {
+      "id": "portfolio-14",
+      "source_file": "20241025_132502.jpg",
+      "source_sha256": "c590dcd6e9217a1e2c8492fdbe95f5ddca286747bb4cf961865218280408cc4f",
+      "source_dimensions": [
+        3000,
+        4000
+      ],
+      "caption": "A framed work photographed on an outdoor easel.",
+      "creator_credit": "unconfirmed",
+      "historical_location": "unconfirmed",
+      "historical_date": "unconfirmed",
+      "priced_product_match": null,
+      "derivatives": [
+        {
+          "src": "assets/portfolio/14-640.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 34532,
+          "sha256": "461611314a8a8ce1f8d542c47d57ce30ada5a6bfb7bc27abfd3cfaf0a27453dd",
+          "git_blob_sha": "e1ba08a7f9a3d5b7325faa66728742df3509e7b1"
+        },
+        {
+          "src": "assets/portfolio/14-1600.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 130376,
+          "sha256": "e07303966fecd5c1ced8af7a39cf5e96144fb915ded01f90ef1a4a0c34bf8c5d",
+          "git_blob_sha": "6e7f375d4375fb1c03741207e2d89b6de773d75c"
+        }
+      ]
+    },
+    {
+      "id": "portfolio-15",
+      "source_file": "20241025_123334.jpg",
+      "source_sha256": "5a9264a57d72219d6bbf84d84a9f66510cad56548d8c02ed3942be45e8d9ae1b",
+      "source_dimensions": [
+        3000,
+        4000
+      ],
+      "caption": "A circular form surrounded by a textured assemblage.",
+      "creator_credit": "unconfirmed",
+      "historical_location": "unconfirmed",
+      "historical_date": "unconfirmed",
+      "priced_product_match": null,
+      "derivatives": [
+        {
+          "src": "assets/portfolio/15-640.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 76626,
+          "sha256": "0ea31d7e6409df8edb6cf40d873e2fa76f9e4a0261c19e2ef357d45878bd705d",
+          "git_blob_sha": "0d1fa2f3f7a8b6f91f48818be847ab6553d854a5"
+        },
+        {
+          "src": "assets/portfolio/15-1600.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 363948,
+          "sha256": "b895daa2136efb6f78d9cf2c9228143a71893650debb34bce9514412cf42be15",
+          "git_blob_sha": "538c16cf0467d46fba3d09eb6de043aac4b876c7"
+        }
+      ]
+    },
+    {
+      "id": "portfolio-16",
+      "source_file": "20210911_060556.jpg",
+      "source_sha256": "1ca84183b1bed261ff78c60f00d6789f915713fb916cbee441cc7df4d8ad6824",
+      "source_dimensions": [
+        3000,
+        4000
+      ],
+      "caption": "Orbit-like circles in an interior setting.",
+      "creator_credit": "unconfirmed",
+      "historical_location": "unconfirmed",
+      "historical_date": "unconfirmed",
+      "priced_product_match": null,
+      "derivatives": [
+        {
+          "src": "assets/portfolio/16-640.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 25606,
+          "sha256": "77d5a8fde73e15dd8900fcbb0cef9b1c29cee5eab0d5135a723b0471b2ef424d",
+          "git_blob_sha": "ce8b1c13da1704608ed4a8929c58f77d3f369131"
+        },
+        {
+          "src": "assets/portfolio/16-1600.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 110980,
+          "sha256": "7012a29fcee985369f949303cc1cf7f3aeeb22630bbcd2706a686352f9a95a61",
+          "git_blob_sha": "92e1fc16675abc133204f0cc8dc8fa377fb79274"
+        }
+      ]
+    },
+    {
+      "id": "portfolio-17",
+      "source_file": "8FC6F23D-BC50-4CF9-8505-F024821B38A5.jpeg",
+      "source_sha256": "0753211812dc9b41108b7b127006ca2459361ac48c91382ccb11e44f00290da7",
+      "source_dimensions": [
+        4032,
+        3024
+      ],
+      "caption": "Two luminous spirals against black.",
+      "creator_credit": "unconfirmed",
+      "historical_location": "unconfirmed",
+      "historical_date": "unconfirmed",
+      "priced_product_match": null,
+      "derivatives": [
+        {
+          "src": "assets/portfolio/17-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 36052,
+          "sha256": "19f2278b8033fe724d63dc8537f6fb55cafef0d03e8edc02405ed0047f8347c7",
+          "git_blob_sha": "105472f9891794b7f2f821ca9c4d00a7ee18c019"
+        },
+        {
+          "src": "assets/portfolio/17-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 124634,
+          "sha256": "a528aea15c7ab6b7f2f4b5e0a0e45b8173cd842cff95ed3b76a9e549eb42ef51",
+          "git_blob_sha": "de1bf5cbdcad1516ab1fea9e3b59d06c4fc9b75c"
+        }
+      ]
+    },
+    {
+      "id": "portfolio-18",
+      "source_file": "IMG_3300.HEIC",
+      "source_sha256": "136ed9ad6fbc55b8b9d926e6d2cb2efbb1a19e74a67a01c4c83f8d625bab503a",
+      "source_dimensions": [
+        3024,
+        4032
+      ],
+      "caption": "Layered framed works with a yellow circular center.",
+      "creator_credit": "unconfirmed",
+      "historical_location": "unconfirmed",
+      "historical_date": "unconfirmed",
+      "priced_product_match": null,
+      "derivatives": [
+        {
+          "src": "assets/portfolio/18-640.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 54158,
+          "sha256": "ccdd56be4d621c6b2806d2f32e40f4538357c40e63e76f78be5b7ae783f9d997",
+          "git_blob_sha": "344403431be28987f515c63e89909224c9f1d7b0"
+        },
+        {
+          "src": "assets/portfolio/18-1600.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 229358,
+          "sha256": "baa05d9765d28be1852074841343e81d9e50233614f34c84a745f4bbb3ab08ca",
+          "git_blob_sha": "b5fc512bd4dc6e55764982eba194c44505d416a4"
+        }
+      ]
+    },
+    {
+      "id": "portfolio-19",
+      "source_file": "20241025_133451.jpg",
+      "source_sha256": "e5b731a21978207bc3985de4727fc28aa89df49195ae903e7193dd1c8ef4106a",
+      "source_dimensions": [
+        4000,
+        3000
+      ],
+      "caption": "Color, symbols, and an open-air encounter.",
+      "creator_credit": "unconfirmed",
+      "historical_location": "unconfirmed",
+      "historical_date": "unconfirmed",
+      "priced_product_match": null,
+      "derivatives": [
+        {
+          "src": "assets/portfolio/19-640.webp",
+          "width": 640,
+          "height": 480,
+          "bytes": 33504,
+          "sha256": "9424fac720a305007f895c7a521353a0cc3ef9beac14a72ff722c947f1c85460",
+          "git_blob_sha": "9a33494287ebdafb71b8e6a7173663d45ac1b2b0"
+        },
+        {
+          "src": "assets/portfolio/19-1600.webp",
+          "width": 1600,
+          "height": 1200,
+          "bytes": 167272,
+          "sha256": "d02127362cc9ea214046149d9de9da609c9f74e185f7fe720cad719265fd9778",
+          "git_blob_sha": "2463723a75de7d4dd0a6193b794df4c6975cd136"
+        }
+      ]
+    },
+    {
+      "id": "portfolio-20",
+      "source_file": "IMG_2369.jpg",
+      "source_sha256": "894761f0ff4abfc279c29afdd9f002cd302d362e217aa4b1499cf00c42097882",
+      "source_dimensions": [
+        2605,
+        1707
+      ],
+      "caption": "Radiating circles above a band of green.",
+      "creator_credit": "unconfirmed",
+      "historical_location": "unconfirmed",
+      "historical_date": "unconfirmed",
+      "priced_product_match": null,
+      "derivatives": [
+        {
+          "src": "assets/portfolio/20-640.webp",
+          "width": 640,
+          "height": 419,
+          "bytes": 62836,
+          "sha256": "b996eab3c871defa60fd92d5d3360f5fa74e86b26a53f505c77e6b62b84dfdbb",
+          "git_blob_sha": "136937d45b94af78012096063d37e58ab144102a"
+        },
+        {
+          "src": "assets/portfolio/20-1600.webp",
+          "width": 1600,
+          "height": 1048,
+          "bytes": 282074,
+          "sha256": "36e232a0332b0c46b7ca944fb9a75238c4c4640bb0f8e4d849c7f2800d8d4910",
+          "git_blob_sha": "a535f056463907186351894dcbda9550672fc637"
+        }
+      ]
+    },
+    {
+      "id": "portfolio-21",
+      "source_file": "IMG_9496.HEIC",
+      "source_sha256": "8f691d3f2fe933e8209804d87acb889ffdc4a6a1fcc5cd16f7cd65656bd6b286",
+      "source_dimensions": [
+        2278,
+        3036
+      ],
+      "caption": "A decorated sign reading “6 ft of space.”",
+      "creator_credit": "unconfirmed",
+      "historical_location": "unconfirmed",
+      "historical_date": "unconfirmed",
+      "priced_product_match": null,
+      "derivatives": [
+        {
+          "src": "assets/portfolio/21-640.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 100762,
+          "sha256": "5e886bd2ce62b03ac3dbd212c00ae0b4b20f3aac06a135cba6d1a5e033f5977f",
+          "git_blob_sha": "d461789373833f9218769a8296993cc53a09f555"
+        },
+        {
+          "src": "assets/portfolio/21-1600.webp",
+          "width": 1201,
+          "height": 1600,
+          "bytes": 476850,
+          "sha256": "3c929e3ab1e72a5694545acfb7223c07b701cb9539b1d7f456dc97525ec7003f",
+          "git_blob_sha": "c067a8438478097b564092559d848ed47f4a58d7"
+        }
+      ]
+    },
+    {
+      "id": "portfolio-22",
+      "source_file": "IMG_3298.HEIC",
+      "source_sha256": "92955326dd7dc1581e6250fb287ddb1b433aaa3504634b64907121255987f9f8",
+      "source_dimensions": [
+        3024,
+        4032
+      ],
+      "caption": "Framed experiments gathered together.",
+      "creator_credit": "unconfirmed",
+      "historical_location": "unconfirmed",
+      "historical_date": "unconfirmed",
+      "priced_product_match": null,
+      "derivatives": [
+        {
+          "src": "assets/portfolio/22-640.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 43548,
+          "sha256": "4947ae83fac818d1ecfe9062895c12615bace8094cdd581ddc6c3b0149d24765",
+          "git_blob_sha": "990dec45770a134cf42bef83e54c8202905cd1d7"
+        },
+        {
+          "src": "assets/portfolio/22-1600.webp",
+          "width": 1200,
+          "height": 1600,
+          "bytes": 134150,
+          "sha256": "cb8f5f1f5e1512ab07c13d06f42b1b0e7b41339a57a8dfb6cb211bcaeb241973",
+          "git_blob_sha": "5dcd3b830d88427b4a22c73b9d629f155a76c9a0"
+        }
+      ]
+    },
+    {
+      "id": "portfolio-23",
+      "source_file": "Screenshot_20241025_170042_Photos.jpg",
+      "source_sha256": "60143c96dbbeffac84ec158e8a3f8c7815d63dc2b19cd5d89c70b337c535825d",
+      "source_dimensions": [
+        1080,
+        1120
+      ],
+      "caption": "Figures and bright color photographed on an easel.",
+      "creator_credit": "unconfirmed",
+      "historical_location": "unconfirmed",
+      "historical_date": "unconfirmed",
+      "priced_product_match": null,
+      "derivatives": [
+        {
+          "src": "assets/portfolio/23-640.webp",
+          "width": 617,
+          "height": 640,
+          "bytes": 40974,
+          "sha256": "b0f52ed0015ac4fa5ccebbe500045ad403a58d989e14af22a37bf079628c705e",
+          "git_blob_sha": "c168dd9090a3d9640c2a06f64d377ea170c5990c"
+        },
+        {
+          "src": "assets/portfolio/23-1600.webp",
+          "width": 1080,
+          "height": 1120,
+          "bytes": 110254,
+          "sha256": "d766910972c3217a29e5c8efdeedf42284a496bc865cd88bc623dabd5b47d7c7",
+          "git_blob_sha": "22ffb03a96e38ed762162124f952521ead3db1b5"
+        }
+      ]
+    }
+  ]
+}

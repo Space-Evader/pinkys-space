@@ -1,0 +1,14 @@
+{
+  "name": "pinkys-space-founder-review",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Unpublished static Pinky’s Space redesign and self-contained review checks.",
+  "scripts": {
+    "validate": "python review/check-source.py && node review/check-css.mjs && node review/check.mjs && node review/check-portfolio.mjs",
+    "browser-check": "node review/check-browser.mjs"
+  },
+  "devDependencies": {
+    "playwright-core": "1.57.0",
+    "postcss": "8.5.6"
+  }
+}
