@@ -18,7 +18,28 @@ window.PINKYS_ARCHIVE = [
     id: "artists", number: "03", label: "The Artists",
     title: "Make something. Stay awhile.",
     story: "People came to Pinky’s Space to paint, draw, create, and think. Art was part of the life of the space, woven into encounters and everyday moments.",
-    entries: []
+    entries: [
+    {
+        "title": "From the creative universe",
+        "body": "A portfolio image of a work on an easel, brought into the ongoing archive.",
+        "image": "assets/portfolio/19-640.webp",
+        "alt": "A horizontal painted work on an outdoor easel with colorful circles, red and pink marks, and a silver-gray central form.",
+        "caption": "Color and symbols photographed outdoors. From the founder-supplied portfolio; location and date are not established.",
+        "credit": "Founder-supplied portfolio · Creator credit unconfirmed",
+        "width": 1600,
+        "height": 1200,
+        "sources": [
+            {
+                "src": "assets/portfolio/19-640.webp",
+                "width": 640
+            },
+            {
+                "src": "assets/portfolio/19-1600.webp",
+                "width": 1600
+            }
+        ]
+    }
+]
   },
   {
     id: "visitors", number: "04", label: "The Visitors",

@@ -1,0 +1,39 @@
+{
+  "browser": "154.0.8037.57",
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "checks": [
+    "all 46 WebP variants decoded at their declared widths",
+    "23 visible decoded portfolio images after disclosure",
+    "native gallery dialog and previous/next controls",
+    "arrow keys, Tab containment, Escape and focus restoration",
+    "seven archive headings with keyboard activation",
+    "desktop and mobile main-navigation destinations",
+    "five product prices and specific inquiry links",
+    "Square, companion domain and checkout links preserved",
+    "no homepage external requests or browser errors",
+    "no horizontal overflow at 320, 390, 650, 768, 1024, 1440 pixels",
+    "reduced motion",
+    "no-JavaScript gallery fallback",
+    "checkout remains opt-in; no transaction attempted"
+  ],
+  "screenshots": [
+    "review/screenshots/homepage-desktop.png",
+    "review/screenshots/gallery-desktop.png",
+    "review/screenshots/artwork-viewer-desktop.png",
+    "review/screenshots/homepage-mobile.png",
+    "review/screenshots/gallery-mobile.png",
+    "review/screenshots/artwork-viewer-mobile.png"
+  ],
+  "decodedWebPVariants": 46
+}

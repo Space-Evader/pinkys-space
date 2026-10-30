@@ -62,7 +62,7 @@
       if (entry.video) {
         const video = safeMedia(entry.video);
         if (video) {
-          const link = text("a", entry.videoLabel || "Watch the archive video ↗");
+          const link = text("a", entry.videoLabel || "Watch the archive video");
           link.href = video; link.target = "_blank"; link.rel = "noopener noreferrer";
           section.append(link);
         }
@@ -70,7 +70,7 @@
       if (entry.body) section.append(text("p", entry.body));
       article.append(section);
     }
-    const share = text("a", "Share a memory from this chapter ↗");
+    const share = text("a", "Share a memory from this chapter");
     share.href = "mailto:info@pinkys.space?subject=" + encodeURIComponent("Pinky’s Days / " + chapter.label);
     article.append(share);
     journal.replaceChildren(article);
@@ -129,4 +129,11 @@
   dialog.querySelector(".close").addEventListener("click", () => dialog.close());
   dialog.addEventListener("click", event => { if (event.target === dialog) dialog.close(); });
   dialog.addEventListener("close", () => opener?.focus());
+  dialog.addEventListener("keydown", event => {
+    if (!dialog.open || event.key !== "Tab") return;
+    const controls = [...dialog.querySelectorAll('button:not([disabled]), a[href]')];
+    const first = controls[0], last = controls.at(-1);
+    if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus(); }
+    else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
+  });
 })();
