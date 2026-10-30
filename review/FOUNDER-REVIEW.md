@@ -96,4 +96,4 @@ The attachment ended at “The atmosphere” in section C, The Garden. Requireme
 
 The review branch is isolated from main. Do not merge it until founders approve. No Sites registration, domain change, production deployment, Square mutation, or checkout transaction is part of this work.
 
-The accompanying published-baseline.zip contains all four original files with verified byte content. The local Git bundle includes baseline and review checkpoint branches. The original upstream SHA remains recoverable in GitHub. If a future authorized deployment needs rollback, prepare a reviewed revert to that source checkpoint; do not automatically force-reset main.
+Local recovery materials contain a published-baseline.zip with all four original files at verified byte content and a Git bundle with baseline and review checkpoint branches. The review source is also downloadable from the draft branch on GitHub. The original upstream SHA remains recoverable in GitHub. If a future authorized deployment needs rollback, prepare a reviewed revert to that source checkpoint; do not automatically force-reset main.
