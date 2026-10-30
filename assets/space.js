@@ -23,6 +23,22 @@
     const figure = document.createElement("figure");
     const img = document.createElement("img");
     img.src = source; img.alt = entry.alt; img.loading = "lazy"; img.decoding = "async";
+    const positivePixels = value => Number.isInteger(Number(value)) && Number(value) > 0 && Number(value) <= 20000;
+    if (positivePixels(entry.width) && positivePixels(entry.height)) {
+      img.width = Number(entry.width); img.height = Number(entry.height);
+    } else {
+      // Reserve a neutral frame until original dimensions are supplied.
+      img.className = "media-undimensioned";
+    }
+    const variants = new Map();
+    for (const variant of Array.isArray(entry.sources) ? entry.sources : []) {
+      const url = safeMedia(variant.src);
+      if (url && positivePixels(variant.width)) variants.set(Number(variant.width), url.replaceAll(",", "%2C"));
+    }
+    if (variants.size) {
+      img.srcset = [...variants].sort((a, b) => a[0] - b[0]).map(([width, url]) => url + " " + width + "w").join(", ");
+      img.sizes = "(max-width: 650px) calc(100vw - 100px), 50vw";
+    }
     const caption = document.createElement("figcaption");
     if (entry.caption) caption.append(text("span", entry.caption));
     caption.append(text("span", entry.credit, "credit"));
@@ -35,7 +51,8 @@
     const article = document.createElement("article");
     article.id = "chapter-" + chapter.id;
     article.append(text("p", "CHAPTER " + chapter.number + " / " + chapter.label.toUpperCase(), "eyebrow"));
-    article.append(text("h3", chapter.title), text("p", chapter.story));
+    const heading = text("h3", chapter.title);
+    article.append(heading, text("p", chapter.story));
     for (const entry of chapter.entries || []) {
       const section = document.createElement("section");
       section.className = "entry";
@@ -62,9 +79,9 @@
       else link.removeAttribute("aria-current");
     }
     if (focus) {
-      article.tabIndex = -1;
-      article.focus({ preventScroll: true });
-      article.scrollIntoView({ block: "nearest" });
+      heading.tabIndex = -1;
+      heading.focus({ preventScroll: true });
+      heading.scrollIntoView({ block: "start" });
     }
     return true;
   }

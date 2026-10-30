@@ -11,6 +11,10 @@
 <label>Story<textarea id="entry-body" maxlength="10000"></textarea></label>
 <label>Image path or direct HTTPS image URL (optional)<input id="entry-image" placeholder="assets/garden-01.jpg"></label>
 <label>Image description for screen readers<input id="entry-alt" maxlength="500"></label><label>Photo caption<input id="entry-caption" maxlength="1000"></label><label>Photo credit / attribution<input id="entry-credit" maxlength="500"></label>
+<label>Actual image width in pixels (optional)<input id="entry-width" type="number" min="1" max="20000"></label>
+<label>Actual image height in pixels (optional)<input id="entry-height" type="number" min="1" max="20000"></label>
+<label>Responsive image variants (optional; one image path, a space, and its actual width per line)<textarea id="entry-sources" placeholder="assets/garden-640.webp 640&#10;assets/garden-1280.webp 1280"></textarea></label>
+<p class="hint">Use dimensions from the image file. Export smaller derivatives before listing them here; this editor does not resize images. Leave photographer attribution unconfirmed when the album does not identify its creator.</p>
 <label>Video or interview HTTPS link (optional)<input id="entry-video"></label>
 <label>Link label<input id="entry-video-label" placeholder="Watch the garden interview ↗"></label>
 <label style="display:flex;align-items:center"><input style="width:auto" id="approved" type="checkbox">I have checked the story, credit, and permission to use this media.</label>
@@ -59,10 +63,22 @@
     if (value("entry-image") && (!value("entry-alt") || !value("entry-credit"))) { say("Add image description and credit."); return; }
     const image = value("entry-image");
     if (image && !/^https:\/\//i.test(image) && !/^assets\/[a-z0-9_./-]+$/i.test(image)) { say("Use an assets/ path or a direct HTTPS image URL."); return; }
+    const width = Number(value("entry-width")), height = Number(value("entry-height"));
+    const validPixels = n => Number.isInteger(n) && n > 0 && n <= 20000;
+    if ((width || height) && (!validPixels(width) || !validPixels(height))) { say("Enter both actual image dimensions between 1 and 20000 pixels, or leave both blank."); return; }
+    const sources = [];
+    for (const line of value("entry-sources").split("\n").filter(line => line.trim())) {
+      const parts = line.trim().match(/^(\S+)\s+(\d+)$/);
+      if (!parts || !validPixels(Number(parts[2])) || (!/^https:\/\//i.test(parts[1]) && !/^assets\/[a-z0-9_./-]+$/i.test(parts[1]))) { say("Each image variant needs an assets/ path or HTTPS URL followed by its actual pixel width."); return; }
+      sources.push({src:parts[1],width:Number(parts[2])});
+    }
     if (value("entry-video") && !/^https:\/\//i.test(value("entry-video"))) { say("Use an HTTPS video link."); return; }
     if (!save()) return;
-    current().entries.push({title:value("entry-title"),date:value("entry-date"),body:value("entry-body"),image,alt:value("entry-alt"),caption:value("entry-caption"),credit:value("entry-credit"),video:value("entry-video"),videoLabel:value("entry-video-label")});
-    ["entry-title","entry-date","entry-body","entry-image","entry-alt","entry-caption","entry-credit","entry-video","entry-video-label"].forEach(id => $(id).value = "");
+    const entry = {title:value("entry-title"),date:value("entry-date"),body:value("entry-body"),image,alt:value("entry-alt"),caption:value("entry-caption"),credit:value("entry-credit"),video:value("entry-video"),videoLabel:value("entry-video-label")};
+    if (width && height) { entry.width = width; entry.height = height; }
+    if (sources.length) entry.sources = sources;
+    current().entries.push(entry);
+    ["entry-title","entry-date","entry-body","entry-image","entry-alt","entry-caption","entry-credit","entry-width","entry-height","entry-sources","entry-video","entry-video-label"].forEach(id => $(id).value = "");
     $("approved").checked = false; show(); say("Entry added in this tab. Export to keep your changes.");
   });
   $("export").addEventListener("click", () => {

@@ -6,9 +6,9 @@ Prepared October 30, 2026. Status: working, unpublished visual and interaction d
 
 The entrance uses electric pink, large editorial type, a restrained rotating symbol, and clear routes into Pinky’s Days and the collection. The site continues through the East Village origin story, seven browsable archive chapters, the garden, the collection, the central creative statement, and contact.
 
-Chapter history comes from the supplied brief. No dates beyond the supplied pandemic context, visitor quotes, artist identities, individual memories, or historical photographs have been invented. The typographic motifs are interface decoration, not presented as collection artwork. The Google Photos album link has been requested.
+Chapter history comes from the supplied brief. No dates beyond the supplied pandemic context, visitor quotes, artist identities, individual memories, or historical photographs have been invented. The typographic motifs are interface decoration, not presented as collection artwork. Three Google Photos album links were supplied on October 30. The web reader could not access them, and direct access was blocked by the managed environment’s outbound network policy (HTTP CONNECT 403). Plugin discovery found no Google Photos connection. No album contents, photo identities, or photographer credits have been verified. The album URLs and sharing keys have not been copied into this public repository.
 
-The archive supports credited images, captions, stories, dates or known periods, and external video/interview links. The local editor exports an updated archive.js; replacing that file and approved assets requires no rebuild. It is a file-based workflow, not an authenticated CMS or an automatic publishing system. Changes are held in the editor tab until exported.
+The archive supports credited images, captions, stories, dates or known periods, and external video/interview links. It now supports actual pixel dimensions and validated responsive image variants; a neutral frame reserves space when dimensions are unknown. Chapter navigation focuses the heading without announcing the entire photo journal as a live region. Collection detail buttons have work-specific accessible names. The local editor exports an updated archive.js; replacing that file and approved assets requires no rebuild. It is a file-based workflow, not an authenticated CMS or an automatic publishing system. Changes are held in the editor tab until exported.
 
 ## Source and published baseline
 
@@ -85,7 +85,7 @@ The available environment has no supported interactive browser or preview handof
 
 1. Open index.html locally and review the entrance, narrative, garden, collection, and contact.
 2. Try all seven chapters, Back/Forward navigation, the five collection dialogs, Escape/Close, and narrow/zoomed layouts.
-3. Provide the Google Photos share link and identify the hero, garden, collection images, credits, and approved historical captions. Direct exported image files are needed for durable hosting; Google Photos album pages should not be used as image URLs.
+3. The supplied Google Photos links could not be read in this environment. Supply an album export ZIP or selected original photos as chat attachments, or an accessible Drive folder. Identify hero, garden, collection images, credits, and approved historical captions where known. Google Photos album pages should not be used as image URLs. Album artwork will not be assigned to priced works without matching evidence.
 4. Use review/editor.html to add verified memories and credited images. Export the content file before closing the tab.
 5. Confirm the listed print prices and whether the original Stripe button remains the intended checkout. Its configured identity was preserved but checkout was not exercised. Confirm Square’s intended role and whether an authenticated CMS is desired later.
 6. Complete browser accessibility/mobile review with authentic imagery, then obtain explicit Magic × Wizard authorization before merging or publishing.
