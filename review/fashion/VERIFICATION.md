@@ -1,6 +1,6 @@
 # Wearable Art verification
 
-October 30, 2026. Review branch: `codex/pinkys-universe-review`. No publication, merge, commerce mutation or purchase was performed.
+October 30, 2026. Review branch: `codex/pinkys-universe-review`. Publication was subsequently authorized by the owner; see the release record. These checks perform no commerce mutation or purchase.
 
 ## Results
 
@@ -44,4 +44,4 @@ npm run fashion-check
 
 An installed Chromium is required. The test commands run temporary local HTTP servers and need local socket access where the sandbox restricts it. No external checkout requests are made. The optional `python review/build-fashion.py` regenerates the checked-in static fashion page without installing a runtime framework.
 
-See [missing sources and readiness](MISSING-AND-READINESS.md) for the publication blockers. Passing these local checks does not establish a complete current commerce catalog.
+See [missing sources and readiness](MISSING-AND-READINESS.md) for the remaining source gaps. Passing these local checks does not establish a complete current commerce catalog.

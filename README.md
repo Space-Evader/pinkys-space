@@ -2,7 +2,7 @@
 
 The static Pinky’s Space art and culture website. The website needs no build step or runtime package installation. Reproducible validation uses this project's pinned development dependencies.
 
-The current Wearable Art assignment is draft-only: do not publish or merge. It continues `codex/pinkys-universe-review` from `b46ad03383a229ff3b202fda1f9832baf81181ce`. [Fashion inventory, missing sources and readiness](review/fashion/MISSING-AND-READINESS.md) records the current boundary and supersedes earlier release authorization below.
+Publication of the reviewed Wearable Art site was authorized on October 30, 2026, with continued review and iteration after release. The work continues `codex/pinkys-universe-review` from `b46ad03383a229ff3b202fda1f9832baf81181ce`. See the [release record](review/RELEASE-2026-10-30.md) and [inventory/source limitations](review/fashion/MISSING-AND-READINESS.md).
 
 - `fashion.html`: editorial fashion archive with 71 exact names, 79 provisional source groups and 716 historical variants, plus 25 distinct HatsRx design references. Search/category filters enhance complete static HTML.
 - `content/fashion-inventory.json`: full recovered historical wearable inventory; current commerce fields remain unverified.
@@ -42,4 +42,4 @@ The original `CNAME` and `pinky-final-wave.html` are unchanged. The previous pro
 
 All 23 photos from the supplied Drive portfolio are integrated in the gallery. Image 19 also anchors the entrance and the Artists archive chapter. Captions describe visible content; no unverified artwork titles, artist credits, or matches to the five priced products have been assumed. Derivatives retain the full image without cropping or creative alteration and omit EXIF metadata. The complete derivative set is 7,751,884 bytes (about 7.4 MiB); responsive loading avoids requesting every size at once.
 
-Earlier artwork release notes below describe the prior checkpoint. The current fashion assignment is not authorized for publication or merging. Exact artwork titles and credits, historical garden/venue photographs, current Square product mapping, public hotline suitability and founder visual review remain open. The original logo and dog portrait were subsequently supplied and are integrated faithfully. No substitute historical or product imagery has been fabricated.
+Earlier artwork release notes below describe the prior checkpoint. The owner has now authorized publication of the reviewed fashion archive and original identity integration. Exact artwork titles and credits, historical garden/venue photographs, current Square product mapping, public hotline suitability and founder visual review remain open. The original logo and dog portrait were subsequently supplied and are integrated faithfully. No substitute historical or product imagery has been fabricated.

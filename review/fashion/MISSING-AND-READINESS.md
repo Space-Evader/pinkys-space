@@ -1,6 +1,6 @@
 # Fashion archive — missing sources and publication readiness
 
-Prepared October 30, 2026. Draft implementation only. Do not publish or merge.
+Updated October 30, 2026. The owner has authorized publication of the reviewed historical archive and original identity integration, followed by iterative review. The former draft-only restriction is superseded; the source limitations below remain documented.
 
 The accessible historical export has been fully inventoried: 802 source rows, 716 wearable variant rows, 86 excluded nonwearable rows, 71 exact wearable names and 79 provisional exact-name/SKU-family groups. The website groups repeated exact names into 71 archive entries while retaining all separate source groups in their details. Parent Square item IDs were not present, so neither 71 nor 79 is a certified count of current purchasable products.
 
@@ -8,7 +8,7 @@ The accessible historical export has been fully inventoried: 802 source rows, 71
 
 The separate `content/related-brand-catalog.json` contains 25 individually read official HatsRx pages and 31 image references, including six artwork/inspiration images. HatsRx remains a separate brand and no records or stock have been merged into Pinky’s catalog. Its dollar-symbol prices are recorded with unknown ISO currency. The public references are editorial links, not Pinky’s purchase buttons.
 
-## Publication blockers
+## Remaining catalog and telephone verification
 
 | Missing verification | Scope | Required evidence |
 | --- | --- | --- |
@@ -40,4 +40,4 @@ Direct access to Square returned HTTP CONNECT 403. The web reader returned minim
 
 Work continues on `codex/pinkys-universe-review` from `b46ad03383a229ff3b202fda1f9832baf81181ce`. The recovered checkout was clean, with no unpublished local edits to overwrite. Prior review commits remain ancestors. The original Drive images were not changed. The complete raw historical export and excluded rows are retained in `/workspace/pinkys-source-audit`, outside the public website source. Unrelated environments were not used for runtime packages or testing.
 
-The original identity assets are integrated. This is an implemented historical fashion archive, not a completed current commerce integration. Publication is blocked by the source and asset gaps above and by the user’s explicit no-publish/no-merge instruction. Final founder visual review and current commerce verification remain required. Browser results and screenshots are recorded alongside this report; emulated mobile Chromium checks do not replace Safari, physical-device or assistive-technology review.
+The original identity assets are integrated. This is an implemented historical fashion archive, not a completed current commerce integration. The owner has approved publication of this historical archive despite the outstanding current-catalog mapping, choosing to review and adjust the site after release. Current product purchase buttons and telephone access remain unavailable until their actual destinations are supplied and verified. Browser results and screenshots are recorded alongside this report; emulated mobile Chromium checks do not replace Safari, physical-device or assistive-technology review.

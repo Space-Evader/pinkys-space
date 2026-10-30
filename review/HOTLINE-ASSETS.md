@@ -1,6 +1,6 @@
 # Original identity and Big Chef Dog integration
 
-Updated October 30, 2026. Draft only; no publication, merge or telephone number has been added.
+Updated October 30, 2026. The reviewed site is authorized for publication; no telephone number has been added.
 
 The user supplied the original Pinky’s Space logo (`1000002955.jpg`, 812 × 1280) and Big Chef Dog Halloween portrait (`1000002978.jpg`, 960 × 1280) after the initial catalog audit. Both were visually inspected and copied byte-for-byte to `assets/identity/`. [identity-sources.json](identity-sources.json) records original filenames, exact SHA-256 hashes, byte counts, dimensions and user-supplied provenance. No crop, redraw, filters, recoloring or generative editing was applied. The original frames and embedded color profiles remain intact; the supplied JPEGs contain no EXIF tags.
 
