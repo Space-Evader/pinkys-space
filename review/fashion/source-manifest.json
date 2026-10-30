@@ -32,7 +32,7 @@
   "identityAssets": {
     "originalLogo": "verified user-supplied original; assets/identity/pinkys-space-original-logo.jpg",
     "chefHalloweenPortrait": "verified user-supplied original; assets/identity/big-chef-dog-halloween.jpg",
-    "publicHotlineNumber": "unverified; no telephone link exposed",
+    "publicHotlineNumber": "Owner-confirmed Big Chef Dog Google Voice number +13476354690; normal guide links to tel:+13476354690.",
     "provenance": "review/identity-sources.json",
     "processing": "Byte-identical original JPEG copies; full frames, no creative alterations."
   },
@@ -70,13 +70,13 @@
     },
     {
       "path": "content/identity.js",
-      "bytes": 977,
-      "sha256": "d952e8992cf1c28fe2da47ba136a33d1c876d665a3d13e07a498cb58253c19b7"
+      "bytes": 1189,
+      "sha256": "92f93ac9a10a8b5427bd01881d4674fd12969b6ea730931221baf7e19719006f"
     },
     {
       "path": "review/identity-sources.json",
-      "bytes": 1996,
-      "sha256": "f0633d5f6d6280790a14b9d2bd07a03aad83462cd879920843c8f27765b0005f"
+      "bytes": 2569,
+      "sha256": "804eaf9a07a0b327a06428d90aef6fe8631299ec50791d04a72bf4a6429935ed"
     },
     {
       "path": "assets/identity/pinkys-space-original-logo.jpg",

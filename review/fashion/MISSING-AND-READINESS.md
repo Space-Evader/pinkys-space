@@ -8,7 +8,7 @@ The accessible historical export has been fully inventoried: 802 source rows, 71
 
 The separate `content/related-brand-catalog.json` contains 25 individually read official HatsRx pages and 31 image references, including six artwork/inspiration images. HatsRx remains a separate brand and no records or stock have been merged into Pinky’s catalog. Its dollar-symbol prices are recorded with unknown ISO currency. The public references are editorial links, not Pinky’s purchase buttons.
 
-## Remaining catalog and telephone verification
+## Remaining catalog verification
 
 | Missing verification | Scope | Required evidence |
 | --- | --- | --- |
@@ -18,9 +18,8 @@ The separate `content/related-brand-catalog.json` contains 25 individually read 
 | Available variants and inventory | All 79 historical groups | Current variation and availability data; historical quantities such as 100000 are not live stock evidence |
 | Matched original product photography | All 79 historical groups | Original images mapped to exact item IDs; gallery/artwork pictures cannot stand in for these |
 | HatsRx image files | 31 source references | Source binaries and visual verification before local publication; image host is blocked here |
-| Full Google Voice number ending 212 | Not verified | Full number and evidence it is approved for public hotline use |
 
-The user subsequently attached the original logo (1000002955.jpg) and Big Chef Dog Halloween photograph (1000002978.jpg). Both were visually inspected and copied byte-for-byte into `assets/identity/`, retaining their full frames and original color profiles. [Identity provenance](../identity-sources.json) records their exact hashes and dimensions. The originals now appear in the draft; these two asset gaps are resolved. The full public hotline number remains unverified.
+The user subsequently attached the original logo (1000002955.jpg) and Big Chef Dog Halloween photograph (1000002978.jpg). Both were visually inspected and copied byte-for-byte into `assets/identity/`, retaining their full frames and original color profiles. [Identity provenance](../identity-sources.json) records their exact hashes and dimensions. The originals now appear in the draft; these two asset gaps are resolved. The owner subsequently confirmed (347) 635-4690 as Big Chef Dog’s public Google Voice number and supplied matching settings evidence. The normal guide now links to `tel:+13476354690`.
 
 ## Square link evidence
 
@@ -32,7 +31,7 @@ Direct access to Square returned HTTP CONNECT 403. The web reader returned minim
 
 - `fashion.html`: editorial entrance, authentic supplied portfolio photograph, all 71 exact archive names, seven source-supported categories, search, native source disclosures, and separate HatsRx references. All entries remain accessible without JavaScript.
 - `index.html#wearable-art`: homepage entry into the new room. Existing artwork, history chapters, gallery, five priced artworks and commerce destinations remain available.
-- `content/identity.js`: verified original logo and portrait are configured. The floating non-AI guide uses the supplied portrait, approved copy and existing story/art links. Telephone access stays disabled because the full public-use number is unverified. Local `?hotline-preview=1` remains available for review.
+- `content/identity.js`: verified original logo and portrait are configured. The floating non-AI guide uses the supplied portrait, approved copy and existing story/art links. Telephone access uses the owner-confirmed public Google Voice number (347) 635-4690. Local `?hotline-preview=1` remains available for review.
 - The original-logo hook renders the supplied historical logo image faithfully. No redraw, crop, recoloring, generative edit or substitute asset was used.
 - Portfolio photograph 03 provides editorial context only; no catalog match, title, price or artist credit has been invented. Visual reinspection corrected two inherited descriptions: image11 shows stencils and paint supplies rather than a jacket; image13 shows a painted panel rather than fabric. All 46 image files are byte-identical to the checkpoint.
 
@@ -40,4 +39,4 @@ Direct access to Square returned HTTP CONNECT 403. The web reader returned minim
 
 Work continues on `codex/pinkys-universe-review` from `b46ad03383a229ff3b202fda1f9832baf81181ce`. The recovered checkout was clean, with no unpublished local edits to overwrite. Prior review commits remain ancestors. The original Drive images were not changed. The complete raw historical export and excluded rows are retained in `/workspace/pinkys-source-audit`, outside the public website source. Unrelated environments were not used for runtime packages or testing.
 
-The original identity assets are integrated. This is an implemented historical fashion archive, not a completed current commerce integration. The owner has approved publication of this historical archive despite the outstanding current-catalog mapping, choosing to review and adjust the site after release. Current product purchase buttons and telephone access remain unavailable until their actual destinations are supplied and verified. Browser results and screenshots are recorded alongside this report; emulated mobile Chromium checks do not replace Safari, physical-device or assistive-technology review.
+The original identity assets are integrated. This is an implemented historical fashion archive, not a completed current commerce integration. The owner has approved publication of this historical archive despite the outstanding current-catalog mapping, choosing to review and adjust the site after release. Current product purchase buttons remain unavailable until their actual Square destinations are supplied and verified. The hotline telephone destination is now confirmed and enabled. Browser results and screenshots are recorded alongside this report; emulated mobile Chromium checks do not replace Safari, physical-device or assistive-technology review.

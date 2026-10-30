@@ -20,7 +20,13 @@ vm.runInContext(await fs.readFile(path.join(root,"content/identity.js"),"utf8"),
 const identity = identityContext.window.PINKYS_IDENTITY;
 const identityManifest = JSON.parse(await fs.readFile(path.join(root,"review/identity-sources.json"),"utf8"));
 assert.equal(identityManifest.records.length,2);
-assert.equal(identity.publicTelephone,null);
+const expectedTelephone={e164:"+13476354690",display:"(347) 635-4690"};
+assert.equal(identity.publicTelephone.e164,expectedTelephone.e164);
+assert.equal(identity.publicTelephone.display,expectedTelephone.display);
+assert.equal(identity.publicTelephone.publicHotlineUseConfirmed,true);
+assert.ok(identity.publicTelephone.sourceReference.includes("1000002984.jpg"));
+assert.match(identity.publicTelephone.verifiedAt,/^\d{4}-\d{2}-\d{2}$/);
+assert.equal(identity.publicTelephone.display.replace(/\D/g,""),identity.publicTelephone.e164.slice(2));
 for(const expected of expectedIdentity){
   const configured=identity[expected.key];
   assert.equal(configured.src,expected.src);
@@ -68,7 +74,7 @@ const server = createServer(async (request,response)=>{
 await new Promise(resolve=>server.listen(0,"127.0.0.1",resolve));
 const origin = "http://127.0.0.1:"+server.address().port;
 const browser = await chromium.launch({executablePath:process.env.CHROMIUM_PATH || "/usr/bin/chromium",headless:true,args:["--no-sandbox"]});
-const results = {browser:await browser.version(),inventory:{exactNames:71,provisionalGroups:79,historicalVariants:716,verifiedCurrentSquareItems:0},identityAssets:expectedIdentity.map(({key,src,bytes,sha256,width,height})=>({key,src,bytes,sha256,width,height,originalBytesVerified:true})),viewports:[],checks:[],screenshots:[],limitations:["No current Square product page was accessible; remote destination availability and checkout were not exercised.","No physical device, Safari, or assistive-technology testing is implied.","The original logo and Halloween portrait are verified; a confirmed public hotline number remains absent. The non-AI guide exposes no telephone link."]};
+const results = {browser:await browser.version(),inventory:{exactNames:71,provisionalGroups:79,historicalVariants:716,verifiedCurrentSquareItems:0},identityAssets:expectedIdentity.map(({key,src,bytes,sha256,width,height})=>({key,src,bytes,sha256,width,height,originalBytesVerified:true})),publicHotline:expectedTelephone,viewports:[],checks:[],screenshots:[],limitations:["No current Square product page was accessible; remote destination availability and checkout were not exercised.","No physical device, Safari, or assistive-technology testing is implied.","The owner-confirmed public telephone link is checked by intercepted keyboard activation. No call was placed and voicemail delivery was not tested. The private account-settings screenshot is not a website asset."]};
 const errors = [];
 async function shot(page,name) {
   const relative = "review/screenshots/"+name+".png";
@@ -99,23 +105,45 @@ async function decodeIdentityImages(page){
     assert.equal(decoded.borderRadius,"0px","Original identity portrait must not use avatar cropping");
   }
 }
-async function checkHotline(page,viewport,preview){
+async function checkHotline(page,viewport,preview,capture=true){
   const launcher=page.locator("#chef-launcher");
   assert.equal(await launcher.textContent(),preview ? "Big Chef Dog · preview" : "Big Chef Dog Hotline");
   assert.equal(await page.locator(".chef-portrait").count(),1);
   assert.equal(await page.locator(".chef-launcher-portrait").count(),1);
-  assert.equal(await page.locator("#chef-call, a[href^='tel:']").count(),0);
+  assert.equal(await page.locator("#chef-call").count(),preview ? 0 : 1);
+  assert.equal(await page.locator("a[href^='tel:']").count(),preview ? 0 : 1);
   await decodeIdentityImages(page);
   await launcher.focus();await page.keyboard.press("Enter");
   assert.equal(await page.locator("#chef-dialog").evaluate(node=>node.open),true);
   assert.equal(await page.locator("#chef-greeting").textContent(),"Congratulations. You've reached the Big Chef Dog. He wasn't expecting you. But then again, he never is.");
   assert.equal(await page.locator(".chef-message").textContent(),"Leave him a message. Maybe he'll get back to you.");
+  if(!preview){
+    const call=page.locator("#chef-call");
+    assert.equal(await call.getAttribute("href"),"tel:"+expectedTelephone.e164);
+    assert.equal(await call.isVisible(),true);
+    const label=await call.innerText();
+    assert.ok(label.includes(expectedTelephone.display),"Visible call label must include the owner-confirmed public number");
+    assert.equal(label.replace(/\D/g,""),expectedTelephone.display.replace(/\D/g,""),"Visible telephone number and actual destination must agree");
+    // Test keyboard activation without handing a call to the operating system.
+    await call.evaluate(link=>{
+      window.__chefCallActivation=null;
+      link.addEventListener("click",event=>{
+        event.preventDefault();
+        window.__chefCallActivation={href:link.getAttribute("href"),trusted:event.isTrusted};
+      },{once:true});
+    });
+    const beforeActivation=page.url();
+    await call.focus();await page.keyboard.press("Enter");
+    const activation=await page.evaluate(()=>window.__chefCallActivation);
+    assert.deepEqual(activation,{href:"tel:"+expectedTelephone.e164,trusted:true});
+    assert.equal(page.url(),beforeActivation);
+  }
   assert.deepEqual(await page.locator(".chef-routes a").evaluateAll(nodes=>nodes.map(a=>a.getAttribute("href"))),["index.html#chapter-unexpected","index.html#gallery"]);
   for(const key of ["Tab","Tab","Tab","Tab","Shift+Tab","Shift+Tab"]){
     await page.keyboard.press(key);
     assert.equal(await page.evaluate(()=>document.querySelector("#chef-dialog").contains(document.activeElement)),true);
   }
-  await shot(page,(preview ? "hotline-preview-" : "hotline-")+viewport.name);
+  if(capture) await shot(page,(preview ? "hotline-preview-" : "hotline-")+viewport.name);
   await page.keyboard.press("Escape");
   assert.equal(await page.locator("#chef-dialog").evaluate(node=>node.open),false);
   assert.equal(await launcher.evaluate(node=>node===document.activeElement),true);
@@ -141,7 +169,8 @@ try {
     assert.equal(await page.locator(".fashion-group").count(),79);
     assert.equal(await page.locator("[data-fashion-filter]").count(),8);
     assert.equal(await page.locator("#chef-launcher, #chef-dialog").count(),2);
-    assert.equal(await page.locator("a[href^='tel:']").count(),0);
+    assert.equal(await page.locator("a[href^='tel:']").count(),1);
+    assert.equal(await page.locator("#chef-call").getAttribute("href"),"tel:"+expectedTelephone.e164);
     assert.ok(await page.locator("[data-original-logo] img").count()>0);
     assert.equal(await page.locator("[data-original-logo]").first().isVisible(),true);
     await decodeIdentityImages(page);
@@ -204,6 +233,10 @@ try {
     await checkHotline(page,viewport,false);
     await page.goto(origin+"/fashion.html?hotline-preview=1",{waitUntil:"networkidle"});
     await checkHotline(page,viewport,true);
+    await page.goto(origin+"/index.html",{waitUntil:"networkidle"});
+    await checkHotline(page,viewport,false,false);
+    await page.goto(origin+"/index.html?hotline-preview=1",{waitUntil:"networkidle"});
+    await checkHotline(page,viewport,true,false);
     assert.deepEqual(externalRequests,[]);
     results.viewports.push(viewport);
     await context.close();
@@ -226,6 +259,36 @@ try {
   assert.equal(missingRequests.filter(url=>url.includes("/assets/identity/")).length,0);
   assert.equal(missingRequests.filter(url=>!url.startsWith(origin+"/")).length,0);
   await missing.close();
+  // Owner approval, provenance and valid E.164 are independently required.
+  // Keep the authentic portrait active while denying each telephone candidate.
+  // Invalid fixtures use malformed non-dialable strings, not other real numbers.
+  const deniedTelephones=[
+    {name:"null",value:null},
+    {name:"public use not confirmed",value:{...identity.publicTelephone,publicHotlineUseConfirmed:false}},
+    {name:"missing source",value:{...identity.publicTelephone,sourceReference:""}},
+    {name:"invalid E.164",value:{...identity.publicTelephone,e164:"not-a-telephone"}},
+    {name:"invalid leading zero",value:{...identity.publicTelephone,e164:"+00000000"}},
+    {name:"too short",value:{...identity.publicTelephone,e164:"+1"}},
+    {name:"too long",value:{...identity.publicTelephone,e164:"+1234567890123456"}}
+  ];
+  for(const fixture of deniedTelephones){
+    const denied=await browser.newContext({viewport:{width:390,height:844}});
+    const deniedIdentity={...identity,publicTelephone:fixture.value};
+    await denied.route("**/*",route=>{
+      const url=route.request().url();
+      if(url===origin+"/content/identity.js") route.fulfill({contentType:"text/javascript",body:"window.PINKYS_IDENTITY="+JSON.stringify(deniedIdentity)+";"});
+      else if(url.startsWith(origin+"/")) route.continue();
+      else route.abort();
+    });
+    const deniedPage=await denied.newPage();
+    for(const entry of ["index.html","fashion.html"]){
+      await deniedPage.goto(origin+"/"+entry,{waitUntil:"networkidle"});
+      assert.equal(await deniedPage.locator("#chef-launcher, #chef-dialog").count(),2,"Portrait guide should remain available: "+fixture.name);
+      assert.equal(await deniedPage.locator(".chef-launcher-portrait, .chef-portrait").count(),2);
+      assert.equal(await deniedPage.locator("#chef-call, a[href^='tel:']").count(),0,"Rejected telephone must never become a link: "+fixture.name);
+    }
+    await denied.close();
+  }
   const noScript=await browser.newContext({javaScriptEnabled:false,viewport:{width:390,height:844}});
   const plain=await noScript.newPage();
   await plain.goto(origin+"/fashion.html");
@@ -235,9 +298,9 @@ try {
   assert.equal(await plain.locator("[data-fashion-record] details").first().evaluate(node=>node.open),true);
   await noScript.close();
   assert.deepEqual(errors,[]);
-  results.checks=["71 exact source names, 79 distinct provisional groups, 716 historical variants","Every card identity, category, source link and group count matches inventory","Seven supported category filters, keyboard activation, case-insensitive search, no results and clear/focus","All records and native source disclosure usable without JavaScript","No current prices, inventory or purchase destination invented; no commerce action inside archival records","25 HatsRx design references remain distinct from Pinky's historical records","Original logo and Halloween portrait JPEG byte counts and SHA-256 match independent supplied-source hashes","Original identity images decode at supplied dimensions with nonempty descriptions","Normal portrait launcher and local-only preview: exact approved copy, route links, Tab containment, Escape, Close and restored focus","Unconfirmed public telephone remains null and no telephone link is rendered","Runtime all-null identity override keeps normal logo and guide absent and requests no identity images on homepage and fashion page","No horizontal overflow at 320, 390, 650, 768, 1024 and 1440 pixels","No external requests or browser errors; reduced-motion mode","Ten current desktop/mobile fashion, normal hotline and hotline-preview screenshots"];
+  results.checks=["71 exact source names, 79 distinct provisional groups, 716 historical variants","Every card identity, category, source link and group count matches inventory","Seven supported category filters, keyboard activation, case-insensitive search, no results and clear/focus","All records and native source disclosure usable without JavaScript","No current prices, inventory or purchase destination invented; no commerce action inside archival records","25 HatsRx design references remain distinct from Pinky's historical records","Original logo and Halloween portrait JPEG byte counts and SHA-256 match independent supplied-source hashes","Original identity images decode at supplied dimensions with nonempty descriptions","Normal portrait launcher and local-only preview on homepage and fashion page: exact approved copy, route links, Tab containment, Escape, Close and restored focus","Owner-confirmed visible telephone number matches tel:+13476354690; intercepted keyboard activation places no call","Local preview suppresses telephone links on both pages","Null, false approval, missing provenance and malformed E.164 each suppress telephone links while portrait guide stays active on both pages","Runtime all-null identity override keeps normal logo and guide absent and requests no identity images on homepage and fashion page","No horizontal overflow at 320, 390, 650, 768, 1024 and 1440 pixels","No external requests or browser errors; reduced-motion mode","Ten current desktop/mobile fashion, normal hotline and hotline-preview screenshots"];
   await fs.writeFile(path.join(root,"review/fashion-browser-results.json"),JSON.stringify(results,null,2)+"\n");
-  console.log("PASS: fashion identities, filters/search, original identity bytes/images, normal hotline and preview, missing-asset gate, no-JS, responsive widths and ten screenshots.");
+  console.log("PASS: fashion identities, filters/search, original identity bytes/images, public hotline/intercepted activation, preview/telephone gates, no-JS, responsive widths and ten screenshots.");
 } finally {
   await browser.close();
   await new Promise(resolve=>server.close(resolve));

@@ -14,7 +14,7 @@
   const logoReady = verifiedImage(identity.originalLogo, "originalArtworkConfirmed");
   const portraitReady = verifiedImage(identity.chefPortrait, "originalHalloweenPhotoConfirmed");
   const phone = identity.publicTelephone;
-  const telephoneReady = Boolean(phone && sourced(phone) && phone.publicHotlineUseConfirmed === true && /^\+[1-9]\d{7,14}$/.test(phone.e164 || "") && phone.e164.endsWith("212"));
+  const telephoneReady = Boolean(phone && sourced(phone) && phone.publicHotlineUseConfirmed === true && /^\+[1-9]\d{7,14}$/.test(phone.e164 || ""));
   const image = (asset, className) => {
     const element = document.createElement("img");
     element.src = localSource(asset.src);
@@ -70,9 +70,10 @@
   greeting.id = "chef-greeting";
   inner.append(title, greeting, node("p", "Leave him a message. Maybe he'll get back to you.", "chef-message"));
   if (!preview && telephoneReady) {
-    const call = node("a", "Call the Big Chef Dog", "button pink chef-call");
+    const call = node("a", "", "button pink chef-call");
     call.id = "chef-call";
     call.href = "tel:" + phone.e164;
+    call.append(node("span", "Call the Big Chef Dog"), node("span", phone.display || phone.e164, "chef-call-number"));
     inner.append(call);
   } else {
     inner.append(node("p", preview ? "The telephone link is not available in this preview." : "The telephone link isn’t available yet.", "chef-preview-note"));

@@ -1,6 +1,6 @@
 # Original identity and Big Chef Dog integration
 
-Updated October 30, 2026. The reviewed site is authorized for publication; no telephone number has been added.
+Updated October 30, 2026. The reviewed site and subsequent hotline update are authorized for publication.
 
 The user supplied the original Pinky’s Space logo (`1000002955.jpg`, 812 × 1280) and Big Chef Dog Halloween portrait (`1000002978.jpg`, 960 × 1280) after the initial catalog audit. Both were visually inspected and copied byte-for-byte to `assets/identity/`. [identity-sources.json](identity-sources.json) records original filenames, exact SHA-256 hashes, byte counts, dimensions and user-supplied provenance. No crop, redraw, filters, recoloring or generative editing was applied. The original frames and embedded color profiles remain intact; the supplied JPEGs contain no EXIF tags.
 
@@ -10,9 +10,9 @@ The discreet floating guide uses the original portrait, the approved greeting an
 
 ## Telephone status
 
-The full Google Voice number ending in 212 is still unverified. `content/identity.js` leaves `publicTelephone` null. No `tel:` link or personal contact candidate appears in the draft. The dialog states that the telephone link is not available yet.
+The owner confirmed **(347) 635-4690** as Big Chef Dog’s public number and supplied a Google Voice settings screenshot showing that same full number. `content/identity.js` records `+13476354690`; the normal guide displays (347) 635-4690 and links to `tel:+13476354690`. This replaces the earlier unverified ending-212 hint. The screenshot contains unrelated account details and is kept outside public website source; only minimal provenance is recorded in `identity-sources.json`.
 
-The authentic portrait enables the non-AI guide independently of telephone access. A telephone link is added only when the configured full E.164 number ends in 212, has dated source evidence, and is explicitly confirmed suitable for public hotline use. This implements the user’s existing authorization; it does not introduce a new approval requirement. No unrelated footer number is used as a substitute.
+The authentic portrait enables the non-AI guide independently of telephone access. A telephone link is added only when the configured full E.164 number is valid, has dated source evidence, and is explicitly confirmed suitable for public hotline use. This implements the user’s existing authorization; it does not introduce a new approval requirement. No unrelated footer number is used as a substitute.
 
 The original-logo and portrait fields require local image paths, actual dimensions, dated source references and explicit original-asset authenticity flags. Missing or unverified originals remain gated. Removing both assets from configuration leaves the normal guide dormant rather than substituting artwork.
 
@@ -24,7 +24,7 @@ Open `index.html` or `fashion.html` locally to review the normal portrait launch
 - Launcher: `#chef-launcher`; dialog: `#chef-dialog`; close: `#chef-close`.
 - Greeting: `#chef-greeting`; approved second paragraph: `.chef-message`.
 - Portraits: `.chef-launcher-portrait` and `.chef-portrait`.
-- Telephone anchor: `#chef-call`, absent while the public number is unverified.
+- Telephone anchor: `#chef-call`, linking to `tel:+13476354690` in normal mode; absent in local preview or if verification data is missing/invalid.
 - Existing story/art links: `.chef-routes a`.
 
-Browser checks verify original file hashes, natural dimensions and decoding, complete-frame styles, normal and preview guide interactions, exact approved copy, Tab containment, Escape/Close, focus restoration, no telephone link, missing-asset fallback and responsive widths. Current screenshots and results are linked in [fashion verification](fashion/VERIFICATION.md).
+Browser checks verify original file hashes, natural dimensions and decoding, complete-frame styles, normal and preview guide interactions, exact approved copy, Tab containment, Escape/Close, focus restoration, the exact displayed number and telephone URI, keyboard activation with navigation prevented, missing/invalid-number gating, missing-asset fallback and responsive widths. The checks do not place a call. Current screenshots and results are linked in [fashion verification](fashion/VERIFICATION.md).

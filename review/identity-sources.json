@@ -1,6 +1,6 @@
 {
   "verifiedAt": "2026-10-30",
-  "scope": "Two original identity assets explicitly supplied by the user for the existing draft integration. Telephone remains unverified.",
+  "scope": "Two original identity images and the owner-confirmed public Big Chef Dog Google Voice number.",
   "records": [
     {
       "id": "original-logo",
@@ -40,5 +40,15 @@
       "visuallyInspected": true,
       "processing": "None. Byte-identical JPEG copy with complete supplied frame and color profile. No crop, redraw, recolor, filters or generative editing. No EXIF tags present in supplied file."
     }
-  ]
+  ],
+  "publicTelephone": {
+    "e164": "+13476354690",
+    "display": "(347) 635-4690",
+    "service": "Google Voice",
+    "purpose": "Big Chef Dog public hotline",
+    "verifiedAt": "2026-10-30",
+    "source": "Owner statement: Thats the number we use for Big Chef Dog; supplied Google Voice settings screenshot 1000002984.jpg confirms the full number.",
+    "supersedes": "Earlier unverified ending-212 hint",
+    "privacy": "Only the confirmed public hotline number and minimal provenance are recorded. The account-settings screenshot and unrelated account details are not included in website source."
+  }
 }

@@ -13,7 +13,8 @@
 .chef-dialog .chef-greeting{font-size:18px;line-height:1.6}
 .chef-dialog .chef-message{font-size:15px;color:#cccac0}
 .chef-dialog .chef-preview-note{font-size:12px;color:var(--muted);padding-block:15px;border-block:1px solid var(--line)}
-.chef-call{margin:6px 0 22px}
+.chef-call{margin:6px 0 22px;max-width:100%;flex-direction:column;align-items:flex-start;gap:5px}
+.chef-call-number{font-size:16px;letter-spacing:.02em}
 .chef-routes{display:grid;gap:6px;border-top:1px solid var(--line);padding-top:16px}
 .chef-routes a{display:flex;align-items:center;min-height:44px;font-size:13px;text-decoration:none}
 .chef-routes a:hover{color:var(--pink)}
