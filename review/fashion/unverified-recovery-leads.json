@@ -1,0 +1,123 @@
+{
+  "auditDate": "2026-10-30",
+  "usage": "Recovery leads only. These are excluded from verified/current commerce until source authority, asset identity, and Square mapping are confirmed.",
+  "candidates": [
+    {
+      "name": "XOXO /crop tee",
+      "source": "https://pinkysspace.square.site/product/xoxo-crop-tee/209?cfa=gpl&channel=CH_CICfHoRnoHVg9GCn7RuRa7ssqwsDzKIAFUCuXQlQuYC",
+      "type": "Square search-index lead",
+      "price": null,
+      "variants": null,
+      "image": null,
+      "availability": null,
+      "verification": "Search result title and exact existing Square URL observed. Current opened product page yields only Facebook image; cannot verify current listing contents."
+    },
+    {
+      "name": "p.s. I Love You /t-shirt",
+      "source": "https://www.ebay.com/itm/285517057008",
+      "type": "Third-party seller listing",
+      "listedBrand": "pinkysspace",
+      "seller": "itsago-75",
+      "displayedPrice": "US $39.00",
+      "currency": "USD",
+      "colors": [
+        "Berry",
+        "Army",
+        "Heather Deep Teal",
+        "Silver",
+        "Citron",
+        "White"
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL",
+        "4XL",
+        "5XL"
+      ],
+      "availability": "Listing displayed 'Last one'; no variant stock verified.",
+      "verification": "Readable listing. Seller authority / connection to owner's Square not verified; do not adopt eBay price or availability as Square data."
+    },
+    {
+      "name": "p.s. I Love You /vintage",
+      "source": "https://www.ebay.com/itm/285517056856",
+      "type": "Third-party seller listing",
+      "listedBrand": "pinkysspace",
+      "seller": "itsago-75",
+      "displayedPrice": "US $39.00",
+      "currency": "USD",
+      "colors": [
+        "Black",
+        "Navy",
+        "Maroon",
+        "Red",
+        "Charcoal Grey"
+      ],
+      "sizes": null,
+      "availability": "Listing displayed 'Last one'; no variant stock verified.",
+      "verification": "Category not conclusively identified from readable item specifics (Style N/A). Seller authority and Square mapping unverified."
+    },
+    {
+      "name": "Yes Yes Yes /snapback hat",
+      "source": "https://www.ebay.com/itm/285512839554",
+      "type": "Third-party seller listing",
+      "listedBrand": "pinkysspace",
+      "seller": "itsago-75",
+      "displayedPrice": "US $25.00",
+      "currency": "USD",
+      "colors": [
+        "White"
+      ],
+      "sizes": [
+        "U"
+      ],
+      "availability": "Listing displayed 'Last one'; no variant stock verified.",
+      "verification": "Possible historical/shared design with HatsRx Yes Yes Yes. Do not duplicate records or transfer lower eBay price into official HatsRx or Square inventory."
+    },
+    {
+      "name": "Rainbow Jazz /hightops men",
+      "source": "https://www.ebay.com/itm/285517056891",
+      "type": "Third-party seller listing",
+      "listedBrand": "pinkysspace",
+      "seller": "itsago-75",
+      "displayedPrice": "US $69.00",
+      "currency": "USD",
+      "colors": null,
+      "sizes": [
+        "5",
+        "5.5",
+        "6",
+        "6.5",
+        "7",
+        "7.5",
+        "8",
+        "8.5",
+        "9",
+        "9.5",
+        "10",
+        "10.5",
+        "11",
+        "11.5",
+        "12",
+        "12.5",
+        "13"
+      ],
+      "availability": "Listing displayed 'Last one'; no variant stock verified.",
+      "verification": "Current readable title/listing verified; seller authority and exact sizing system not verified. Item specifics US Shoe Size is N/A despite dropdown. No Square mapping."
+    }
+  ],
+  "historicalContext": {
+    "source": "https://evgrieve.com/2023/05/the-pinkys-space-storefront-is-for-rent.html?m=0",
+    "published": "2023-05-01",
+    "finding": "Report quotes co-owner Wesley Wobles explaining that a clothing line began after the lockout, using print-on-demand items designed with art created at Pinky's Space.",
+    "use": "Supports an editorial art-to-clothing history connection with attribution; does not verify current inventory, product identity, or purchasing links."
+  },
+  "unrelatedCommerce": {
+    "source": "https://pinkysspace.com/checkout.html",
+    "finding": "Existing homepage 'Existing checkout' link opens an art-specific Double Heart Transmission page containing an existing Stripe buy-button loader. This is pre-existing art commerce to preserve, not a fashion checkout to replace."
+  }
+}

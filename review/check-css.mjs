@@ -4,11 +4,13 @@ import { fileURLToPath } from "node:url";
 import postcss from "postcss";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const stylesheet = path.join(root, "assets/space.css");
-postcss.parse(fs.readFileSync(stylesheet, "utf8"), { from: stylesheet });
+for (const relative of ["assets/space.css", "assets/fashion.css", "assets/hotline.css"]) {
+  const stylesheet = path.join(root, relative);
+  postcss.parse(fs.readFileSync(stylesheet, "utf8"), { from: stylesheet });
+}
 
 let inlineCount = 0;
-for (const relative of ["index.html", "checkout.html", "review/editor.html"]) {
+for (const relative of ["index.html", "fashion.html", "checkout.html", "review/editor.html"]) {
   const filename = path.join(root, relative);
   const html = fs.readFileSync(filename, "utf8");
   for (const match of html.matchAll(/<style\b[^>]*>([\s\S]*?)<\/style\s*>/gi)) {

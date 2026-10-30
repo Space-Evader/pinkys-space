@@ -1,0 +1,92 @@
+{
+  "auditDate": "2026-10-30",
+  "reviewBaseCommit": "b46ad03383a229ff3b202fda1f9832baf81181ce",
+  "branch": "codex/pinkys-universe-review",
+  "publication": "Owner authorized publication of the reviewed historical archive and original identity integration on 2026-10-30, followed by iterative review. Source gaps remain explicit; no catalog/checkout mutations.",
+  "completeCurrentCatalog": false,
+  "sourceInventory": {
+    "sourceDate": "2026-05-31",
+    "sourceRows": 802,
+    "wearableRows": 716,
+    "excludedNonwearableRows": 86,
+    "exactNames": 71,
+    "provisionalSkuGroups": 79,
+    "verifiedCurrentSquareItems": 0
+  },
+  "relatedBrand": {
+    "name": "HatsRx",
+    "individuallyReadPublicDesignPages": 25,
+    "sourceImageReferences": 31,
+    "localImagesDownloaded": 0,
+    "verifiedSquareMappings": 0,
+    "mergedWithPinkysRecords": false
+  },
+  "editorialImages": [
+    {
+      "src": "assets/portfolio/03-640.webp",
+      "sourceRecord": "portfolio-03",
+      "role": "Supplied art portfolio photograph of a decorated bag. Editorial context only; no named-product or price match.",
+      "sourceFile": "See review/image-sources.json record portfolio-03"
+    }
+  ],
+  "identityAssets": {
+    "originalLogo": "verified user-supplied original; assets/identity/pinkys-space-original-logo.jpg",
+    "chefHalloweenPortrait": "verified user-supplied original; assets/identity/big-chef-dog-halloween.jpg",
+    "publicHotlineNumber": "unverified; no telephone link exposed",
+    "provenance": "review/identity-sources.json",
+    "processing": "Byte-identical original JPEG copies; full frames, no creative alterations."
+  },
+  "accessLimitations": [
+    "Direct Square HTTPS CONNECT403; page extractor cannot recover listing contents.",
+    "Direct static.wixstatic.com image access CONNECT403; related-brand image references remain unshipped and visually unverified.",
+    "No Square connected catalog API available.",
+    "Historical variants/price amounts/quantities do not establish current stock or prices."
+  ],
+  "files": [
+    {
+      "path": "content/fashion-inventory.json",
+      "bytes": 465560,
+      "sha256": "fbc9415467268ae7ad4d121286c28daa481208a14b608427d9ef5ab68bbf4bf7"
+    },
+    {
+      "path": "content/related-brand-catalog.json",
+      "bytes": 55645,
+      "sha256": "94c3ec4ff7e5578a6b7a0f0ae9617154a880240c457d52bd38a41f26a345a241"
+    },
+    {
+      "path": "review/fashion/connected-source-manifest.json",
+      "bytes": 6707,
+      "sha256": "f570ba725015ad149425cda0ae19c92fbed6b25c23cf0acf0394f227caa497a8"
+    },
+    {
+      "path": "review/fashion/unverified-recovery-leads.json",
+      "bytes": 4493,
+      "sha256": "3cfb7ac5e3d6986f83ca7ed1d6870f213584cdccd5dc682f9afbbe52b9717b53"
+    },
+    {
+      "path": "review/fashion/inventory-summary.csv",
+      "bytes": 20599,
+      "sha256": "b78d721010f9638cbfc76b7a5c276f26a2f7acccb52cd35d51140c15f9eb78e9"
+    },
+    {
+      "path": "content/identity.js",
+      "bytes": 977,
+      "sha256": "d952e8992cf1c28fe2da47ba136a33d1c876d665a3d13e07a498cb58253c19b7"
+    },
+    {
+      "path": "review/identity-sources.json",
+      "bytes": 1996,
+      "sha256": "f0633d5f6d6280790a14b9d2bd07a03aad83462cd879920843c8f27765b0005f"
+    },
+    {
+      "path": "assets/identity/pinkys-space-original-logo.jpg",
+      "bytes": 32358,
+      "sha256": "60b2b87f88f69576f0fb2c1fbcd083719c4a72f1fd082d5f22ee8898275ae497"
+    },
+    {
+      "path": "assets/identity/big-chef-dog-halloween.jpg",
+      "bytes": 83842,
+      "sha256": "e971f4eeea9c40202a3193f2b813dbf6e13e2052f2206340e0f1536b108f6936"
+    }
+  ]
+}

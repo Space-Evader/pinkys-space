@@ -1,5 +1,7 @@
 # Pinky’s Space — founder review
 
+**Historical artwork-checkpoint report.** The later Wearable Art site has now been approved for publication by the owner, with iterative review after release. See the [current release record](RELEASE-2026-10-30.md) and [fashion inventory/source limitations](fashion/MISSING-AND-READINESS.md).
+
 Prepared October 30, 2026. Status: publication-authorized release candidate with all 23 supplied portfolio photos integrated. Automated source and real-browser checks passed. Exact artwork titles and credits, historical garden/venue photography, and founder visual review remain open.
 
 ## What is ready to review

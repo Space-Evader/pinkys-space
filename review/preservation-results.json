@@ -1,0 +1,332 @@
+{
+  "baselineCommit": "b46ad03383a229ff3b202fda1f9832baf81181ce",
+  "branch": "codex/pinkys-universe-review",
+  "method": "SHA-256 of each protected tracked file compared with the exact Git baseline blob. Full baseline source and all 75 tracked-file hashes retained outside the website at /workspace/pinkys-baseline-evidence.",
+  "protectedCount": 53,
+  "allProtectedBytesPreserved": true,
+  "records": [
+    {
+      "path": "CNAME",
+      "baselineSha256": "cc222909fd22fe5f29b382e0be7598023e53c14a0af189fb046307cf4d52efe8",
+      "reviewSha256": "cc222909fd22fe5f29b382e0be7598023e53c14a0af189fb046307cf4d52efe8",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio.js",
+      "baselineSha256": "80fdfe6408df69cf38f19a43a4317114bd64d1b4077f090eca61ef4c27e334d6",
+      "reviewSha256": "80fdfe6408df69cf38f19a43a4317114bd64d1b4077f090eca61ef4c27e334d6",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/01-1600.webp",
+      "baselineSha256": "481408c894d10fb73ce7a0123c3097d24aa3f4b4c45123f7167756825592d731",
+      "reviewSha256": "481408c894d10fb73ce7a0123c3097d24aa3f4b4c45123f7167756825592d731",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/01-640.webp",
+      "baselineSha256": "5cbe4de13bd5a0ec87c216bbae9d318c2d86bf273a9bdc500a61a95ffe0ef3e3",
+      "reviewSha256": "5cbe4de13bd5a0ec87c216bbae9d318c2d86bf273a9bdc500a61a95ffe0ef3e3",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/02-1600.webp",
+      "baselineSha256": "77a0e6c6922468a36cef6f0fc921630a10c4cbd2b904b8f9489c790f37d85aa4",
+      "reviewSha256": "77a0e6c6922468a36cef6f0fc921630a10c4cbd2b904b8f9489c790f37d85aa4",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/02-640.webp",
+      "baselineSha256": "a489448b723fa3b0d161e364cf81c49f6dfbf4bcea5180fa1358dceac0fdec86",
+      "reviewSha256": "a489448b723fa3b0d161e364cf81c49f6dfbf4bcea5180fa1358dceac0fdec86",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/03-1600.webp",
+      "baselineSha256": "af189158f4c3378d01f274f8e1e8adfad356a062961c06156446114c7b1fb29a",
+      "reviewSha256": "af189158f4c3378d01f274f8e1e8adfad356a062961c06156446114c7b1fb29a",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/03-640.webp",
+      "baselineSha256": "717537f997113dc1ec52409e9deeb105a65e22982c1e2e3f730ce711c537b581",
+      "reviewSha256": "717537f997113dc1ec52409e9deeb105a65e22982c1e2e3f730ce711c537b581",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/04-1600.webp",
+      "baselineSha256": "06c95a456d9cf109b63e8ac42551914a323d832ab2dcb75a13ca8930e24ec778",
+      "reviewSha256": "06c95a456d9cf109b63e8ac42551914a323d832ab2dcb75a13ca8930e24ec778",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/04-640.webp",
+      "baselineSha256": "61f9cc2b88894798bfc0c5dce07766cddcc1bcb394deadf424f2080e097e9a5e",
+      "reviewSha256": "61f9cc2b88894798bfc0c5dce07766cddcc1bcb394deadf424f2080e097e9a5e",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/05-1600.webp",
+      "baselineSha256": "77f545b25c21dabd6b13a104f0ffb867f2082bf62530e6b373dc8d7b03317242",
+      "reviewSha256": "77f545b25c21dabd6b13a104f0ffb867f2082bf62530e6b373dc8d7b03317242",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/05-640.webp",
+      "baselineSha256": "c6949ea0d4c64511869b81feff97d8518681fb881f30144885f3059abf4c25c1",
+      "reviewSha256": "c6949ea0d4c64511869b81feff97d8518681fb881f30144885f3059abf4c25c1",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/06-1600.webp",
+      "baselineSha256": "92944f18c60d719843c59770b3d43303edffb6e6054d1ba50385e74e8594fd65",
+      "reviewSha256": "92944f18c60d719843c59770b3d43303edffb6e6054d1ba50385e74e8594fd65",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/06-640.webp",
+      "baselineSha256": "4da4ddb6ded363c7c9f5a062b2233e0e0cdeccbbfe6fb4ec536300910c1b1cc2",
+      "reviewSha256": "4da4ddb6ded363c7c9f5a062b2233e0e0cdeccbbfe6fb4ec536300910c1b1cc2",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/07-1600.webp",
+      "baselineSha256": "8a4a28355b736ab78095ca9837016c873ecb1484603626cafe75e355d7c03808",
+      "reviewSha256": "8a4a28355b736ab78095ca9837016c873ecb1484603626cafe75e355d7c03808",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/07-640.webp",
+      "baselineSha256": "3bb2069e7f88f05c95e3274316f43cf3c88a0d1a7836d8f36821d6fc2dcaa190",
+      "reviewSha256": "3bb2069e7f88f05c95e3274316f43cf3c88a0d1a7836d8f36821d6fc2dcaa190",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/08-1600.webp",
+      "baselineSha256": "34e704af0ed129662805a852e88417c076a7bb0593db3488d92502be2e26c11f",
+      "reviewSha256": "34e704af0ed129662805a852e88417c076a7bb0593db3488d92502be2e26c11f",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/08-640.webp",
+      "baselineSha256": "f8b5e2c866649e9f656fd2458d9d4e7cc135dcecd11ad4cc417a7df1baee6b6e",
+      "reviewSha256": "f8b5e2c866649e9f656fd2458d9d4e7cc135dcecd11ad4cc417a7df1baee6b6e",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/09-1600.webp",
+      "baselineSha256": "e534f65c1631e648494f43c0d18e98a6f397cf38eec62d641f9bc3db119ae361",
+      "reviewSha256": "e534f65c1631e648494f43c0d18e98a6f397cf38eec62d641f9bc3db119ae361",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/09-640.webp",
+      "baselineSha256": "9eee5342056b35a62a7c636d07a5a10aa4fbc16d55e4b86b09382a0043523fce",
+      "reviewSha256": "9eee5342056b35a62a7c636d07a5a10aa4fbc16d55e4b86b09382a0043523fce",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/10-1600.webp",
+      "baselineSha256": "5da28c57e89002e2bf3201061b09127517dbf77482ea1ac09d6d58aa430ec2f8",
+      "reviewSha256": "5da28c57e89002e2bf3201061b09127517dbf77482ea1ac09d6d58aa430ec2f8",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/10-640.webp",
+      "baselineSha256": "a707b194b22eb3e708e818f703bd7341abeaa7ba2f05713a114421b9c4d94044",
+      "reviewSha256": "a707b194b22eb3e708e818f703bd7341abeaa7ba2f05713a114421b9c4d94044",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/11-1600.webp",
+      "baselineSha256": "a9c12fa31991f97b78714f9b7f415a8040b11cb8e7e8f2711b14e17d145317c4",
+      "reviewSha256": "a9c12fa31991f97b78714f9b7f415a8040b11cb8e7e8f2711b14e17d145317c4",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/11-640.webp",
+      "baselineSha256": "e97dcd600db3cc613ef96523bd701f481aec90899e31637b8de763680be0e5de",
+      "reviewSha256": "e97dcd600db3cc613ef96523bd701f481aec90899e31637b8de763680be0e5de",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/12-1600.webp",
+      "baselineSha256": "1a92136f6076be5f6495d3527dfb6cedf2419f0b96019676bb08c2f5688c872b",
+      "reviewSha256": "1a92136f6076be5f6495d3527dfb6cedf2419f0b96019676bb08c2f5688c872b",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/12-640.webp",
+      "baselineSha256": "c38ccf579400e1bbb8a92224f832f39687016e4bfbff6e87e4742443891c95cb",
+      "reviewSha256": "c38ccf579400e1bbb8a92224f832f39687016e4bfbff6e87e4742443891c95cb",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/13-1600.webp",
+      "baselineSha256": "c88a53296fcab06f9d95b1e3da1c6e6632d1d95311280bca4e92e8764c3b70df",
+      "reviewSha256": "c88a53296fcab06f9d95b1e3da1c6e6632d1d95311280bca4e92e8764c3b70df",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/13-640.webp",
+      "baselineSha256": "1ba00ccd8cb75dc3f77c256eec08f27a2a1171d8bd4314bb2cf3ad9e81a9b831",
+      "reviewSha256": "1ba00ccd8cb75dc3f77c256eec08f27a2a1171d8bd4314bb2cf3ad9e81a9b831",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/14-1600.webp",
+      "baselineSha256": "e07303966fecd5c1ced8af7a39cf5e96144fb915ded01f90ef1a4a0c34bf8c5d",
+      "reviewSha256": "e07303966fecd5c1ced8af7a39cf5e96144fb915ded01f90ef1a4a0c34bf8c5d",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/14-640.webp",
+      "baselineSha256": "461611314a8a8ce1f8d542c47d57ce30ada5a6bfb7bc27abfd3cfaf0a27453dd",
+      "reviewSha256": "461611314a8a8ce1f8d542c47d57ce30ada5a6bfb7bc27abfd3cfaf0a27453dd",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/15-1600.webp",
+      "baselineSha256": "b895daa2136efb6f78d9cf2c9228143a71893650debb34bce9514412cf42be15",
+      "reviewSha256": "b895daa2136efb6f78d9cf2c9228143a71893650debb34bce9514412cf42be15",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/15-640.webp",
+      "baselineSha256": "0ea31d7e6409df8edb6cf40d873e2fa76f9e4a0261c19e2ef357d45878bd705d",
+      "reviewSha256": "0ea31d7e6409df8edb6cf40d873e2fa76f9e4a0261c19e2ef357d45878bd705d",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/16-1600.webp",
+      "baselineSha256": "7012a29fcee985369f949303cc1cf7f3aeeb22630bbcd2706a686352f9a95a61",
+      "reviewSha256": "7012a29fcee985369f949303cc1cf7f3aeeb22630bbcd2706a686352f9a95a61",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/16-640.webp",
+      "baselineSha256": "77d5a8fde73e15dd8900fcbb0cef9b1c29cee5eab0d5135a723b0471b2ef424d",
+      "reviewSha256": "77d5a8fde73e15dd8900fcbb0cef9b1c29cee5eab0d5135a723b0471b2ef424d",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/17-1600.webp",
+      "baselineSha256": "a528aea15c7ab6b7f2f4b5e0a0e45b8173cd842cff95ed3b76a9e549eb42ef51",
+      "reviewSha256": "a528aea15c7ab6b7f2f4b5e0a0e45b8173cd842cff95ed3b76a9e549eb42ef51",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/17-640.webp",
+      "baselineSha256": "19f2278b8033fe724d63dc8537f6fb55cafef0d03e8edc02405ed0047f8347c7",
+      "reviewSha256": "19f2278b8033fe724d63dc8537f6fb55cafef0d03e8edc02405ed0047f8347c7",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/18-1600.webp",
+      "baselineSha256": "baa05d9765d28be1852074841343e81d9e50233614f34c84a745f4bbb3ab08ca",
+      "reviewSha256": "baa05d9765d28be1852074841343e81d9e50233614f34c84a745f4bbb3ab08ca",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/18-640.webp",
+      "baselineSha256": "ccdd56be4d621c6b2806d2f32e40f4538357c40e63e76f78be5b7ae783f9d997",
+      "reviewSha256": "ccdd56be4d621c6b2806d2f32e40f4538357c40e63e76f78be5b7ae783f9d997",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/19-1600.webp",
+      "baselineSha256": "d02127362cc9ea214046149d9de9da609c9f74e185f7fe720cad719265fd9778",
+      "reviewSha256": "d02127362cc9ea214046149d9de9da609c9f74e185f7fe720cad719265fd9778",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/19-640.webp",
+      "baselineSha256": "9424fac720a305007f895c7a521353a0cc3ef9beac14a72ff722c947f1c85460",
+      "reviewSha256": "9424fac720a305007f895c7a521353a0cc3ef9beac14a72ff722c947f1c85460",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/20-1600.webp",
+      "baselineSha256": "36e232a0332b0c46b7ca944fb9a75238c4c4640bb0f8e4d849c7f2800d8d4910",
+      "reviewSha256": "36e232a0332b0c46b7ca944fb9a75238c4c4640bb0f8e4d849c7f2800d8d4910",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/20-640.webp",
+      "baselineSha256": "b996eab3c871defa60fd92d5d3360f5fa74e86b26a53f505c77e6b62b84dfdbb",
+      "reviewSha256": "b996eab3c871defa60fd92d5d3360f5fa74e86b26a53f505c77e6b62b84dfdbb",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/21-1600.webp",
+      "baselineSha256": "3c929e3ab1e72a5694545acfb7223c07b701cb9539b1d7f456dc97525ec7003f",
+      "reviewSha256": "3c929e3ab1e72a5694545acfb7223c07b701cb9539b1d7f456dc97525ec7003f",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/21-640.webp",
+      "baselineSha256": "5e886bd2ce62b03ac3dbd212c00ae0b4b20f3aac06a135cba6d1a5e033f5977f",
+      "reviewSha256": "5e886bd2ce62b03ac3dbd212c00ae0b4b20f3aac06a135cba6d1a5e033f5977f",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/22-1600.webp",
+      "baselineSha256": "cb8f5f1f5e1512ab07c13d06f42b1b0e7b41339a57a8dfb6cb211bcaeb241973",
+      "reviewSha256": "cb8f5f1f5e1512ab07c13d06f42b1b0e7b41339a57a8dfb6cb211bcaeb241973",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/22-640.webp",
+      "baselineSha256": "4947ae83fac818d1ecfe9062895c12615bace8094cdd581ddc6c3b0149d24765",
+      "reviewSha256": "4947ae83fac818d1ecfe9062895c12615bace8094cdd581ddc6c3b0149d24765",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/23-1600.webp",
+      "baselineSha256": "d766910972c3217a29e5c8efdeedf42284a496bc865cd88bc623dabd5b47d7c7",
+      "reviewSha256": "d766910972c3217a29e5c8efdeedf42284a496bc865cd88bc623dabd5b47d7c7",
+      "preserved": true
+    },
+    {
+      "path": "assets/portfolio/23-640.webp",
+      "baselineSha256": "b0f52ed0015ac4fa5ccebbe500045ad403a58d989e14af22a37bf079628c705e",
+      "reviewSha256": "b0f52ed0015ac4fa5ccebbe500045ad403a58d989e14af22a37bf079628c705e",
+      "preserved": true
+    },
+    {
+      "path": "assets/space.css",
+      "baselineSha256": "769ba33563fb78a256e39fa7b61d7c3163f7b1fb6b1fa724ba52f344494aedec",
+      "reviewSha256": "769ba33563fb78a256e39fa7b61d7c3163f7b1fb6b1fa724ba52f344494aedec",
+      "preserved": true
+    },
+    {
+      "path": "assets/space.js",
+      "baselineSha256": "13300b5661558529923109319dad015b47bcd4fd37d17082541e89ed5bc43b81",
+      "reviewSha256": "13300b5661558529923109319dad015b47bcd4fd37d17082541e89ed5bc43b81",
+      "preserved": true
+    },
+    {
+      "path": "checkout.html",
+      "baselineSha256": "139b88bb291daae65ca7f9fc55548868691a31275b036e1d30b0b123a06e8d11",
+      "reviewSha256": "139b88bb291daae65ca7f9fc55548868691a31275b036e1d30b0b123a06e8d11",
+      "preserved": true
+    },
+    {
+      "path": "content/archive.js",
+      "baselineSha256": "fd89d3ecc6613928809555eef931fa8a3ff95ae9114b7c3d7226faff887abca8",
+      "reviewSha256": "fd89d3ecc6613928809555eef931fa8a3ff95ae9114b7c3d7226faff887abca8",
+      "preserved": true
+    },
+    {
+      "path": "pinky-final-wave.html",
+      "baselineSha256": "6b74821d5e24fdeceb5657b4c40ca399e60a2932727503e687218af5bfaaa150",
+      "reviewSha256": "6b74821d5e24fdeceb5657b4c40ca399e60a2932727503e687218af5bfaaa150",
+      "preserved": true
+    }
+  ],
+  "intentionalMetadataCorrections": [
+    "Portfolio 11 descriptive caption/alt corrected to stencil pile, not jacket.",
+    "Portfolio 13 descriptive caption/alt corrected to panel, not fabric."
+  ],
+  "scopeNote": "Original source photographs remain outside this repository; this verifies all 46 shipped derivatives and protected code/configuration. It does not establish access to unseen or uncommitted source work from another environment."
+}
